@@ -1,0 +1,14 @@
+_OpenUSART: CODE, 2952 0 104
+_lcd_write_byte: CODE, 3184 0 26
+__stringdata: SMALLCONST, 2053 0 11
+_ISR: CODE, 8 0 2820
+_main: CODE, 2066 0 272
+_lcd_puts_const: CODE, 2828 0 124
+__initialization: CODE, 3210 0 8
+_lcd_gotoxy: CODE, 3056 0 98
+_WriteUSART: CODE, 3232 0 18
+_ReadUSART: CODE, 3154 0 30
+_lcd_write_nibble: CODE, 2546 0 154
+_lcd_init: CODE, 2338 0 208
+_LCD_ROW_ADDRESS: SMALLCONST, 2049 0 4
+Total: 3877
