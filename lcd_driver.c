@@ -71,7 +71,18 @@ void lcd_gotoxy(uint8_t x,
     LCD_WAIT_US(1000);
 }
 
-
+void lcd_put_blank(uint8_t x, 
+                   uint8_t y, 
+                   uint8_t size)
+{
+    lcd_gotoxy(x,y);
+    
+    while (size)
+    {
+        lcd_putch(' ');
+        size--;
+    }
+}
 
 void lcd_putnum(uint16_t num, 
                 uint8_t len,
@@ -94,7 +105,29 @@ void lcd_putnum(uint16_t num,
     }
 }
 
-
+void lcd_puts(char * str)
+{
+    while (*str != 0)
+    {
+        if (*str != '\n')
+        {
+           lcd_putch(*str); 
+        }        
+        
+        if ((++lcd_x == LCD_COLUMNS) || (*str == '\n'))
+        {
+            if (++lcd_y == LCD_ROWS)
+            {
+                lcd_gotoxy(0,0);
+            }
+            else
+            {
+                lcd_gotoxy(0, lcd_y);
+            }
+        }
+        str++;
+    }
+}
 
 void lcd_puts_const(const char * str)
 {
@@ -117,6 +150,26 @@ void lcd_puts_const(const char * str)
             }
         }
         str++;
+    }
+}
+
+void lcd_set_cgram(uint8_t addr, 
+                   const char data[])
+{
+    uint8_t i;
+    
+    if (addr > 7)
+    {
+        return; /* bad argument */
+    }
+    
+    addr <<= 3;         /* addr = addr * 8 */
+    
+    lcd_write_byte(LCD_SET_CGRAM_ADDRESS | addr, LCD_WRITE_FUNCTION);
+    
+    for (i = 0; i < 8; i++)
+    {
+        lcd_write_byte(data[i], LCD_WRITE_DATA);
     }
 }
 

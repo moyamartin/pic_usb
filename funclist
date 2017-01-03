@@ -1,14 +1,22 @@
-_OpenUSART: CODE, 2952 0 104
-_lcd_write_byte: CODE, 3184 0 26
-__stringdata: SMALLCONST, 2053 0 11
-_ISR: CODE, 8 0 2820
-_main: CODE, 2066 0 272
-_lcd_puts_const: CODE, 2828 0 124
-__initialization: CODE, 3210 0 8
-_lcd_gotoxy: CODE, 3056 0 98
-_WriteUSART: CODE, 3232 0 18
-_ReadUSART: CODE, 3154 0 30
-_lcd_write_nibble: CODE, 2546 0 154
-_lcd_init: CODE, 2338 0 208
+_rotarString: CODE, 3306 0 232
+i2_lcd_write_nibble: CODE, 3732 0 154
+_OpenUSART: CODE, 3886 0 128
+_lcd_write_byte: CODE, 4654 0 32
+_strcpy: CODE, 4524 0 46
+_cuentaLetras: CODE, 4570 0 46
+_lcd_puts: CODE, 4134 0 118
+_ISR: CODE, 8 0 2616
+_lcd_put_blank: CODE, 4686 0 32
+_main: CODE, 2624 0 442
+__initialization: CODE, 4466 0 48
+_lcd_gotoxy: CODE, 4252 0 116
+_putsUSART: CODE, 4616 0 38
+_WriteUSART: CODE, 4774 0 18
+i2_lcd_gotoxy: CODE, 4368 0 98
+i2_lcd_write_byte: CODE, 4748 0 26
+_ReadUSART: CODE, 4718 0 30
+_lcd_write_nibble: CODE, 3538 0 194
+_strncpy: CODE, 4014 0 120
+_lcd_init: CODE, 3066 0 240
 _LCD_ROW_ADDRESS: SMALLCONST, 2049 0 4
-Total: 3877
+Total: 4778

@@ -95,11 +95,11 @@ void lcd_putnum(uint16_t num,
                 uint8_t y);
 
 
-
+void lcd_puts(char * str);
 void lcd_puts_const(const char * str);
+void lcd_put_blank(uint8_t x, uint8_t y, uint8_t size);
 
-
-
+void lcd_set_cgram(uint8_t addr, const char data[]);
 
 
 void lcd_write_nibble(uint8_t nibble, uint8_t is_data);
