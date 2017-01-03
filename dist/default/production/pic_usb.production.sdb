@@ -23,6 +23,8 @@
 [v ___atdiv __atdiv `(m  1 e 3 0 ]
 "8 I:\Programas\Microchip\xc8\v1.33\sources\common\atmod.c
 [v ___atmod __atmod `(m  1 e 3 0 ]
+"5 I:\Programas\Microchip\xc8\v1.33\sources\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
 "37 I:\Programas\Microchip\xc8\v1.33\sources\common\attofl.c
 [v ___attofl __attofl `(d  1 e 3 0 ]
 "37 I:\Programas\Microchip\xc8\v1.33\sources\common\attoft.c
@@ -67,6 +69,8 @@
 [v ___ftsub __ftsub `(f  1 e 3 0 ]
 "44 I:\Programas\Microchip\xc8\v1.33\sources\common\fttol.c
 [v ___fttol __fttol `(l  1 e 4 0 ]
+"8 I:\Programas\Microchip\xc8\v1.33\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
 "4 I:\Programas\Microchip\xc8\v1.33\sources\common\lbdiv.c
 [v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
 "4 I:\Programas\Microchip\xc8\v1.33\sources\common\lbmod.c
@@ -99,8 +103,8 @@
 [v ___lwtofl __lwtofl `(d  1 e 3 0 ]
 "28 I:\Programas\Microchip\xc8\v1.33\sources\common\lwtoft.c
 [v ___lwtoft __lwtoft `(f  1 e 3 0 ]
-"8 I:\Programas\Microchip\xc8\v1.33\sources\common\strcpy.c
-[v _strcpy strcpy `(*.39uc  1 e 2 0 ]
+"8 I:\Programas\Microchip\xc8\v1.33\sources\common\strcat.c
+[v _strcat strcat `(*.25uc  1 e 2 0 ]
 "8 I:\Programas\Microchip\xc8\v1.33\sources\common\strncpy.c
 [v _strncpy strncpy `(*.39uc  1 e 2 0 ]
 "15 I:\Programas\Microchip\xc8\v1.33\sources\common\Umul16.c
@@ -147,7 +151,6 @@
 [v _lcd_init lcd_init `(v  1 e 0 0 ]
 "54
 [v _lcd_gotoxy lcd_gotoxy `(v  1 e 0 0 ]
-[v i2_lcd_gotoxy lcd_gotoxy `(v  1 e 0 0 ]
 "74
 [v _lcd_put_blank lcd_put_blank `(v  1 e 0 0 ]
 "87
@@ -160,19 +163,17 @@
 [v _lcd_set_cgram lcd_set_cgram `(v  1 e 0 0 ]
 "176
 [v _lcd_write_nibble lcd_write_nibble `(v  1 e 0 0 ]
-[v i2_lcd_write_nibble lcd_write_nibble `(v  1 e 0 0 ]
 "185
 [v _lcd_write_byte lcd_write_byte `(v  1 e 0 0 ]
-[v i2_lcd_write_byte lcd_write_byte `(v  1 e 0 0 ]
-"42 I:\Proyectos\MPLABXProjects\pic_usb\main.c
+"46 I:\Proyectos\MPLABXProjects\pic_usb\main.c
 [v _main main `(v  1 e 0 0 ]
-"107
+"96
 [v _ISR ISR `II(v  1 e 0 0 ]
-"166
+"138
 [v _cuentaLetras cuentaLetras `(i  1 e 2 0 ]
-"176
+"148
 [v _rotarString rotarString `(v  1 e 0 0 ]
-[s S302 . 1 `uc 1 LATD0 1 0 :1:0 
+[s S297 . 1 `uc 1 LATD0 1 0 :1:0 
 `uc 1 LATD1 1 0 :1:1 
 `uc 1 LATD2 1 0 :1:2 
 `uc 1 LATD3 1 0 :1:3 
@@ -182,31 +183,31 @@
 `uc 1 LATD7 1 0 :1:7 
 ]
 "3788 I:\Programas\Microchip\xc8\v1.33\include\pic18f4550.h
-[s S311 . 1 `uc 1 LD0 1 0 :1:0 
+[s S306 . 1 `uc 1 LD0 1 0 :1:0 
 ]
-[s S313 . 1 `uc 1 . 1 0 :1:0 
+[s S308 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 LD1 1 0 :1:1 
 ]
-[s S316 . 1 `uc 1 . 1 0 :2:0 
+[s S311 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 LD2 1 0 :1:2 
 ]
-[s S319 . 1 `uc 1 . 1 0 :3:0 
+[s S314 . 1 `uc 1 . 1 0 :3:0 
 `uc 1 LD3 1 0 :1:3 
 ]
-[s S322 . 1 `uc 1 . 1 0 :4:0 
+[s S317 . 1 `uc 1 . 1 0 :4:0 
 `uc 1 LD4 1 0 :1:4 
 ]
-[s S325 . 1 `uc 1 . 1 0 :5:0 
+[s S320 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 LD5 1 0 :1:5 
 ]
-[s S328 . 1 `uc 1 . 1 0 :6:0 
+[s S323 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 LD6 1 0 :1:6 
 ]
-[s S331 . 1 `uc 1 . 1 0 :7:0 
+[s S326 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 LD7 1 0 :1:7 
 ]
-[u S334 . 1 `S302 1 . 1 0 `S311 1 . 1 0 `S313 1 . 1 0 `S316 1 . 1 0 `S319 1 . 1 0 `S322 1 . 1 0 `S325 1 . 1 0 `S328 1 . 1 0 `S331 1 . 1 0 ]
-[v _LATDbits LATDbits `VES334  1 e 1 @3980 ]
+[u S329 . 1 `S297 1 . 1 0 `S306 1 . 1 0 `S308 1 . 1 0 `S311 1 . 1 0 `S314 1 . 1 0 `S317 1 . 1 0 `S320 1 . 1 0 `S323 1 . 1 0 `S326 1 . 1 0 ]
+[v _LATDbits LATDbits `VES329  1 e 1 @3980 ]
 "4392
 [v _TRISC TRISC `VEuc  1 e 1 @3988 ]
 [s S547 . 1 `uc 1 TRISC0 1 0 :1:0 
@@ -429,37 +430,149 @@
 [v _lcd_x lcd_x `uc  1 e 1 0 ]
 "9
 [v _lcd_y lcd_y `uc  1 e 1 0 ]
-"22 I:\Proyectos\MPLABXProjects\pic_usb\main.c
+"24 I:\Proyectos\MPLABXProjects\pic_usb\main.c
 [v _c c `uc  1 e 1 0 ]
-"23
-[v _flag_newline flag_newline `uc  1 e 1 0 ]
-"24
-[v _i i `i  1 e 2 0 ]
 "25
-[v _k k `i  1 e 2 0 ]
+[v _flag_newline flag_newline `uc  1 e 1 0 ]
 "26
-[v _cantidadLetrasUP cantidadLetrasUP `i  1 e 2 0 ]
+[v _i i `i  1 e 2 0 ]
 "27
-[v _cantidadLetrasDOWN cantidadLetrasDOWN `i  1 e 2 0 ]
+[v _k k `i  1 e 2 0 ]
 "28
-[v _DutyCycle DutyCycle `ui  1 e 2 0 ]
+[v _cantidadLetrasUP cantidadLetrasUP `i  1 e 2 0 ]
+"29
+[v _cantidadLetrasDOWN cantidadLetrasDOWN `i  1 e 2 0 ]
 "30
-[v _MessageBuffer MessageBuffer `[200]uc  1 e 200 0 ]
-"31
-[v _lcd_upper_row_buffer lcd_upper_row_buffer `[200]uc  1 e 200 0 ]
+[v _DutyCycle DutyCycle `ui  1 e 2 0 ]
 "32
-[v _lcd_lower_row_buffer lcd_lower_row_buffer `[200]uc  1 e 200 0 ]
+[v _MessageBuffer MessageBuffer `[200]uc  1 e 200 0 ]
+"33
+[v _lcd_upper_row_buffer lcd_upper_row_buffer `[200]uc  1 e 200 0 ]
 "34
+[v _lcd_lower_row_buffer lcd_lower_row_buffer `[200]uc  1 e 200 0 ]
+"36
 [v _lcd_lower_display_buffer lcd_lower_display_buffer `[16]uc  1 e 16 0 ]
-"35
+"37
 [v _lcd_upper_display_buffer lcd_upper_display_buffer `[16]uc  1 e 16 0 ]
-"42
+"39
+[v _DC_str DC_str `[5]uc  1 e 5 0 ]
+"46
 [v _main main `(v  1 e 0 0 ]
 {
-"44
-[v main@spbrg spbrg `uc  1 a 1 14 ]
-[v main@config config `uc  1 a 1 13 ]
-"105
+"48
+[v main@spbrg spbrg `uc  1 a 1 13 ]
+[v main@config config `uc  1 a 1 12 ]
+"94
+} 0
+"108 I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c
+[v _lcd_puts lcd_puts `(v  1 e 0 0 ]
+{
+[v lcd_puts@str str `*.25uc  1 p 2 3 ]
+"130
+} 0
+"87
+[v _lcd_putnum lcd_putnum `(v  1 e 0 0 ]
+{
+"92
+[v lcd_putnum@r r `ui  1 a 2 9 ]
+"93
+[v lcd_putnum@dec dec `uc  1 a 1 8 ]
+"87
+[v lcd_putnum@num num `ui  1 p 2 3 ]
+"88
+[v lcd_putnum@len len `uc  1 p 1 5 ]
+"89
+[v lcd_putnum@x x `uc  1 p 1 6 ]
+"90
+[v lcd_putnum@y y `uc  1 p 1 7 ]
+"106
+} 0
+"54
+[v _lcd_gotoxy lcd_gotoxy `(v  1 e 0 0 ]
+{
+[v lcd_gotoxy@x x `uc  1 a 1 wreg ]
+"57
+[v lcd_gotoxy@addr addr `uc  1 a 1 1 ]
+"54
+[v lcd_gotoxy@x x `uc  1 a 1 wreg ]
+"55
+[v lcd_gotoxy@y y `uc  1 p 1 0 ]
+"59
+[v lcd_gotoxy@x x `uc  1 a 1 2 ]
+"72
+} 0
+"8 I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 0 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 2 ]
+"8
+[v ___lwdiv@dividend dividend `ui  1 p 2 27 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 29 ]
+"31
+} 0
+"11 I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c
+[v _lcd_init lcd_init `(v  1 e 0 0 ]
+{
+"52
+} 0
+"185
+[v _lcd_write_byte lcd_write_byte `(v  1 e 0 0 ]
+{
+[v lcd_write_byte@byte byte `uc  1 a 1 wreg ]
+[v lcd_write_byte@byte byte `uc  1 a 1 wreg ]
+"186
+[v lcd_write_byte@is_data is_data `uc  1 p 1 30 ]
+"188
+[v lcd_write_byte@byte byte `uc  1 a 1 31 ]
+"190
+} 0
+"176
+[v _lcd_write_nibble lcd_write_nibble `(v  1 e 0 0 ]
+{
+[v lcd_write_nibble@nibble nibble `uc  1 a 1 wreg ]
+[v lcd_write_nibble@nibble nibble `uc  1 a 1 wreg ]
+"177
+[v lcd_write_nibble@is_data is_data `uc  1 p 1 27 ]
+"179
+[v lcd_write_nibble@nibble nibble `uc  1 a 1 29 ]
+"183
+} 0
+"7 I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c
+[v _SetDCPWM1 SetDCPWM1 `(v  1 e 0 0 ]
+{
+[u S640 PWMDC 2 `ui 1 lpwm 2 0 `[2]uc 1 bpwm 2 0 ]
+"9
+[v SetDCPWM1@DCycle DCycle `S640  1 a 2 0 ]
+"7
+[v SetDCPWM1@dutycycle dutycycle `ui  1 p 2 27 ]
+"19
+} 0
+"73 I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c
+[v _OpenUSART OpenUSART `(v  1 e 0 0 ]
+{
+[v OpenUSART@config config `uc  1 a 1 wreg ]
+[v OpenUSART@config config `uc  1 a 1 wreg ]
+[v OpenUSART@spbrg spbrg `ui  1 p 2 27 ]
+"75
+[v OpenUSART@config config `uc  1 a 1 0 ]
+"143
+} 0
+"8 I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c
+[v _OpenPWM1 OpenPWM1 `(v  1 e 0 0 ]
+{
+[v OpenPWM1@period period `uc  1 a 1 wreg ]
+[v OpenPWM1@period period `uc  1 a 1 wreg ]
+"11
+[v OpenPWM1@period period `uc  1 a 1 27 ]
+"19
+} 0
+"96 I:\Proyectos\MPLABXProjects\pic_usb\main.c
+[v _ISR ISR `II(v  1 e 0 0 ]
+{
+"135
 } 0
 "8 I:\Programas\Microchip\xc8\v1.33\sources\common\strncpy.c
 [v _strncpy strncpy `(*.39uc  1 e 2 0 ]
@@ -472,113 +585,20 @@
 [v strncpy@size size `ui  1 p 2 4 ]
 "27
 } 0
-"176 I:\Proyectos\MPLABXProjects\pic_usb\main.c
-[v _rotarString rotarString `(v  1 e 0 0 ]
-{
-"178
-[v rotarString@j j `i  1 a 2 10 ]
-"179
-[v rotarString@aux aux `uc  1 a 1 9 ]
-"176
-[v rotarString@str str `*.39uc  1 p 2 0 ]
-[v rotarString@length length `i  1 p 2 2 ]
-"186
-} 0
-"108 I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c
-[v _lcd_puts lcd_puts `(v  1 e 0 0 ]
-{
-[v lcd_puts@str str `*.39uc  1 p 2 8 ]
-"130
-} 0
-"54
-[v _lcd_gotoxy lcd_gotoxy `(v  1 e 0 0 ]
-{
-[v lcd_gotoxy@x x `uc  1 a 1 wreg ]
-"57
-[v lcd_gotoxy@addr addr `uc  1 a 1 6 ]
-"54
-[v lcd_gotoxy@x x `uc  1 a 1 wreg ]
-"55
-[v lcd_gotoxy@y y `uc  1 p 1 5 ]
-"59
-[v lcd_gotoxy@x x `uc  1 a 1 7 ]
-"72
-} 0
-"11
-[v _lcd_init lcd_init `(v  1 e 0 0 ]
-{
-"52
-} 0
-"185
-[v _lcd_write_byte lcd_write_byte `(v  1 e 0 0 ]
-{
-[v lcd_write_byte@byte byte `uc  1 a 1 wreg ]
-[v lcd_write_byte@byte byte `uc  1 a 1 wreg ]
-"186
-[v lcd_write_byte@is_data is_data `uc  1 p 1 3 ]
-"188
-[v lcd_write_byte@byte byte `uc  1 a 1 4 ]
-"190
-} 0
-"176
-[v _lcd_write_nibble lcd_write_nibble `(v  1 e 0 0 ]
-{
-[v lcd_write_nibble@nibble nibble `uc  1 a 1 wreg ]
-[v lcd_write_nibble@nibble nibble `uc  1 a 1 wreg ]
-"177
-[v lcd_write_nibble@is_data is_data `uc  1 p 1 0 ]
-"179
-[v lcd_write_nibble@nibble nibble `uc  1 a 1 2 ]
-"183
-} 0
-"7 I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c
-[v _SetDCPWM1 SetDCPWM1 `(v  1 e 0 0 ]
-{
-[u S640 PWMDC 2 `ui 1 lpwm 2 0 `[2]uc 1 bpwm 2 0 ]
-"9
-[v SetDCPWM1@DCycle DCycle `S640  1 a 2 4 ]
-"7
-[v SetDCPWM1@dutycycle dutycycle `ui  1 p 2 0 ]
-"19
-} 0
-"73 I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c
-[v _OpenUSART OpenUSART `(v  1 e 0 0 ]
-{
-[v OpenUSART@config config `uc  1 a 1 wreg ]
-[v OpenUSART@config config `uc  1 a 1 wreg ]
-[v OpenUSART@spbrg spbrg `ui  1 p 2 0 ]
-"75
-[v OpenUSART@config config `uc  1 a 1 5 ]
-"143
-} 0
-"8 I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c
-[v _OpenPWM1 OpenPWM1 `(v  1 e 0 0 ]
-{
-[v OpenPWM1@period period `uc  1 a 1 wreg ]
-[v OpenPWM1@period period `uc  1 a 1 wreg ]
-"11
-[v OpenPWM1@period period `uc  1 a 1 0 ]
-"19
-} 0
-"107 I:\Proyectos\MPLABXProjects\pic_usb\main.c
-[v _ISR ISR `II(v  1 e 0 0 ]
-{
-"163
-} 0
-"8 I:\Programas\Microchip\xc8\v1.33\sources\common\strcpy.c
-[v _strcpy strcpy `(*.39uc  1 e 2 0 ]
+"8 I:\Programas\Microchip\xc8\v1.33\sources\common\strcat.c
+[v _strcat strcat `(*.25uc  1 e 2 0 ]
 {
 "15
-[v strcpy@cp cp `*.39uc  1 a 2 4 ]
+[v strcat@cp cp `*.25uc  1 a 2 4 ]
 "8
-[v strcpy@to to `*.39uc  1 p 2 0 ]
-[v strcpy@from from `*.39Cuc  1 p 2 2 ]
-"24
+[v strcat@to to `*.25uc  1 p 2 0 ]
+[v strcat@from from `*.39Cuc  1 p 2 2 ]
+"26
 } 0
 "14 I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uputs.c
 [v _putsUSART putsUSART `(v  1 e 0 0 ]
 {
-[v putsUSART@data data `*.39uc  1 p 2 1 ]
+[v putsUSART@data data `*.35uc  1 p 2 6 ]
 "21
 } 0
 "13 I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c
@@ -590,61 +610,35 @@
 [v WriteUSART@data data `uc  1 a 1 0 ]
 "23
 } 0
-"74 I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c
-[v _lcd_put_blank lcd_put_blank `(v  1 e 0 0 ]
+"5 I:\Programas\Microchip\xc8\v1.33\sources\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
 {
-[v lcd_put_blank@x x `uc  1 a 1 wreg ]
-[v lcd_put_blank@x x `uc  1 a 1 wreg ]
-"75
-[v lcd_put_blank@y y `uc  1 p 1 8 ]
-"76
-[v lcd_put_blank@size size `uc  1 p 1 9 ]
-"78
-[v lcd_put_blank@x x `uc  1 a 1 10 ]
-"85
+"7
+[v atoi@a a `i  1 a 2 11 ]
+"8
+[v atoi@sign sign `uc  1 a 1 10 ]
+"5
+[v atoi@s s `*.39Cuc  1 p 2 6 ]
+"24
 } 0
-"54
-[v i2_lcd_gotoxy lcd_gotoxy `(v  1 e 0 0 ]
+"8 I:\Programas\Microchip\xc8\v1.33\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
 {
-[v i2lcd_gotoxy@x x `uc  1 a 1 wreg ]
-[v i2lcd_gotoxy@addr lcd_gotoxy `uc  1 a 1 6 ]
-[v i2lcd_gotoxy@x x `uc  1 a 1 wreg ]
-"55
-[v i2lcd_gotoxy@y y `uc  1 p 1 5 ]
-"59
-[v i2lcd_gotoxy@x x `uc  1 a 1 7 ]
-"72
+[v isdigit@c c `uc  1 a 1 wreg ]
+[v isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v isdigit@c c `uc  1 a 1 2 ]
+"15
 } 0
-"185
-[v i2_lcd_write_byte lcd_write_byte `(v  1 e 0 0 ]
+"15 I:\Programas\Microchip\xc8\v1.33\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
 {
-[v i2lcd_write_byte@byte byte `uc  1 a 1 wreg ]
-[v i2lcd_write_byte@byte byte `uc  1 a 1 wreg ]
-"186
-[v i2lcd_write_byte@is_data is_data `uc  1 p 1 3 ]
-"188
-[v i2lcd_write_byte@byte byte `uc  1 a 1 4 ]
-"190
-} 0
-"176
-[v i2_lcd_write_nibble lcd_write_nibble `(v  1 e 0 0 ]
-{
-[v i2lcd_write_nibble@nibble nibble `uc  1 a 1 wreg ]
-[v i2lcd_write_nibble@nibble nibble `uc  1 a 1 wreg ]
-"177
-[v i2lcd_write_nibble@is_data is_data `uc  1 p 1 0 ]
-"179
-[v i2lcd_write_nibble@nibble nibble `uc  1 a 1 2 ]
-"183
-} 0
-"166 I:\Proyectos\MPLABXProjects\pic_usb\main.c
-[v _cuentaLetras cuentaLetras `(i  1 e 2 0 ]
-{
-"168
-[v cuentaLetras@j j `i  1 a 2 2 ]
-"166
-[v cuentaLetras@str str `*.39uc  1 p 2 0 ]
-"174
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
 } 0
 "15 I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c
 [v _ReadUSART ReadUSART `(uc  1 e 1 0 ]

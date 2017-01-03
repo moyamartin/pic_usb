@@ -109,12 +109,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [p i __delay ]
 "84 lcd_driver.h
 [v _lcd_gotoxy `(v ~T0 @X0 0 ef2`uc`uc ]
-"45 I:\Programas\Microchip\xc8\v1.33\include\string.h
-[v _strncpy `(*uc ~T0 @X0 0 ef3`*uc`*Cuc`ui ]
-"98 lcd_driver.h
+"98
 [v _lcd_puts `(v ~T0 @X0 0 ef1`*uc ]
-"37 main.c
-[v _rotarString `(v ~T0 @X0 0 ef2`*uc`i ]
+"92
+[v _lcd_putnum `(v ~T0 @X0 0 ef4`ui`uc`uc`uc ]
 "3746 I:\Programas\Microchip\xc8\v1.33\include\pic18f4550.h
 [s S272 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S272 . LATD0 LATD1 LATD2 LATD3 LATD4 LATD5 LATD6 LATD7 ]
@@ -149,14 +147,14 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _LATDbits `VS271 ~T0 @X0 0 e@3980 ]
 "596 I:\Programas\Microchip\xc8\v1.33\include\plib\usart.h
 [v _ReadUSART `(uc ~T0 @X0 0 ef ]
-"100 lcd_driver.h
-[v _lcd_put_blank `(v ~T0 @X0 0 ef3`uc`uc`uc ]
-"43 I:\Programas\Microchip\xc8\v1.33\include\string.h
-[v _strcpy `(*uc ~T0 @X0 0 ef2`*uc`*Cuc ]
-"38 main.c
-[v _cuentaLetras `(i ~T0 @X0 0 ef1`*uc ]
+"45 I:\Programas\Microchip\xc8\v1.33\include\string.h
+[v _strncpy `(*uc ~T0 @X0 0 ef3`*uc`*Cuc`ui ]
+"67 I:\Programas\Microchip\xc8\v1.33\include\stdlib.h
+[v _atoi `(i ~T0 @X0 0 ef1`*Cuc ]
 "599 I:\Programas\Microchip\xc8\v1.33\include\plib\usart.h
 [v _putsUSART `(v ~T0 @X0 0 ef1`*uc ]
+"42 I:\Programas\Microchip\xc8\v1.33\include\string.h
+[v _strcat `(*uc ~T0 @X0 0 ef2`*uc`*Cuc ]
 "8 main.c
 [p x FOSC=HS ]
 "9
@@ -4969,6 +4967,87 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic18.h: 147: extern __nonreentrant void _delay(unsigned long);
 [; ;pic18.h: 149: extern __nonreentrant void _delaywdt(unsigned long);
 [; ;pic18.h: 151: extern __nonreentrant void _delay3(unsigned char);
+[; ;stdarg.h: 7: typedef void * va_list[1];
+[; ;stdarg.h: 10: extern void * __va_start(void);
+[; ;stdarg.h: 13: extern void * __va_arg(void *, ...);
+[; ;stdio.h: 23: extern int errno;
+[; ;stdio.h: 54: struct __prbuf
+[; ;stdio.h: 55: {
+[; ;stdio.h: 56: char * ptr;
+[; ;stdio.h: 57: void (* func)(char);
+[; ;stdio.h: 58: };
+[; ;conio.h: 17: extern int errno;
+[; ;conio.h: 20: extern void init_uart(void);
+[; ;conio.h: 22: extern char getch(void);
+[; ;conio.h: 23: extern char getche(void);
+[; ;conio.h: 24: extern void putch(char);
+[; ;conio.h: 25: extern void ungetch(char);
+[; ;conio.h: 27: extern __bit kbhit(void);
+[; ;conio.h: 31: extern char * cgets(char *);
+[; ;conio.h: 32: extern void cputs(const char *);
+[; ;stdio.h: 99: extern int cprintf(char *, ...);
+[; ;stdio.h: 104: extern int _doprnt(struct __prbuf *, const register char *, register va_list);
+[; ;stdio.h: 194: extern char * gets(char *);
+[; ;stdio.h: 195: extern int puts(const char *);
+[; ;stdio.h: 196: extern int scanf(const char *, ...) __attribute__((unsupported("scanf() is not supported by this compiler")));
+[; ;stdio.h: 197: extern int sscanf(const char *, const char *, ...) __attribute__((unsupported("sscanf() is not supported by this compiler")));
+[; ;stdio.h: 198: extern int vprintf(const char *, va_list) __attribute__((unsupported("vprintf() is not supported by this compiler")));
+[; ;stdio.h: 199: extern int vsprintf(char *, const char *, va_list) __attribute__((unsupported("vsprintf() is not supported by this compiler")));
+[; ;stdio.h: 200: extern int vscanf(const char *, va_list ap) __attribute__((unsupported("vscanf() is not supported by this compiler")));
+[; ;stdio.h: 201: extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
+[; ;stdio.h: 205: extern int sprintf(char *, const char *, ...);
+[; ;stdio.h: 206: extern int printf(const char *, ...);
+[; ;stdlib.h: 27: typedef struct {
+[; ;stdlib.h: 28: int rem;
+[; ;stdlib.h: 29: int quot;
+[; ;stdlib.h: 30: } div_t;
+[; ;stdlib.h: 31: typedef struct {
+[; ;stdlib.h: 32: unsigned rem;
+[; ;stdlib.h: 33: unsigned quot;
+[; ;stdlib.h: 34: } udiv_t;
+[; ;stdlib.h: 35: typedef struct {
+[; ;stdlib.h: 36: long quot;
+[; ;stdlib.h: 37: long rem;
+[; ;stdlib.h: 38: } ldiv_t;
+[; ;stdlib.h: 39: typedef struct {
+[; ;stdlib.h: 40: unsigned long quot;
+[; ;stdlib.h: 41: unsigned long rem;
+[; ;stdlib.h: 42: } uldiv_t;
+[; ;stdlib.h: 65: extern double atof(const char *);
+[; ;stdlib.h: 66: extern double strtod(const char *, const char **);
+[; ;stdlib.h: 67: extern int atoi(const char *);
+[; ;stdlib.h: 68: extern unsigned xtoi(const char *);
+[; ;stdlib.h: 69: extern long atol(const char *);
+[; ;stdlib.h: 70: extern long strtol(const char *, char **, int);
+[; ;stdlib.h: 72: extern int rand(void);
+[; ;stdlib.h: 73: extern void srand(unsigned int);
+[; ;stdlib.h: 74: extern void * calloc(size_t, size_t);
+[; ;stdlib.h: 75: extern div_t div(int numer, int denom);
+[; ;stdlib.h: 76: extern udiv_t udiv(unsigned numer, unsigned denom);
+[; ;stdlib.h: 77: extern ldiv_t ldiv(long numer, long denom);
+[; ;stdlib.h: 78: extern uldiv_t uldiv(unsigned long numer,unsigned long denom);
+[; ;stdlib.h: 79: extern unsigned long _lrotl(unsigned long value, unsigned int shift);
+[; ;stdlib.h: 80: extern unsigned long _lrotr(unsigned long value, unsigned int shift);
+[; ;stdlib.h: 81: extern unsigned int _rotl(unsigned int value, unsigned int shift);
+[; ;stdlib.h: 82: extern unsigned int _rotr(unsigned int value, unsigned int shift);
+[; ;stdlib.h: 87: extern void * malloc(size_t);
+[; ;stdlib.h: 88: extern void free(void *);
+[; ;stdlib.h: 89: extern void * realloc(void *, size_t);
+[; ;stdlib.h: 91: extern void abort(void);
+[; ;stdlib.h: 92: extern void exit(int);
+[; ;stdlib.h: 93: extern int atexit(void (*)(void));
+[; ;stdlib.h: 94: extern char * getenv(const char *);
+[; ;stdlib.h: 95: extern char ** environ;
+[; ;stdlib.h: 96: extern int system(char *);
+[; ;stdlib.h: 97: extern void qsort(void *, size_t, size_t, int (*)(const void *, const void *));
+[; ;stdlib.h: 98: extern void * bsearch(const void *, void *, size_t, size_t, int(*)(const void *, const void *));
+[; ;stdlib.h: 99: extern int abs(int);
+[; ;stdlib.h: 100: extern long labs(long);
+[; ;stdlib.h: 103: extern char * itoa(char * buf, int val, int base);
+[; ;stdlib.h: 104: extern char * utoa(char * buf, unsigned val, int base);
+[; ;stdlib.h: 109: extern char * ltoa(char * buf, long val, int base);
+[; ;stdlib.h: 110: extern char * ultoa(char * buf, unsigned long val, int base);
+[; ;stdlib.h: 112: extern char * ftoa(float f, int * status);
 [; ;string.h: 22: extern void * memcpy(void *, const void *, size_t);
 [; ;string.h: 23: extern void * memmove(void *, const void *, size_t);
 [; ;string.h: 24: extern void * memset(void *, int, size_t);
@@ -5035,516 +5114,414 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;lcd_driver.h: 102: void lcd_set_cgram(uint8_t addr, const char data[]);
 [; ;lcd_driver.h: 105: void lcd_write_nibble(uint8_t nibble, uint8_t is_data);
 [; ;lcd_driver.h: 106: void lcd_write_byte(uint8_t byte, uint8_t is_data);
-"22 main.c
+"24 main.c
 [v _c `uc ~T0 @X0 1 e ]
-[; ;main.c: 22: char c;
-"23
+[; ;main.c: 24: char c;
+"25
 [v _flag_newline `uc ~T0 @X0 1 e ]
 [i _flag_newline
 -> -> 0 `i `uc
 ]
-[; ;main.c: 23: char flag_newline = 0;
-"24
+[; ;main.c: 25: char flag_newline = 0;
+"26
 [v _i `i ~T0 @X0 1 e ]
 [i _i
 -> 0 `i
 ]
-[; ;main.c: 24: int i=0;
-"25
+[; ;main.c: 26: int i=0;
+"27
 [v _k `i ~T0 @X0 1 e ]
-[; ;main.c: 25: int k;
-"26
+[; ;main.c: 27: int k;
+"28
 [v _cantidadLetrasUP `i ~T0 @X0 1 e ]
 [i _cantidadLetrasUP
 -> 0 `i
 ]
-[; ;main.c: 26: int cantidadLetrasUP = 0;
-"27
+[; ;main.c: 28: int cantidadLetrasUP = 0;
+"29
 [v _cantidadLetrasDOWN `i ~T0 @X0 1 e ]
 [i _cantidadLetrasDOWN
 -> 0 `i
 ]
-[; ;main.c: 27: int cantidadLetrasDOWN = 0 ;
-"28
+[; ;main.c: 29: int cantidadLetrasDOWN = 0 ;
+"30
 [v _DutyCycle `ui ~T0 @X0 1 e ]
 [i _DutyCycle
 -> -> 10 `i `ui
 ]
-[; ;main.c: 28: unsigned int DutyCycle = 10;
-"30
-[v _MessageBuffer `uc ~T0 @X0 -> 200 `i e ]
-[; ;main.c: 30: unsigned char MessageBuffer[200];
-"31
-[v _lcd_upper_row_buffer `uc ~T0 @X0 -> 200 `i e ]
-[; ;main.c: 31: unsigned char lcd_upper_row_buffer[200];
+[; ;main.c: 30: unsigned int DutyCycle = 10;
 "32
-[v _lcd_lower_row_buffer `uc ~T0 @X0 -> 200 `i e ]
-[; ;main.c: 32: unsigned char lcd_lower_row_buffer[200];
+[v _MessageBuffer `uc ~T0 @X0 -> 200 `i e ]
+[; ;main.c: 32: unsigned char MessageBuffer[200];
+"33
+[v _lcd_upper_row_buffer `uc ~T0 @X0 -> 200 `i e ]
+[; ;main.c: 33: unsigned char lcd_upper_row_buffer[200];
 "34
+[v _lcd_lower_row_buffer `uc ~T0 @X0 -> 200 `i e ]
+[; ;main.c: 34: unsigned char lcd_lower_row_buffer[200];
+"36
 [v _lcd_lower_display_buffer `uc ~T0 @X0 -> 16 `i e ]
-[; ;main.c: 34: unsigned char lcd_lower_display_buffer[16];
-"35
+[; ;main.c: 36: unsigned char lcd_lower_display_buffer[16];
+"37
 [v _lcd_upper_display_buffer `uc ~T0 @X0 -> 16 `i e ]
-[; ;main.c: 35: unsigned char lcd_upper_display_buffer[16];
-[; ;main.c: 37: void rotarString(char* str, int length);
-[; ;main.c: 38: int cuentaLetras(char* str);
-[; ;main.c: 40: void interrupt ISR(void);
-"42
+[; ;main.c: 37: unsigned char lcd_upper_display_buffer[16];
+"39
+[v _DC_str `uc ~T0 @X0 -> 5 `i e ]
+[; ;main.c: 39: unsigned char DC_str[5];
+[; ;main.c: 41: void rotarString(char* str, int length);
+[; ;main.c: 42: int cuentaLetras(char* str);
+[; ;main.c: 44: void interrupt ISR(void);
+"46
 [v _main `(v ~T0 @X0 1 ef ]
 {
-[; ;main.c: 42: void main(void) {
+[; ;main.c: 46: void main(void) {
 [e :U _main ]
 [f ]
-"44
+"48
 [v _config `uc ~T0 @X0 1 a ]
-[; ;main.c: 44: unsigned char config = 0, spbrg = 0;
+[; ;main.c: 48: unsigned char config = 0, spbrg = 0;
 [e = _config -> -> 0 `i `uc ]
 [v _spbrg `uc ~T0 @X0 1 a ]
 [e = _spbrg -> -> 0 `i `uc ]
-[; ;main.c: 46: TRISC = 0b10000000;
-"46
+[; ;main.c: 50: TRISC = 0b10000000;
+"50
 [e = _TRISC -> -> 128 `i `uc ]
-[; ;main.c: 47: TRISD = 0b00000000;
-"47
+[; ;main.c: 51: TRISD = 0b00000000;
+"51
 [e = _TRISD -> -> 0 `i `uc ]
-[; ;main.c: 52: RCSTA&=0b01001111,TXSTAbits.TXEN=0,PIE1&=0b11001111;
-"52
-[e ; ; =& _RCSTA -> -> 79 `i `uc = . . _TXSTAbits 0 5 -> -> 0 `i `uc =& _PIE1 -> -> 207 `i `uc ]
-[; ;main.c: 53: config = 0b01111111& 0b11111111 & 0b11111110 & 0b11111101 & 0b11111111;
-"53
-[e = _config -> & & & & -> 127 `i -> 255 `i -> 254 `i -> 253 `i -> 255 `i `uc ]
-[; ;main.c: 54: spbrg = 77;
-"54
-[e = _spbrg -> -> 77 `i `uc ]
-[; ;main.c: 55: OpenUSART(config, spbrg);
-"55
-[e ( _OpenUSART (2 , _config -> _spbrg `ui ]
-[; ;main.c: 56: RCIF = 0;
+[; ;main.c: 56: RCSTA&=0b01001111,TXSTAbits.TXEN=0,PIE1&=0b11001111;
 "56
-[e = _RCIF -> -> 0 `i `b ]
-[; ;main.c: 57: RCIP = 0;
+[e ; ; =& _RCSTA -> -> 79 `i `uc = . . _TXSTAbits 0 5 -> -> 0 `i `uc =& _PIE1 -> -> 207 `i `uc ]
+[; ;main.c: 57: config = 0b01111111& 0b11111111 & 0b11111110 & 0b11111101 & 0b11111111;
 "57
-[e = _RCIP -> -> 0 `i `b ]
-[; ;main.c: 58: RCIE = 1;
+[e = _config -> & & & & -> 127 `i -> 255 `i -> 254 `i -> 253 `i -> 255 `i `uc ]
+[; ;main.c: 58: spbrg = 77;
 "58
-[e = _RCIE -> -> 1 `i `b ]
-[; ;main.c: 59: PEIE = 1;
+[e = _spbrg -> -> 77 `i `uc ]
+[; ;main.c: 59: OpenUSART(config, spbrg);
 "59
-[e = _PEIE -> -> 1 `i `b ]
-[; ;main.c: 60: PIR1bits.RCIF = 0;
+[e ( _OpenUSART (2 , _config -> _spbrg `ui ]
+[; ;main.c: 60: RCIF = 0;
 "60
-[e = . . _PIR1bits 0 5 -> -> 0 `i `uc ]
-[; ;main.c: 61: (INTCONbits.GIE = 1);
+[e = _RCIF -> -> 0 `i `b ]
+[; ;main.c: 61: RCIP = 0;
 "61
-[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
-[; ;main.c: 65: T2CON = 0b00000111 ;
+[e = _RCIP -> -> 0 `i `b ]
+[; ;main.c: 62: RCIE = 1;
+"62
+[e = _RCIE -> -> 1 `i `b ]
+[; ;main.c: 63: PEIE = 1;
+"63
+[e = _PEIE -> -> 1 `i `b ]
+[; ;main.c: 64: PIR1bits.RCIF = 0;
+"64
+[e = . . _PIR1bits 0 5 -> -> 0 `i `uc ]
+[; ;main.c: 65: (INTCONbits.GIE = 1);
 "65
+[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
+[; ;main.c: 69: T2CON = 0b00000111 ;
+"69
 [e = _T2CON -> -> 7 `i `uc ]
-[; ;main.c: 66: OpenPWM1(0b10111011);
-"66
+[; ;main.c: 70: OpenPWM1(0b10111011);
+"70
 [e ( _OpenPWM1 (1 -> -> 187 `i `uc ]
-[; ;main.c: 68: SetDCPWM1(DutyCycle);
-"68
-[e ( _SetDCPWM1 (1 _DutyCycle ]
-[; ;main.c: 71: lcd_init();
-"71
-[e ( _lcd_init ..  ]
-[; ;main.c: 72: {lcd_write_byte(0x01, 0); { _delay((unsigned long)((5000)*(12000000/4000000.0))); };};
+[; ;main.c: 72: SetDCPWM1(DutyCycle);
 "72
+[e ( _SetDCPWM1 (1 _DutyCycle ]
+[; ;main.c: 75: lcd_init();
+"75
+[e ( _lcd_init ..  ]
+[; ;main.c: 76: {lcd_write_byte(0x01, 0); { _delay((unsigned long)((5000)*(12000000/4000000.0))); };};
+"76
 {
 [e ( _lcd_write_byte (2 , -> -> 1 `i `uc -> -> 0 `i `uc ]
 {
 [e ( __delay (1 -> * -> -> 5000 `i `d / -> -> 12000000 `l `d .4000000.0 `ul ]
 }
 }
-[; ;main.c: 73: lcd_gotoxy(0,0);
-"73
-[e ( _lcd_gotoxy (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
-[; ;main.c: 74: while(1)
-"74
-[e :U 595 ]
-[; ;main.c: 75: {
-"75
-{
 [; ;main.c: 77: lcd_gotoxy(0,0);
 "77
 [e ( _lcd_gotoxy (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
-[; ;main.c: 78: strncpy(lcd_upper_display_buffer, lcd_upper_row_buffer, 16);
+[; ;main.c: 78: while(1)
 "78
-[e ( _strncpy (3 , , &U _lcd_upper_display_buffer -> &U _lcd_upper_row_buffer `*Cuc -> -> 16 `i `ui ]
-[; ;main.c: 79: lcd_puts(lcd_upper_display_buffer);
-"79
-[e ( _lcd_puts (1 &U _lcd_upper_display_buffer ]
-[; ;main.c: 81: lcd_gotoxy(0,1);
-"81
-[e ( _lcd_gotoxy (2 , -> -> 0 `i `uc -> -> 1 `i `uc ]
-[; ;main.c: 82: strncpy(lcd_lower_display_buffer, lcd_lower_row_buffer, 16);
-"82
-[e ( _strncpy (3 , , &U _lcd_lower_display_buffer -> &U _lcd_lower_row_buffer `*Cuc -> -> 16 `i `ui ]
-[; ;main.c: 83: lcd_puts(lcd_lower_display_buffer);
-"83
-[e ( _lcd_puts (1 &U _lcd_lower_display_buffer ]
-[; ;main.c: 84: if(cantidadLetrasUP > 16)
-"84
-[e $ ! > _cantidadLetrasUP -> 16 `i 597  ]
-[; ;main.c: 85: {
-"85
-{
-[; ;main.c: 86: rotarString(lcd_upper_row_buffer, cantidadLetrasUP);
-"86
-[e ( _rotarString (2 , &U _lcd_upper_row_buffer _cantidadLetrasUP ]
-"87
-}
-[e :U 597 ]
-[; ;main.c: 87: }
-[; ;main.c: 88: if(cantidadLetrasDOWN > 16)
-"88
-[e $ ! > _cantidadLetrasDOWN -> 16 `i 598  ]
-[; ;main.c: 89: {
-"89
-{
-[; ;main.c: 90: rotarString(lcd_lower_row_buffer, cantidadLetrasDOWN);
-"90
-[e ( _rotarString (2 , &U _lcd_lower_row_buffer _cantidadLetrasDOWN ]
-"91
-}
-[e :U 598 ]
-[; ;main.c: 91: }
-[; ;main.c: 92: _delay((unsigned long)((50)*(12000000/4000.0)));
-"92
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 12000000 `l `d .4000.0 `ul ]
-[; ;main.c: 93: _delay((unsigned long)((50)*(12000000/4000.0)));
-"93
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 12000000 `l `d .4000.0 `ul ]
-[; ;main.c: 94: _delay((unsigned long)((50)*(12000000/4000.0)));
-"94
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 12000000 `l `d .4000.0 `ul ]
-[; ;main.c: 95: _delay((unsigned long)((50)*(12000000/4000.0)));
-"95
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 12000000 `l `d .4000.0 `ul ]
-[; ;main.c: 96: _delay((unsigned long)((50)*(12000000/4000.0)));
-"96
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 12000000 `l `d .4000.0 `ul ]
-[; ;main.c: 97: LATDbits.LATD0 =~ LATDbits.LATD0;
-"97
-[e = . . _LATDbits 0 0 -> ~ -> . . _LATDbits 0 0 `i `uc ]
-[; ;main.c: 98: if(DutyCycle < 1020)
-"98
-[e $ ! < _DutyCycle -> -> 1020 `i `ui 599  ]
-[; ;main.c: 99: DutyCycle += 10;
-"99
-[e =+ _DutyCycle -> -> 10 `i `ui ]
-[e $U 600  ]
-"100
-[e :U 599 ]
-[; ;main.c: 100: else
-[; ;main.c: 101: DutyCycle = 10;
-"101
-[e = _DutyCycle -> -> 10 `i `ui ]
 [e :U 600 ]
-[; ;main.c: 103: SetDCPWM1(DutyCycle);
-"103
-[e ( _SetDCPWM1 (1 _DutyCycle ]
-"104
-}
-[e :U 594 ]
-"74
-[e $U 595  ]
-[e :U 596 ]
-[; ;main.c: 104: }
-[; ;main.c: 105: }
-"105
-[e :UE 593 ]
-}
-[v F5414 `(v ~T0 @X0 1 tf ]
-"107
-[v _ISR `IF5414 ~T0 @X0 1 e ]
-"108
+[; ;main.c: 79: {
+"79
 {
-[; ;main.c: 107: void interrupt ISR()
-[; ;main.c: 108: {
+[; ;main.c: 80: SetDCPWM1(DutyCycle);
+"80
+[e ( _SetDCPWM1 (1 _DutyCycle ]
+[; ;main.c: 82: lcd_gotoxy(0,0);
+"82
+[e ( _lcd_gotoxy (2 , -> -> 0 `i `uc -> -> 0 `i `uc ]
+[; ;main.c: 83: lcd_puts("Duty Cycle: ");
+"83
+[e ( _lcd_puts (1 -> :s 1C `*uc ]
+[; ;main.c: 84: lcd_putnum(DutyCycle, 4, 0, 1);
+"84
+[e ( _lcd_putnum (4 , , , _DutyCycle -> -> 4 `i `uc -> -> 0 `i `uc -> -> 1 `i `uc ]
+[; ;main.c: 85: _delay((unsigned long)((50)*(12000000/4000.0)));
+"85
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 12000000 `l `d .4000.0 `ul ]
+[; ;main.c: 86: _delay((unsigned long)((50)*(12000000/4000.0)));
+"86
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 12000000 `l `d .4000.0 `ul ]
+[; ;main.c: 87: _delay((unsigned long)((50)*(12000000/4000.0)));
+"87
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 12000000 `l `d .4000.0 `ul ]
+[; ;main.c: 88: _delay((unsigned long)((50)*(12000000/4000.0)));
+"88
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 12000000 `l `d .4000.0 `ul ]
+[; ;main.c: 89: _delay((unsigned long)((50)*(12000000/4000.0)));
+"89
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 12000000 `l `d .4000.0 `ul ]
+[; ;main.c: 90: LATDbits.LATD0 =~ LATDbits.LATD0;
+"90
+[e = . . _LATDbits 0 0 -> ~ -> . . _LATDbits 0 0 `i `uc ]
+"93
+}
+[e :U 599 ]
+"78
+[e $U 600  ]
+[e :U 601 ]
+[; ;main.c: 93: }
+[; ;main.c: 94: }
+"94
+[e :UE 598 ]
+}
+[v F5597 `(v ~T0 @X0 1 tf ]
+"96
+[v _ISR `IF5597 ~T0 @X0 1 e ]
+"97
+{
+[; ;main.c: 96: void interrupt ISR()
+[; ;main.c: 97: {
 [e :U _ISR ]
 [f ]
-[; ;main.c: 110: if(PIR1bits.RCIF == 1)
-"110
-[e $ ! == -> . . _PIR1bits 0 5 `i -> 1 `i 602  ]
-[; ;main.c: 111: {
-"111
+[; ;main.c: 99: if(PIR1bits.RCIF == 1)
+"99
+[e $ ! == -> . . _PIR1bits 0 5 `i -> 1 `i 603  ]
+[; ;main.c: 100: {
+"100
 {
-[; ;main.c: 112: if(i<200)
-"112
-[e $ ! < _i -> 200 `i 603  ]
-[; ;main.c: 113: {
-"113
+[; ;main.c: 101: if(i<200)
+"101
+[e $ ! < _i -> 200 `i 604  ]
+[; ;main.c: 102: {
+"102
 {
-[; ;main.c: 115: MessageBuffer[i] = ReadUSART();
-"115
+[; ;main.c: 103: MessageBuffer[i] = ReadUSART();
+"103
 [e = *U + &U _MessageBuffer * -> -> _i `ui `ux -> -> # *U &U _MessageBuffer `ui `ux ( _ReadUSART ..  ]
-[; ;main.c: 116: if(MessageBuffer[i] == 0x0D)
+[; ;main.c: 104: if(MessageBuffer[i] == 0x0D)
+"104
+[e $ ! == -> *U + &U _MessageBuffer * -> -> _i `ui `ux -> -> # *U &U _MessageBuffer `ui `ux `i -> 13 `i 605  ]
+[; ;main.c: 105: {
+"105
+{
+[; ;main.c: 106: strncpy(DC_str, MessageBuffer,4);
+"106
+[e ( _strncpy (3 , , &U _DC_str -> &U _MessageBuffer `*Cuc -> -> 4 `i `ui ]
+[; ;main.c: 107: k = atoi(DC_str);
+"107
+[e = _k ( _atoi (1 -> &U _DC_str `*Cuc ]
+[; ;main.c: 108: if(k >= 0 && k <= 1023)
+"108
+[e $ ! && >= _k -> 0 `i <= _k -> 1023 `i 606  ]
+[; ;main.c: 109: {
+"109
+{
+[; ;main.c: 110: DutyCycle = k;
+"110
+[e = _DutyCycle -> _k `ui ]
+[; ;main.c: 111: putsUSART(strcat("Modificado el SetPoint a ",DC_str));
+"111
+[e ( _putsUSART (1 ( _strcat (2 , -> :s 2C `*uc -> &U _DC_str `*Cuc ]
+[; ;main.c: 112: putsUSART("\n");
+"112
+[e ( _putsUSART (1 -> :s 3C `*uc ]
+"113
+}
+[; ;main.c: 113: }
+[e $U 607  ]
+"114
+[e :U 606 ]
+[; ;main.c: 114: else
+[; ;main.c: 115: {
+"115
+{
+[; ;main.c: 116: putsUSART("Error maquinola\n");
 "116
-[e $ ! == -> *U + &U _MessageBuffer * -> -> _i `ui `ux -> -> # *U &U _MessageBuffer `ui `ux `i -> 13 `i 604  ]
-[; ;main.c: 117: {
+[e ( _putsUSART (1 -> :s 4C `*uc ]
 "117
-{
-[; ;main.c: 118: lcd_put_blank(0,flag_newline, 16);
-"118
-[e ( _lcd_put_blank (3 , , -> -> 0 `i `uc _flag_newline -> -> 16 `i `uc ]
-[; ;main.c: 119: switch (flag_newline)
-"119
-[e $U 606  ]
-[; ;main.c: 120: {
-"120
-{
-[; ;main.c: 121: case 0:
-"121
+}
 [e :U 607 ]
-[; ;main.c: 122: for(;k>0;k--)
-"122
+[; ;main.c: 117: }
+[; ;main.c: 119: for(;i>0;i--)
+"119
 {
 [e $U 611  ]
-"123
+"120
 [e :U 608 ]
-[; ;main.c: 123: lcd_upper_row_buffer[k] = 0x00;
-[e = *U + &U _lcd_upper_row_buffer * -> -> _k `ui `ux -> -> # *U &U _lcd_upper_row_buffer `ui `ux -> -> 0 `i `uc ]
-"122
-[e -- _k -> 1 `i ]
+[; ;main.c: 120: MessageBuffer[i] = 0x00;
+[e = *U + &U _MessageBuffer * -> -> _i `ui `ux -> -> # *U &U _MessageBuffer `ui `ux -> -> 0 `i `uc ]
+"119
+[e -- _i -> 1 `i ]
 [e :U 611 ]
-[e $ > _k -> 0 `i 608  ]
+[e $ > _i -> 0 `i 608  ]
 [e :U 609 ]
+"120
+}
+[; ;main.c: 121: i=0;
+"121
+[e = _i -> 0 `i ]
+[; ;main.c: 122: return;
+"122
+[e $UE 602  ]
 "123
 }
-[; ;main.c: 124: k = 0;
+[e :U 605 ]
+[; ;main.c: 123: }
+[; ;main.c: 124: i++;
 "124
-[e = _k -> 0 `i ]
-[; ;main.c: 125: strcpy(lcd_upper_row_buffer, MessageBuffer);
+[e ++ _i -> 1 `i ]
+[; ;main.c: 125: PIR1bits.RCIF = 0;
 "125
-[e ( _strcpy (2 , &U _lcd_upper_row_buffer -> &U _MessageBuffer `*Cuc ]
-[; ;main.c: 126: cantidadLetrasUP = cuentaLetras(MessageBuffer);
+[e = . . _PIR1bits 0 5 -> -> 0 `i `uc ]
 "126
-[e = _cantidadLetrasUP ( _cuentaLetras (1 &U _MessageBuffer ]
-[; ;main.c: 127: lcd_upper_row_buffer[cantidadLetrasUP - 1] = ' ';
+}
+[; ;main.c: 126: }
+[e $U 612  ]
 "127
-[e = *U + &U _lcd_upper_row_buffer * -> -> - _cantidadLetrasUP -> 1 `i `ui `ux -> -> # *U &U _lcd_upper_row_buffer `ui `ux -> -> 32 `ui `uc ]
-[; ;main.c: 128: break;
+[e :U 604 ]
+[; ;main.c: 127: else
+[; ;main.c: 128: {
 "128
-[e $U 605  ]
-[; ;main.c: 130: case 1:
+{
+[; ;main.c: 129: putsUSART(MessageBuffer);
+"129
+[e ( _putsUSART (1 &U _MessageBuffer ]
+[; ;main.c: 130: for(;i>0;i--)
 "130
-[e :U 612 ]
-[; ;main.c: 131: for(;k>0;k--)
-"131
 {
 [e $U 616  ]
-"132
-[e :U 613 ]
-[; ;main.c: 132: lcd_lower_row_buffer[k] = 0x00;
-[e = *U + &U _lcd_lower_row_buffer * -> -> _k `ui `ux -> -> # *U &U _lcd_lower_row_buffer `ui `ux -> -> 0 `i `uc ]
 "131
-[e -- _k -> 1 `i ]
+[e :U 613 ]
+[; ;main.c: 131: MessageBuffer[i] = 0x00;
+[e = *U + &U _MessageBuffer * -> -> _i `ui `ux -> -> # *U &U _MessageBuffer `ui `ux -> -> 0 `i `uc ]
+"130
+[e -- _i -> 1 `i ]
 [e :U 616 ]
-[e $ > _k -> 0 `i 613  ]
+[e $ > _i -> 0 `i 613  ]
 [e :U 614 ]
+"131
+}
+[; ;main.c: 132: i=0;
 "132
-}
-[; ;main.c: 133: k = 0;
+[e = _i -> 0 `i ]
 "133
-[e = _k -> 0 `i ]
-[; ;main.c: 134: strcpy(lcd_lower_row_buffer, MessageBuffer);
+}
+[e :U 612 ]
 "134
-[e ( _strcpy (2 , &U _lcd_lower_row_buffer -> &U _MessageBuffer `*Cuc ]
-[; ;main.c: 135: cantidadLetrasDOWN = cuentaLetras(MessageBuffer);
-"135
-[e = _cantidadLetrasDOWN ( _cuentaLetras (1 &U _MessageBuffer ]
-[; ;main.c: 136: lcd_lower_row_buffer[cantidadLetrasDOWN - 1] = ' ';
-"136
-[e = *U + &U _lcd_lower_row_buffer * -> -> - _cantidadLetrasDOWN -> 1 `i `ui `ux -> -> # *U &U _lcd_lower_row_buffer `ui `ux -> -> 32 `ui `uc ]
-[; ;main.c: 137: break;
-"137
-[e $U 605  ]
-"138
 }
-[; ;main.c: 138: }
-[e $U 605  ]
-"119
-[e :U 606 ]
-[e [\ _flag_newline , $ -> -> 0 `i `uc 607
- , $ -> -> 1 `i `uc 612
- 605 ]
-"138
-[e :U 605 ]
-[; ;main.c: 139: putsUSART(MessageBuffer);
-"139
-[e ( _putsUSART (1 &U _MessageBuffer ]
-[; ;main.c: 141: LATDbits.LATD1 =~ LATDbits.LATD1;
-"141
-[e = . . _LATDbits 0 1 -> ~ -> . . _LATDbits 0 1 `i `uc ]
-[; ;main.c: 144: flag_newline^=1;
-"144
-[e =^ _flag_newline -> -> 1 `i `uc ]
-[; ;main.c: 145: for(;i>0;i--)
-"145
-{
-[e $U 620  ]
-"146
-[e :U 617 ]
-[; ;main.c: 146: MessageBuffer[i] = 0x00;
-[e = *U + &U _MessageBuffer * -> -> _i `ui `ux -> -> # *U &U _MessageBuffer `ui `ux -> -> 0 `i `uc ]
-"145
-[e -- _i -> 1 `i ]
-[e :U 620 ]
-[e $ > _i -> 0 `i 617  ]
-[e :U 618 ]
-"146
-}
-[; ;main.c: 147: i=0;
-"147
-[e = _i -> 0 `i ]
-[; ;main.c: 148: return;
-"148
-[e $UE 601  ]
-"149
-}
-[e :U 604 ]
-[; ;main.c: 149: }
-[; ;main.c: 150: i++;
-"150
-[e ++ _i -> 1 `i ]
-[; ;main.c: 151: PIR1bits.RCIF = 0;
-"151
-[e = . . _PIR1bits 0 5 -> -> 0 `i `uc ]
-"152
-}
-[; ;main.c: 152: }
-[e $U 621  ]
-"153
 [e :U 603 ]
-[; ;main.c: 153: else
-[; ;main.c: 154: {
-"154
-{
-[; ;main.c: 156: putsUSART(MessageBuffer);
-"156
-[e ( _putsUSART (1 &U _MessageBuffer ]
-[; ;main.c: 157: for(;i>0;i--)
-"157
-{
-[e $U 625  ]
-"158
-[e :U 622 ]
-[; ;main.c: 158: MessageBuffer[i] = 0x00;
-[e = *U + &U _MessageBuffer * -> -> _i `ui `ux -> -> # *U &U _MessageBuffer `ui `ux -> -> 0 `i `uc ]
-"157
-[e -- _i -> 1 `i ]
-[e :U 625 ]
-[e $ > _i -> 0 `i 622  ]
-[e :U 623 ]
-"158
+[; ;main.c: 133: }
+[; ;main.c: 134: }
+[; ;main.c: 135: }
+"135
+[e :UE 602 ]
 }
-[; ;main.c: 159: i=0;
-"159
-[e = _i -> 0 `i ]
-[; ;main.c: 160: return;
-"160
-[e $UE 601  ]
-"161
-}
-[e :U 621 ]
-"162
-}
-[e :U 602 ]
-[; ;main.c: 161: }
-[; ;main.c: 162: }
-[; ;main.c: 163: }
-"163
-[e :UE 601 ]
-}
-"166
+"138
 [v _cuentaLetras `(i ~T0 @X0 1 ef1`*uc ]
-"167
+"139
 {
-[; ;main.c: 166: int cuentaLetras(char* str)
-[; ;main.c: 167: {
+[; ;main.c: 138: int cuentaLetras(char* str)
+[; ;main.c: 139: {
 [e :U _cuentaLetras ]
-"166
+"138
 [v _str `*uc ~T0 @X0 1 r1 ]
-"167
+"139
 [f ]
-"168
+"140
 [v _j `i ~T0 @X0 1 a ]
-[; ;main.c: 168: int j=0;
+[; ;main.c: 140: int j=0;
 [e = _j -> 0 `i ]
-[; ;main.c: 169: while(str[j]!= 0x0D)
-"169
-[e $U 627  ]
-[e :U 628 ]
-[; ;main.c: 170: {
-"170
+[; ;main.c: 141: while(str[j]!= 0x0D)
+"141
+[e $U 618  ]
+[e :U 619 ]
+[; ;main.c: 142: {
+"142
 {
-[; ;main.c: 171: j++;
-"171
+[; ;main.c: 143: j++;
+"143
 [e ++ _j -> 1 `i ]
-"172
+"144
 }
-[e :U 627 ]
-"169
-[e $ != -> *U + _str * -> _j `x -> -> # *U _str `i `x `i -> 13 `i 628  ]
-[e :U 629 ]
-[; ;main.c: 172: }
-[; ;main.c: 173: return j+1;
-"173
+[e :U 618 ]
+"141
+[e $ != -> *U + _str * -> _j `x -> -> # *U _str `i `x `i -> 13 `i 619  ]
+[e :U 620 ]
+[; ;main.c: 144: }
+[; ;main.c: 145: return j+1;
+"145
 [e ) + _j -> 1 `i ]
-[e $UE 626  ]
-[; ;main.c: 174: }
-"174
-[e :UE 626 ]
+[e $UE 617  ]
+[; ;main.c: 146: }
+"146
+[e :UE 617 ]
 }
-"176
+"148
 [v _rotarString `(v ~T0 @X0 1 ef2`*uc`i ]
-"177
+"149
 {
-[; ;main.c: 176: void rotarString(char* str, int length)
-[; ;main.c: 177: {
+[; ;main.c: 148: void rotarString(char* str, int length)
+[; ;main.c: 149: {
 [e :U _rotarString ]
-"176
+"148
 [v _str `*uc ~T0 @X0 1 r1 ]
 [v _length `i ~T0 @X0 1 r2 ]
-"177
+"149
 [f ]
-"178
+"150
 [v _j `i ~T0 @X0 1 a ]
-"179
+"151
 [v _aux `uc ~T0 @X0 1 a ]
-[; ;main.c: 178: int j;
-[; ;main.c: 179: char aux;
-[; ;main.c: 180: aux = str[0];
-"180
+[; ;main.c: 150: int j;
+[; ;main.c: 151: char aux;
+[; ;main.c: 152: aux = str[0];
+"152
 [e = _aux *U + _str * -> -> 0 `i `x -> -> # *U _str `i `x ]
-[; ;main.c: 181: for(j = 0; j<length - 1; j++)
-"181
+[; ;main.c: 153: for(j = 0; j<length - 1; j++)
+"153
 {
 [e = _j -> 0 `i ]
-[e $U 634  ]
-"182
-[e :U 631 ]
-[; ;main.c: 182: {
+[e $U 625  ]
+"154
+[e :U 622 ]
+[; ;main.c: 154: {
 {
-[; ;main.c: 183: str[j] = str[j+1];
-"183
+[; ;main.c: 155: str[j] = str[j+1];
+"155
 [e = *U + _str * -> _j `x -> -> # *U _str `i `x *U + _str * -> + _j -> 1 `i `x -> -> # *U _str `i `x ]
-"184
+"156
 }
-"181
+"153
 [e ++ _j -> 1 `i ]
-[e :U 634 ]
-[e $ < _j - _length -> 1 `i 631  ]
-[e :U 632 ]
-"184
+[e :U 625 ]
+[e $ < _j - _length -> 1 `i 622  ]
+[e :U 623 ]
+"156
 }
-[; ;main.c: 184: }
-[; ;main.c: 185: str[length - 1] = aux;
-"185
+[; ;main.c: 156: }
+[; ;main.c: 157: str[length - 1] = aux;
+"157
 [e = *U + _str * -> - _length -> 1 `i `x -> -> # *U _str `i `x _aux ]
-[; ;main.c: 186: }
-"186
-[e :UE 630 ]
+[; ;main.c: 158: }
+"158
+[e :UE 621 ]
 }
+[a 2C 77 111 100 105 102 105 99 97 100 111 32 101 108 32 83 101 116 80 111 105 110 116 32 97 32 0 ]
+[a 1C 68 117 116 121 32 67 121 99 108 101 58 32 0 ]
+[a 4C 69 114 114 111 114 32 109 97 113 117 105 110 111 108 97 10 0 ]
+[a 3C 10 0 ]

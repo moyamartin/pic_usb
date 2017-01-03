@@ -9,7 +9,9 @@
 #pragma config WDT = OFF, LVP = OFF, MCLRE = ON
 
 #include <xc.h>
-#include "string.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "pwm.h"
 #include "usart.h"
 #include "delays.h"
@@ -33,6 +35,8 @@ unsigned char lcd_lower_row_buffer[MAX_CHAR_BUFFER];
 
 unsigned char lcd_lower_display_buffer[LCD_COLUMNS];
 unsigned char lcd_upper_display_buffer[LCD_COLUMNS];
+
+unsigned char DC_str[5];
 
 void rotarString(char* str, int length);
 int cuentaLetras(char* str);
@@ -73,34 +77,19 @@ void main(void) {
     lcd_gotoxy(0,0);
     while(1)
     {
+        SetDCPWM1(DutyCycle);
         //lcd_put_blank(0,flag_newline, LCD_COLUMNS);
         lcd_gotoxy(0,0);
-        strncpy(lcd_upper_display_buffer, lcd_upper_row_buffer, LCD_COLUMNS);
-        lcd_puts(lcd_upper_display_buffer);
-        
-        lcd_gotoxy(0,1);
-        strncpy(lcd_lower_display_buffer, lcd_lower_row_buffer, LCD_COLUMNS);
-        lcd_puts(lcd_lower_display_buffer);
-        if(cantidadLetrasUP > LCD_COLUMNS)
-        {
-            rotarString(lcd_upper_row_buffer, cantidadLetrasUP);
-        }
-        if(cantidadLetrasDOWN > LCD_COLUMNS)
-        {
-            rotarString(lcd_lower_row_buffer, cantidadLetrasDOWN);
-        }
+        lcd_puts("Duty Cycle: ");
+        lcd_putnum(DutyCycle, 4, 0, 1);
         __delay_ms(50);
         __delay_ms(50);
         __delay_ms(50);
         __delay_ms(50);
         __delay_ms(50);
         LATDbits.LATD0 =~ LATDbits.LATD0;
-        if(DutyCycle < 1020)
-            DutyCycle += 10;
-        else
-            DutyCycle = 10;
-       
-        SetDCPWM1(DutyCycle);
+
+        
     }
 }
 
@@ -111,37 +100,22 @@ void interrupt ISR()
     {
         if(i<MAX_CHAR_BUFFER) //our buffer size
         {
-            
             MessageBuffer[i] = ReadUSART(); //read the byte from rx register
             if(MessageBuffer[i] == 0x0D) //check for return key
             {
-                lcd_put_blank(0,flag_newline, LCD_COLUMNS);
-                switch (flag_newline)
+                strncpy(DC_str, MessageBuffer,4);
+                k = atoi(DC_str);
+                if(k >= 0 && k <= 1023)
                 {
-                    case 0:
-                        for(;k>0;k--)
-                            lcd_upper_row_buffer[k] = 0x00; //clear the array
-                        k = 0;
-                        strcpy(lcd_upper_row_buffer, MessageBuffer);
-                        cantidadLetrasUP = cuentaLetras(MessageBuffer);
-                        lcd_upper_row_buffer[cantidadLetrasUP - 1] = ' ';
-                        break;
-                        
-                    case 1:
-                        for(;k>0;k--)
-                            lcd_lower_row_buffer[k] = 0x00; //clear the array
-                        k = 0;
-                        strcpy(lcd_lower_row_buffer, MessageBuffer);
-                        cantidadLetrasDOWN = cuentaLetras(MessageBuffer);
-                        lcd_lower_row_buffer[cantidadLetrasDOWN - 1] = ' ';
-                        break;
-                }               
-                putsUSART(MessageBuffer);
-                
-                LATDbits.LATD1 =~ LATDbits.LATD1;
-                
-                
-                flag_newline^=1;
+                    DutyCycle = k;
+                    putsUSART(strcat("Modificado el SetPoint a ",DC_str));
+                    putsUSART("\n");
+                }
+                else
+                {
+                    putsUSART("Error maquinola\n");
+                }
+  
                 for(;i>0;i--)
                     MessageBuffer[i] = 0x00; //clear the array
                 i=0; //for sanity
@@ -152,12 +126,10 @@ void interrupt ISR()
         }
         else
         {
-            
             putsUSART(MessageBuffer);
             for(;i>0;i--)
                 MessageBuffer[i] = 0x00; //clear the array
             i=0; //for sanity
-            return;
         }
     }
 }
