@@ -108,7 +108,8 @@ void interrupt ISR()
                 if(k >= 0 && k <= 1023)
                 {
                     DutyCycle = k;
-                    putsUSART(strcat("Modificado el SetPoint a ",DC_str));
+                    putsUSART("Modificado el SetPoint a: ");
+					putsUSART(DC_str);
                     putsUSART("\n");
                 }
                 else
