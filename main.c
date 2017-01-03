@@ -10,6 +10,7 @@
 
 #include <xc.h>
 #include "string.h"
+#include "pwm.h"
 #include "usart.h"
 #include "delays.h"
 #include "lcd_driver.h"
@@ -24,6 +25,7 @@ int i=0;
 int k;
 int cantidadLetrasUP = 0; 
 int cantidadLetrasDOWN = 0 ;
+unsigned int DutyCycle = 10;
 
 unsigned char MessageBuffer[MAX_CHAR_BUFFER];
 unsigned char lcd_upper_row_buffer[MAX_CHAR_BUFFER];
@@ -44,15 +46,13 @@ void main(void) {
     TRISC = 0b10000000;
     TRISD = 0b00000000;
     
+    
+    // UART Config & Initialization
     // Close USART port if already opened
     CloseUSART();
-    
     config = USART_TX_INT_OFF& USART_RX_INT_ON & USART_ASYNCH_MODE & USART_EIGHT_BIT & USART_BRGH_HIGH;
     spbrg = 77;
-    
     OpenUSART(config, spbrg);
-    
-    //compare with the table above
     RCIF = 0; //reset RX pin flag
     RCIP = 0; //Not high priority
     RCIE = 1; //Enable RX interrupt
@@ -60,6 +60,14 @@ void main(void) {
     PIR1bits.RCIF = 0; //clear rx flag
     ei();       //remember the master switch for interrupt?
 
+    // PWM Configuration
+    
+    T2CON = 0b00000111 ;
+    OpenPWM1(0b10111011);
+    
+    SetDCPWM1(DutyCycle);
+    
+    // LCD Init
     lcd_init();
     lcd_clear();
     lcd_gotoxy(0,0);
@@ -86,7 +94,13 @@ void main(void) {
         __delay_ms(50);
         __delay_ms(50);
         __delay_ms(50);
-        LATDbits.LATD0 =~ LATDbits.LATD0;   
+        LATDbits.LATD0 =~ LATDbits.LATD0;
+        if(DutyCycle < 1020)
+            DutyCycle += 10;
+        else
+            DutyCycle = 10;
+       
+        SetDCPWM1(DutyCycle);
     }
 }
 
