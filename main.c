@@ -110,6 +110,7 @@ void interrupt ISR()
                         k = 0;
                         strcpy(lcd_upper_row_buffer, MessageBuffer);
                         cantidadLetrasUP = cuentaLetras(MessageBuffer);
+                        lcd_upper_row_buffer[cantidadLetrasUP - 1] = ' ';
                         break;
                         
                     case 1:
@@ -118,6 +119,7 @@ void interrupt ISR()
                         k = 0;
                         strcpy(lcd_lower_row_buffer, MessageBuffer);
                         cantidadLetrasDOWN = cuentaLetras(MessageBuffer);
+                        lcd_lower_row_buffer[cantidadLetrasDOWN - 1] = ' ';
                         break;
                 }               
                 putsUSART(MessageBuffer);
