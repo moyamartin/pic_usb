@@ -122,6 +122,36 @@ void interrupt ISR()
                 i=0; //for sanity
                 return;
             }
+            if(MessageBuffer[i] == 0x2B)
+            {
+                if(DutyCycle >= 0 && DutyCycle <= 1023)
+                {   
+                    DutyCycle++;
+                      
+                    putsUSART("Modificado el SetPoint a: ");
+                    putsUSART(itoa(DutyCycle, DC_str, 10));
+                    putsUSART("\n");
+                }
+                else
+                {
+                    putsUSART("Error maquinola\n");
+                }
+            }
+            if(MessageBuffer[i] == 0x2D)
+            {
+                if(DutyCycle >= 0 && DutyCycle <= 1023)
+                {   
+                    DutyCycle--;
+                      
+                    putsUSART("Modificado el SetPoint a: ");
+                    putsUSART(itoa(DutyCycle, DC_str, 10));
+                    putsUSART("\n");
+                }
+                else
+                {
+                    putsUSART("Error maquinola\n");
+                }  
+            }
             i++;
             PIR1bits.RCIF = 0; // clear rx flag
         }
