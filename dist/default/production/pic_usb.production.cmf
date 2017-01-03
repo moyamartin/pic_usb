@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\Leandro\AppData\Local\Temp\sg88.obj
+$C:\Users\Martin\AppData\Local\Temp\s92k.obj
 end_init CODE 0 18 18 4 1
 reset_vec CODE 0 0 0 4 1
 idloc IDLOC 0 200000 200000 8 1
@@ -19,29 +19,29 @@ config CONFIG 0 300000 300000 E 1
 $dist/default/production\pic_usb.production.obj
 intcode CODE 0 8 8 10 1
 smallconst SMALLCONST 0 800 800 40 1
-text22 CODE 0 1466 1466 1E 1
-text21 CODE 0 1400 1400 26 1
-text20 CODE 0 1446 1446 20 1
-text19 CODE 0 D10 D10 CA 1
-text18 CODE 0 13BE 13BE 42 1
-text17 CODE 0 1324 1324 52 1
-text16 CODE 0 E9C E9C A4 1
-text15 CODE 0 12CA 12CA 5A 1
-text14 CODE 0 1498 1498 12 1
-text13 CODE 0 126E 126E 5C 1
-text12 CODE 0 1210 1210 5E 1
-intcode_body CODE 0 840 840 2B2 1
-text10 CODE 0 1484 1484 14 1
-text9 CODE 0 FD2 FD2 80 1
-text8 CODE 0 1376 1376 48 1
-text7 CODE 0 DDA DDA C2 1
-text6 CODE 0 1426 1426 20 1
-text5 CODE 0 C20 C20 F0 1
-text4 CODE 0 1052 1052 78 1
-text3 CODE 0 113E 113E 74 1
-text2 CODE 0 10CA 10CA 74 1
-text1 CODE 0 F40 F40 92 1
-text0 CODE 0 AF2 AF2 12E 1
+text22 CODE 0 14CA 14CA 1E 1
+text21 CODE 0 1464 1464 26 1
+text20 CODE 0 14AA 14AA 20 1
+text19 CODE 0 D74 D74 CA 1
+text18 CODE 0 1422 1422 42 1
+text17 CODE 0 1388 1388 52 1
+text16 CODE 0 F00 F00 A4 1
+text15 CODE 0 132E 132E 5A 1
+text14 CODE 0 14FC 14FC 12 1
+text13 CODE 0 12D2 12D2 5C 1
+text12 CODE 0 1274 1274 5E 1
+intcode_body CODE 0 840 840 316 1
+text10 CODE 0 14E8 14E8 14 1
+text9 CODE 0 1036 1036 80 1
+text8 CODE 0 13DA 13DA 48 1
+text7 CODE 0 E3E E3E C2 1
+text6 CODE 0 148A 148A 20 1
+text5 CODE 0 C84 C84 F0 1
+text4 CODE 0 10B6 10B6 78 1
+text3 CODE 0 11A2 11A2 74 1
+text2 CODE 0 112E 112E 74 1
+text1 CODE 0 FA4 FA4 92 1
+text0 CODE 0 B56 B56 12E 1
 cstackCOMRAM COMRAM 1 1 1 2A 1
 cstackBANK0 BANK0 1 60 60 13 1
 bssBANK3 BANK3 1 300 300 C8 1
@@ -50,8 +50,8 @@ bssBANK1 BANK1 1 100 100 C8 1
 dataBANK0 BANK0 1 83 83 2 1
 bssBANK0 BANK0 1 73 73 10 1
 bssCOMRAM COMRAM 1 2B 2B 22 1
-cinit CODE 0 11B2 11B2 5E 1
-idataBANK0 CODE 0 14AA 14AA 2 1
+cinit CODE 0 1216 1216 5E 1
+idataBANK0 CODE 0 150E 150E 2 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -73,19 +73,19 @@ BIGRAM 0002C8-0002FF 1
 BIGRAM 0003C8-0007FF 1
 CODE 000004-000007 1
 CODE 00001C-0007FF 1
-CODE 0014AC-007FFF 1
+CODE 001510-007FFF 1
 COMRAM 00004D-00005F 1
 CONST 000004-000007 1
 CONST 00001C-0007FF 1
-CONST 0014AC-007FFF 1
+CONST 001510-007FFF 1
 EEDATA F00000-F000FF 1
-MEDIUMCONST 0014AC-007FFF 1
+MEDIUMCONST 001510-007FFF 1
 RAM 000085-0000FF 1
 RAM 0001C8-0001FF 1
 RAM 0002C8-0002FF 1
 RAM 0003C8-0007FF 1
 SFR 000F60-000FFF 1
-SMALLCONST 0014AC-007FFF 1
+SMALLCONST 001510-007FFF 1
 STACK 0003C8-0007FF 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -101,374 +101,380 @@ STACK 0003C8-0007FF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\pic_usb.production.obj
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":19 8 intcode CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":96 8 intcode CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":96 840 intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":99 86E intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":101 872 intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":103 886 intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":104 89C intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":106 8B2 intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":107 8D2 intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":108 8E6 intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":110 8FE intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":111 906 intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":112 912 intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":113 91E intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":114 92A intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":117 92C intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":121 93A intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":120 94E intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":122 968 intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":125 96A intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":127 980 intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":129 990 intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":131 996 intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":132 9A2 intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":133 9CE intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":134 9DA intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":137 9DC intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":140 9E8 intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":142 9FE intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":144 A0E intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":146 A16 intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":147 A22 intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":148 A4E intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":149 A5A intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":152 A5C intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":155 A68 intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":156 A6C intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":157 A6E intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":160 A70 intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":161 A80 intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":162 A82 intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":161 A96 intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":163 AB0 intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":166 AB8 intcode_body CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":46 AF2 text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":48 AF2 text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":50 AFE text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":51 B02 text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":56 B06 text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":57 B10 text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":58 B16 text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":59 B1C text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":60 B2E text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":61 B30 text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":62 B32 text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":63 B34 text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":64 B36 text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":65 B38 text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":69 B3A text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":70 B3E text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":72 B44 text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":75 B50 text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":76 B54 text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":77 B70 text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":80 B7C text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":82 B88 text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":83 B94 text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":84 BA4 text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":85 BC2 text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":86 BD4 text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":87 BE6 text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":88 BF8 text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":89 C0A text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\main.c":90 C1C text0 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":11 C20 text5 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":15 C20 text5 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":18 C30 text5 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":20 C3C text5 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":22 C4E text5 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":24 C5A text5 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":26 C6C text5 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":28 C78 text5 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":30 C8A text5 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":39 C96 text5 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":40 CA2 text5 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":42 CB4 text5 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":43 CC0 text5 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":45 CD2 text5 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":46 CDE text5 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":48 CF0 text5 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":49 CFC text5 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":52 D0E text5 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\atoi.c":5 D10 text19 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\atoi.c":10 D10 text19 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\atoi.c":11 D12 text19 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\atoi.c":10 D16 text19 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\atoi.c":12 D36 text19 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\atoi.c":13 D3E text19 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\atoi.c":14 D42 text19 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\atoi.c":15 D50 text19 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\atoi.c":17 D54 text19 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\atoi.c":20 D64 text19 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\atoi.c":19 D9E text19 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\atoi.c":21 DB0 text19 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\atoi.c":22 DB6 text19 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\atoi.c":23 DD0 text19 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\atoi.c":24 DD8 text19 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":176 DDA text7 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":179 DDE text7 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":180 DEA text7 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":181 DF2 text7 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":182 E86 text7 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":183 E9A text7 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c":17 E9C text16 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c":22 E9C text16 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c":24 EA4 text16 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c":25 EC0 text16 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c":26 EC4 text16 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c":27 ECC text16 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c":29 EDE text16 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c":30 EF6 text16 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c":31 F12 text16 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c":32 F18 text16 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c":33 F1C text16 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c":34 F20 text16 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c":35 F32 text16 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c":36 F3A text16 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c":37 F3E text16 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":108 F40 text1 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":110 F40 text1 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":112 F42 text1 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":114 F58 text1 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":117 F72 text1 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":119 F92 text1 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":121 F9C text1 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":122 FA8 text1 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":125 FAA text1 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":128 FB4 text1 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":110 FBA text1 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":130 FCE text1 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":110 FD0 text1 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":73 FD2 text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":75 FD6 text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":76 FDA text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":78 FDE text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":79 FE2 text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":81 FE4 text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":83 FEA text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":84 FEC text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":87 FEE text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":88 FF2 text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":90 FF4 text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":91 FFA text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":92 FFE text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":93 FFE text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":95 1000 text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":96 1004 text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":98 1006 text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":100 1008 text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":101 100C text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":103 100E text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":104 1014 text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":105 1018 text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":106 1018 text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":108 101A text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":110 101C text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":111 1022 text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":112 1026 text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":113 1026 text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":115 1028 text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":116 102C text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":118 1040 text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":119 1042 text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":137 1044 text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":138 1048 text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":139 104E text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":143 1050 text9 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":8 1052 text4 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":14 1052 text4 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":15 105E text4 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":16 1068 text4 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":17 106E text4 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":18 1070 text4 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":19 1078 text4 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":17 107C text4 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":22 1082 text4 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":23 108A text4 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":24 109E text4 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":25 10AE text4 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":27 10B2 text4 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":28 10BA text4 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":29 10C0 text4 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":30 10C0 text4 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":31 10C8 text4 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":87 10CA text2 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":95 10CA text2 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":96 10D2 text2 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":98 10D4 text2 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":99 10F8 text2 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":100 110A text2 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":101 110E text2 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":102 1112 text2 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":103 111E text2 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":104 112E text2 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":96 1136 text2 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":106 113C text2 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":54 113E text3 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":59 1142 text3 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":62 1156 text3 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":63 1156 text3 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":64 115A text3 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":65 115E text3 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":66 1162 text3 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":67 117C text3 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":68 1184 text3 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":69 1192 text3 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":70 119A text3 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":71 11A8 text3 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":72 11B0 text3 CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1035 11B2 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1037 11B2 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1040 11B2 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1122 11B2 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1123 11B6 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1124 11B8 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1125 11B8 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1126 11BA cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1127 11BC cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1130 11BE cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1131 11C2 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1132 11C4 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1133 11C4 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1134 11C6 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1135 11C8 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1138 11CA cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1139 11CE cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1140 11D0 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1141 11D0 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1142 11D2 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1143 11D4 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1146 11D6 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1147 11DA cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1148 11DC cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1149 11DC cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1150 11DE cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1151 11E0 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1154 11E2 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1155 11E6 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1156 11E8 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1157 11E8 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1158 11EA cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1159 11EC cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1164 11EE cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1165 11F0 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1166 11F2 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1167 11F4 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1168 11F6 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1169 11F8 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1170 11FA cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1171 11FC cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1172 1200 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1173 1202 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1179 1206 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1181 1206 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1182 1208 cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1183 120A cinit CODE
-"C:\Users\Leandro\AppData\Local\Temp\sg88.":1184 120C cinit CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\strncpy.c":8 1210 text12 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\strncpy.c":18 1210 text12 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\strncpy.c":19 1218 text12 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\strncpy.c":20 121A text12 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\strncpy.c":21 1220 text12 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\strncpy.c":19 1242 text12 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\strncpy.c":25 124C text12 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\strncpy.c":24 125C text12 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\strncpy.c":27 126A text12 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\strncpy.c":24 126C text12 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uputs.c":14 126E text13 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uputs.c":18 126E text13 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uputs.c":19 1272 text13 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uputs.c":20 1296 text13 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uputs.c":21 12C6 text13 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uputs.c":20 12C8 text13 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c":4 12CA text15 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c":6 12CA text15 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c":8 12D2 text15 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c":9 12E6 text15 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c":10 12F6 text15 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c":12 12FE text15 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c":13 131A text15 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c":14 1322 text15 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":8 1324 text17 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":14 1324 text17 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":15 132C text17 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":16 1334 text17 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":17 1338 text17 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":18 133A text17 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":19 1340 text17 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":17 1342 text17 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":22 1346 text17 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":23 134C text17 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":24 1358 text17 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":25 1360 text17 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":27 1362 text17 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":28 1368 text17 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":29 136C text17 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":30 136C text17 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c":31 1374 text17 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c":7 1376 text8 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c":12 1376 text8 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c":15 1398 text8 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c":18 139C text8 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c":19 13BC text8 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwmod.c":8 13BE text18 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwmod.c":13 13BE text18 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwmod.c":14 13C6 text18 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwmod.c":15 13CA text18 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwmod.c":16 13CC text18 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwmod.c":17 13D2 text18 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwmod.c":15 13D4 text18 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwmod.c":20 13D8 text18 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwmod.c":21 13E4 text18 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwmod.c":22 13EC text18 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwmod.c":23 13F2 text18 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwmod.c":24 13F6 text18 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwmod.c":25 13F6 text18 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\lwmod.c":26 13FE text18 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\Umul16.c":15 1400 text21 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\Umul16.c":37 1400 text21 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\Umul16.c":38 140C text21 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\Umul16.c":39 1414 text21 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\Umul16.c":52 141C text21 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\Umul16.c":53 1424 text21 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":185 1426 text6 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":188 142A text6 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":189 1438 text6 CODE
-"I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c":190 1444 text6 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\isdigit.c":8 1446 text20 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\isdigit.c":14 1448 text20 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\common\isdigit.c":15 1464 text20 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":15 1466 text22 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":19 1466 text22 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":21 146A text22 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":23 146E text22 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":24 1470 text22 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":25 1472 text22 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":26 1474 text22 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":28 1474 text22 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":29 1476 text22 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":31 1478 text22 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":32 147A text22 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":34 147C text22 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":36 1480 text22 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":37 1482 text22 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":8 1484 text10 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":11 1488 text10 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":13 148C text10 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":15 148E text10 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":16 1490 text10 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":17 1494 text10 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":19 1496 text10 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c":13 1498 text14 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c":15 149A text14 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c":17 149E text14 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c":18 14A0 text14 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c":19 14A2 text14 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c":22 14A4 text14 CODE
-"I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c":23 14A8 text14 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":19 8 intcode CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":96 8 intcode CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":96 840 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":99 86E intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":101 872 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":103 886 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":104 89C intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":106 8B2 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":107 8D2 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":108 8E6 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":110 8FE intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":111 906 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":112 912 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":113 91E intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":114 92A intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":117 92C intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":121 93A intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":120 94E intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":122 968 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":125 96A intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":127 980 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":129 990 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":131 996 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":132 9A2 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":133 9CE intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":134 9DA intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":137 9DC intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":140 9EA intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":139 9FE intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":141 A18 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":144 A1A intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":146 A30 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":148 A40 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":150 A48 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":151 A54 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":152 A80 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":153 A8C intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":156 A8E intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":159 A9C intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":158 AB0 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":160 ACA intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":163 ACC intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":164 AD0 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":165 AD2 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":168 AD4 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":169 AE4 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":170 AE6 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":169 AFA intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":171 B14 intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":174 B1C intcode_body CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":46 B56 text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":48 B56 text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":50 B62 text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":51 B66 text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":56 B6A text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":57 B74 text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":58 B7A text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":59 B80 text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":60 B92 text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":61 B94 text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":62 B96 text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":63 B98 text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":64 B9A text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":65 B9C text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":69 B9E text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":70 BA2 text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":72 BA8 text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":75 BB4 text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":76 BB8 text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":77 BD4 text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":80 BE0 text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":82 BEC text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":83 BF8 text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":84 C08 text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":85 C26 text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":86 C38 text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":87 C4A text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":88 C5C text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":89 C6E text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\main.c":90 C80 text0 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":11 C84 text5 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":15 C84 text5 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":18 C94 text5 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":20 CA0 text5 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":22 CB2 text5 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":24 CBE text5 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":26 CD0 text5 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":28 CDC text5 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":30 CEE text5 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":39 CFA text5 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":40 D06 text5 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":42 D18 text5 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":43 D24 text5 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":45 D36 text5 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":46 D42 text5 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":48 D54 text5 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":49 D60 text5 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":52 D72 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":5 D74 text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":10 D74 text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":11 D76 text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":10 D7A text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":12 D9A text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":13 DA2 text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":14 DA6 text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":15 DB4 text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":17 DB8 text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":20 DC8 text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":19 E02 text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":21 E14 text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":22 E1A text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":23 E34 text19 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c":24 E3C text19 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":176 E3E text7 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":179 E42 text7 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":180 E4E text7 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":181 E56 text7 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":182 EEA text7 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":183 EFE text7 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c":17 F00 text16 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c":22 F00 text16 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c":24 F08 text16 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c":25 F24 text16 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c":26 F28 text16 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c":27 F30 text16 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c":29 F42 text16 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c":30 F5A text16 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c":31 F76 text16 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c":32 F7C text16 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c":33 F80 text16 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c":34 F84 text16 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c":35 F96 text16 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c":36 F9E text16 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c":37 FA2 text16 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":108 FA4 text1 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":110 FA4 text1 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":112 FA6 text1 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":114 FBC text1 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":117 FD6 text1 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":119 FF6 text1 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":121 1000 text1 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":122 100C text1 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":125 100E text1 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":128 1018 text1 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":110 101E text1 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":130 1032 text1 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":110 1034 text1 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":73 1036 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":75 103A text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":76 103E text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":78 1042 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":79 1046 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":81 1048 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":83 104E text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":84 1050 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":87 1052 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":88 1056 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":90 1058 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":91 105E text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":92 1062 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":93 1062 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":95 1064 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":96 1068 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":98 106A text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":100 106C text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":101 1070 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":103 1072 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":104 1078 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":105 107C text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":106 107C text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":108 107E text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":110 1080 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":111 1086 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":112 108A text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":113 108A text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":115 108C text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":116 1090 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":118 10A4 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":119 10A6 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":137 10A8 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":138 10AC text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":139 10B2 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c":143 10B4 text9 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":8 10B6 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":14 10B6 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":15 10C2 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":16 10CC text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":17 10D2 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":18 10D4 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":19 10DC text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":17 10E0 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":22 10E6 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":23 10EE text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":24 1102 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":25 1112 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":27 1116 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":28 111E text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":29 1124 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":30 1124 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":31 112C text4 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":87 112E text2 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":95 112E text2 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":96 1136 text2 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":98 1138 text2 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":99 115C text2 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":100 116E text2 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":101 1172 text2 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":102 1176 text2 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":103 1182 text2 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":104 1192 text2 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":96 119A text2 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":106 11A0 text2 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":54 11A2 text3 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":59 11A6 text3 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":62 11BA text3 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":63 11BA text3 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":64 11BE text3 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":65 11C2 text3 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":66 11C6 text3 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":67 11E0 text3 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":68 11E8 text3 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":69 11F6 text3 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":70 11FE text3 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":71 120C text3 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":72 1214 text3 CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1035 1216 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1037 1216 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1040 1216 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1122 1216 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1123 121A cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1124 121C cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1125 121C cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1126 121E cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1127 1220 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1130 1222 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1131 1226 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1132 1228 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1133 1228 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1134 122A cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1135 122C cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1138 122E cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1139 1232 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1140 1234 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1141 1234 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1142 1236 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1143 1238 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1146 123A cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1147 123E cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1148 1240 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1149 1240 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1150 1242 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1151 1244 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1154 1246 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1155 124A cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1156 124C cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1157 124C cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1158 124E cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1159 1250 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1164 1252 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1165 1254 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1166 1256 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1167 1258 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1168 125A cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1169 125C cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1170 125E cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1171 1260 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1172 1264 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1173 1266 cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1179 126A cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1181 126A cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1182 126C cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1183 126E cinit CODE
+"C:\Users\Martin\AppData\Local\Temp\s92k.":1184 1270 cinit CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncpy.c":8 1274 text12 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncpy.c":18 1274 text12 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncpy.c":19 127C text12 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncpy.c":20 127E text12 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncpy.c":21 1284 text12 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncpy.c":19 12A6 text12 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncpy.c":25 12B0 text12 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncpy.c":24 12C0 text12 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncpy.c":27 12CE text12 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncpy.c":24 12D0 text12 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uputs.c":14 12D2 text13 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uputs.c":18 12D2 text13 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uputs.c":19 12D6 text13 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uputs.c":20 12FA text13 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uputs.c":21 132A text13 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uputs.c":20 132C text13 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c":4 132E text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c":6 132E text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c":8 1336 text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c":9 134A text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c":10 135A text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c":12 1362 text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c":13 137E text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c":14 1386 text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":8 1388 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":14 1388 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":15 1390 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":16 1398 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":17 139C text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":18 139E text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":19 13A4 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":17 13A6 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":22 13AA text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":23 13B0 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":24 13BC text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":25 13C4 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":27 13C6 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":28 13CC text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":29 13D0 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":30 13D0 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":31 13D8 text17 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c":7 13DA text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c":12 13DA text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c":15 13FC text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c":18 1400 text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c":19 1420 text8 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":8 1422 text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":13 1422 text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":14 142A text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":15 142E text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":16 1430 text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":17 1436 text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":15 1438 text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":20 143C text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":21 1448 text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":22 1450 text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":23 1456 text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":24 145A text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":25 145A text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c":26 1462 text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":15 1464 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":37 1464 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":38 1470 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":39 1478 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":52 1480 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c":53 1488 text21 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":185 148A text6 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":188 148E text6 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":189 149C text6 CODE
+"C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c":190 14A8 text6 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\isdigit.c":8 14AA text20 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\isdigit.c":14 14AC text20 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\isdigit.c":15 14C8 text20 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":15 14CA text22 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":19 14CA text22 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":21 14CE text22 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":23 14D2 text22 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":24 14D4 text22 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":25 14D6 text22 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":26 14D8 text22 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":28 14D8 text22 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":29 14DA text22 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":31 14DC text22 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":32 14DE text22 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":34 14E0 text22 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":36 14E4 text22 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c":37 14E6 text22 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":8 14E8 text10 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":11 14EC text10 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":13 14F0 text10 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":15 14F2 text10 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":16 14F4 text10 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":17 14F8 text10 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c":19 14FA text10 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c":13 14FC text14 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c":15 14FE text14 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c":17 1502 text14 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c":18 1504 text14 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c":19 1506 text14 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c":22 1508 text14 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c":23 150C text14 CODE
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -486,7 +492,7 @@ _c 44 0 COMRAM 1 bssCOMRAM dist/default/production\pic_usb.production.obj
 _i 3F 0 COMRAM 1 bssCOMRAM dist/default/production\pic_usb.production.obj
 _k 41 0 COMRAM 1 bssCOMRAM dist/default/production\pic_usb.production.obj
 ___lwdiv@counter 64 0 BANK0 1 cstackBANK0 dist/default/production\pic_usb.production.obj
-__end_of_OpenUSART 1052 0 CODE 0 text9 dist/default/production\pic_usb.production.obj
+__end_of_OpenUSART 10B6 0 CODE 0 text9 dist/default/production\pic_usb.production.obj
 _PR2 FCB 0 ABS 0 - dist/default/production\pic_usb.production.obj
 __S0 30000E 0 ABS 0 - dist/default/production\pic_usb.production.obj
 __S1 3C8 0 ABS 0 - dist/default/production\pic_usb.production.obj
@@ -496,7 +502,7 @@ lcd_putnum@len 6A 0 BANK0 1 cstackBANK0 dist/default/production\pic_usb.producti
 _ISR 8 0 CODE 0 intcode dist/default/production\pic_usb.production.obj
 __Hintentry 0 0 ABS 0 intentry dist/default/production\pic_usb.production.obj
 __Lintentry 0 0 ABS 0 intentry dist/default/production\pic_usb.production.obj
-__end_of_lcd_write_byte 1446 0 CODE 0 text6 dist/default/production\pic_usb.production.obj
+__end_of_lcd_write_byte 14AA 0 CODE 0 text6 dist/default/production\pic_usb.production.obj
 _MessageBuffer 100 0 BANK1 1 bssBANK1 dist/default/production\pic_usb.production.obj
 __size_of_SetDCPWM1 0 0 ABS 0 - dist/default/production\pic_usb.production.obj
 _PIE1 F9D 0 ABS 0 - dist/default/production\pic_usb.production.obj
@@ -504,14 +510,14 @@ _RCIE 7CED 0 ABS 0 - dist/default/production\pic_usb.production.obj
 _PEIE 7F96 0 ABS 0 - dist/default/production\pic_usb.production.obj
 _RCIF 7CF5 0 ABS 0 - dist/default/production\pic_usb.production.obj
 _RCIP 7CFD 0 ABS 0 - dist/default/production\pic_usb.production.obj
-_itoa 12CA 0 CODE 0 text15 dist/default/production\pic_usb.production.obj
-_utoa E9C 0 CODE 0 text16 dist/default/production\pic_usb.production.obj
-_main AF2 0 CODE 0 text0 dist/default/production\pic_usb.production.obj
-_atoi D10 0 CODE 0 text19 dist/default/production\pic_usb.production.obj
-___sp 0 0 STACK 2 stack C:\Users\Leandro\AppData\Local\Temp\sg88.obj
-start 18 0 CODE 0 init C:\Users\Leandro\AppData\Local\Temp\sg88.obj
+_itoa 132E 0 CODE 0 text15 dist/default/production\pic_usb.production.obj
+_utoa F00 0 CODE 0 text16 dist/default/production\pic_usb.production.obj
+_main B56 0 CODE 0 text0 dist/default/production\pic_usb.production.obj
+_atoi D74 0 CODE 0 text19 dist/default/production\pic_usb.production.obj
+___sp 0 0 STACK 2 stack C:\Users\Martin\AppData\Local\Temp\s92k.obj
+start 18 0 CODE 0 init C:\Users\Martin\AppData\Local\Temp\s92k.obj
 lcd_gotoxy@x 67 0 BANK0 1 cstackBANK0 dist/default/production\pic_usb.production.obj
-_lcd_gotoxy 113E 0 CODE 0 text3 dist/default/production\pic_usb.production.obj
+_lcd_gotoxy 11A2 0 CODE 0 text3 dist/default/production\pic_usb.production.obj
 WriteUSART@data 1 0 COMRAM 1 cstackCOMRAM dist/default/production\pic_usb.production.obj
 _RCREG FAE 0 ABS 0 - dist/default/production\pic_usb.production.obj
 _RCSTA FAB 0 ABS 0 - dist/default/production\pic_usb.production.obj
@@ -551,7 +557,7 @@ __Lcomram 0 0 ABS 0 comram dist/default/production\pic_usb.production.obj
 atoi@sign B 0 COMRAM 1 cstackCOMRAM dist/default/production\pic_usb.production.obj
 __Hsfr 0 0 ABS 0 sfr dist/default/production\pic_usb.production.obj
 __Lsfr 0 0 ABS 0 sfr dist/default/production\pic_usb.production.obj
-__end_of_lcd_puts FD2 0 CODE 0 text1 dist/default/production\pic_usb.production.obj
+__end_of_lcd_puts 1036 0 CODE 0 text1 dist/default/production\pic_usb.production.obj
 __end_of__stringdata 83E 0 SMALLCONST 0 smallconst dist/default/production\pic_usb.production.obj
 _lcd_x 46 0 COMRAM 1 bssCOMRAM dist/default/production\pic_usb.production.obj
 __Hbss 0 0 RAM 1 bss dist/default/production\pic_usb.production.obj
@@ -559,8 +565,8 @@ __Lbss 0 0 RAM 1 bss dist/default/production\pic_usb.production.obj
 _lcd_y 47 0 COMRAM 1 bssCOMRAM dist/default/production\pic_usb.production.obj
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\pic_usb.production.obj
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\pic_usb.production.obj
-__end_of_lcd_putnum 113E 0 CODE 0 text2 dist/default/production\pic_usb.production.obj
-__end_of_ISR AF2 0 CODE 0 intcode_body dist/default/production\pic_usb.production.obj
+__end_of_lcd_putnum 11A2 0 CODE 0 text2 dist/default/production\pic_usb.production.obj
+__end_of_ISR B56 0 CODE 0 intcode_body dist/default/production\pic_usb.production.obj
 _PIE1bits F9D 0 ABS 0 - dist/default/production\pic_usb.production.obj
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\pic_usb.production.obj
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\pic_usb.production.obj
@@ -569,7 +575,7 @@ _LATDbits F8C 0 ABS 0 - dist/default/production\pic_usb.production.obj
 __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\pic_usb.production.obj
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\pic_usb.production.obj
 _CCPR1L FBE 0 ABS 0 - dist/default/production\pic_usb.production.obj
-_lcd_init C20 0 CODE 0 text5 dist/default/production\pic_usb.production.obj
+_lcd_init C84 0 CODE 0 text5 dist/default/production\pic_usb.production.obj
 strncpy@size 5 0 COMRAM 1 cstackCOMRAM dist/default/production\pic_usb.production.obj
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\pic_usb.production.obj
 __Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\pic_usb.production.obj
@@ -600,31 +606,31 @@ _DutyCycle 83 0 BANK0 1 dataBANK0 dist/default/production\pic_usb.production.obj
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\pic_usb.production.obj
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\pic_usb.production.obj
 __size_of_lcd_write_nibble 0 0 ABS 0 - dist/default/production\pic_usb.production.obj
-_lcd_puts F40 0 CODE 0 text1 dist/default/production\pic_usb.production.obj
+_lcd_puts FA4 0 CODE 0 text1 dist/default/production\pic_usb.production.obj
 lcd_write_nibble@nibble 62 0 BANK0 1 cstackBANK0 dist/default/production\pic_usb.production.obj
 main@spbrg 72 0 BANK0 1 cstackBANK0 dist/default/production\pic_usb.production.obj
-__end_ofi2___lwdiv 1376 0 CODE 0 text17 dist/default/production\pic_usb.production.obj
+__end_ofi2___lwdiv 13DA 0 CODE 0 text17 dist/default/production\pic_usb.production.obj
 __Hdata 0 0 ABS 0 data dist/default/production\pic_usb.production.obj
 __Ldata 0 0 ABS 0 data dist/default/production\pic_usb.production.obj
 itoa@cp 17 0 COMRAM 1 cstackCOMRAM dist/default/production\pic_usb.production.obj
 lcd_write_byte@byte 64 0 BANK0 1 cstackBANK0 dist/default/production\pic_usb.production.obj
-stackhi 7FF 0 ABS 0 - C:\Users\Leandro\AppData\Local\Temp\sg88.obj
+stackhi 7FF 0 ABS 0 - C:\Users\Martin\AppData\Local\Temp\s92k.obj
 __HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\pic_usb.production.obj
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\pic_usb.production.obj
 __pcstackBANK0 60 0 BANK0 1 cstackBANK0 dist/default/production\pic_usb.production.obj
 __Htemp 0 0 COMRAM 1 temp dist/default/production\pic_usb.production.obj
 __Ltemp 0 0 COMRAM 1 temp dist/default/production\pic_usb.production.obj
-stacklo 3C8 0 ABS 0 - C:\Users\Leandro\AppData\Local\Temp\sg88.obj
+stacklo 3C8 0 ABS 0 - C:\Users\Martin\AppData\Local\Temp\s92k.obj
 __Hrbit 0 0 COMRAM 1 rbit dist/default/production\pic_usb.production.obj
 __Lrbit 0 0 COMRAM 1 rbit dist/default/production\pic_usb.production.obj
 __Hinit 18 0 CODE 0 init dist/default/production\pic_usb.production.obj
 __Linit 18 0 CODE 0 init dist/default/production\pic_usb.production.obj
 __Hintcodelo 18 0 CODE 0 intcodelo dist/default/production\pic_usb.production.obj
 __Lintcodelo 18 0 CODE 0 intcodelo dist/default/production\pic_usb.production.obj
-___wmul 1400 0 CODE 0 text21 dist/default/production\pic_usb.production.obj
+___wmul 1464 0 CODE 0 text21 dist/default/production\pic_usb.production.obj
 strncpy@to 1 0 COMRAM 1 cstackCOMRAM dist/default/production\pic_usb.production.obj
 __Hrbss 0 0 COMRAM 1 rbss dist/default/production\pic_usb.production.obj
-__end_of_main C20 0 CODE 0 text0 dist/default/production\pic_usb.production.obj
+__end_of_main C84 0 CODE 0 text0 dist/default/production\pic_usb.production.obj
 _DC_str 48 0 COMRAM 1 bssCOMRAM dist/default/production\pic_usb.production.obj
 __Lrbss 0 0 COMRAM 1 rbss dist/default/production\pic_usb.production.obj
 __Htext 0 0 ABS 0 text dist/default/production\pic_usb.production.obj
@@ -634,7 +640,7 @@ __HdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\pic_usb.production.obj
 __LdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\pic_usb.production.obj
 lcd_putnum@num 68 0 BANK0 1 cstackBANK0 dist/default/production\pic_usb.production.obj
 __pdataBANK0 83 0 BANK0 1 dataBANK0 dist/default/production\pic_usb.production.obj
-end_of_initialization 1206 0 CODE 0 cinit dist/default/production\pic_usb.production.obj
+end_of_initialization 126A 0 CODE 0 cinit dist/default/production\pic_usb.production.obj
 OpenUSART@spbrg 60 0 BANK0 1 cstackBANK0 dist/default/production\pic_usb.production.obj
 strncpy@from 3 0 COMRAM 1 cstackCOMRAM dist/default/production\pic_usb.production.obj
 __size_of_ISR 0 0 ABS 0 - dist/default/production\pic_usb.production.obj
@@ -646,12 +652,12 @@ _TRISCbits F94 0 ABS 0 - dist/default/production\pic_usb.production.obj
 _TXSTAbits FAC 0 ABS 0 - dist/default/production\pic_usb.production.obj
 _isdigit$1328 2 0 COMRAM 1 cstackCOMRAM dist/default/production\pic_usb.production.obj
 _T2CONbits FCA 0 ABS 0 - dist/default/production\pic_usb.production.obj
-_SetDCPWM1 1376 0 CODE 0 text8 dist/default/production\pic_usb.production.obj
+_SetDCPWM1 13DA 0 CODE 0 text8 dist/default/production\pic_usb.production.obj
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\pic_usb.production.obj
-i2___lwdiv 1324 0 CODE 0 text17 dist/default/production\pic_usb.production.obj
+i2___lwdiv 1388 0 CODE 0 text17 dist/default/production\pic_usb.production.obj
 __Libigdata 0 0 CODE 0 ibigdata dist/default/production\pic_usb.production.obj
 _CCP1CON FBD 0 ABS 0 - dist/default/production\pic_usb.production.obj
-__end_of_atoi DDA 0 CODE 0 text19 dist/default/production\pic_usb.production.obj
+__end_of_atoi E3E 0 CODE 0 text19 dist/default/production\pic_usb.production.obj
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\pic_usb.production.obj
 __Lifardata 0 0 CODE 0 ifardata dist/default/production\pic_usb.production.obj
 __Hbank0 0 0 ABS 0 bank0 dist/default/production\pic_usb.production.obj
@@ -677,55 +683,55 @@ __Ltext0 0 0 ABS 0 text0 dist/default/production\pic_usb.production.obj
 __size_of_strncpy 0 0 ABS 0 - dist/default/production\pic_usb.production.obj
 __Htext1 0 0 ABS 0 text1 dist/default/production\pic_usb.production.obj
 __Ltext1 0 0 ABS 0 text1 dist/default/production\pic_usb.production.obj
-__ptext0 AF2 0 CODE 0 text0 dist/default/production\pic_usb.production.obj
+__ptext0 B56 0 CODE 0 text0 dist/default/production\pic_usb.production.obj
 __Htext2 0 0 ABS 0 text2 dist/default/production\pic_usb.production.obj
 __Ltext2 0 0 ABS 0 text2 dist/default/production\pic_usb.production.obj
-__ptext1 F40 0 CODE 0 text1 dist/default/production\pic_usb.production.obj
+__ptext1 FA4 0 CODE 0 text1 dist/default/production\pic_usb.production.obj
 __Htext3 0 0 ABS 0 text3 dist/default/production\pic_usb.production.obj
 __Ltext3 0 0 ABS 0 text3 dist/default/production\pic_usb.production.obj
-__ptext2 10CA 0 CODE 0 text2 dist/default/production\pic_usb.production.obj
+__ptext2 112E 0 CODE 0 text2 dist/default/production\pic_usb.production.obj
 __Htext4 0 0 ABS 0 text4 dist/default/production\pic_usb.production.obj
 __Ltext4 0 0 ABS 0 text4 dist/default/production\pic_usb.production.obj
-__ptext3 113E 0 CODE 0 text3 dist/default/production\pic_usb.production.obj
+__ptext3 11A2 0 CODE 0 text3 dist/default/production\pic_usb.production.obj
 __Htext5 0 0 ABS 0 text5 dist/default/production\pic_usb.production.obj
 __Ltext5 0 0 ABS 0 text5 dist/default/production\pic_usb.production.obj
-__ptext4 1052 0 CODE 0 text4 dist/default/production\pic_usb.production.obj
+__ptext4 10B6 0 CODE 0 text4 dist/default/production\pic_usb.production.obj
 __Htext6 0 0 ABS 0 text6 dist/default/production\pic_usb.production.obj
 __Ltext6 0 0 ABS 0 text6 dist/default/production\pic_usb.production.obj
-__ptext5 C20 0 CODE 0 text5 dist/default/production\pic_usb.production.obj
+__ptext5 C84 0 CODE 0 text5 dist/default/production\pic_usb.production.obj
 __Htext7 0 0 ABS 0 text7 dist/default/production\pic_usb.production.obj
 __Ltext7 0 0 ABS 0 text7 dist/default/production\pic_usb.production.obj
-__ptext6 1426 0 CODE 0 text6 dist/default/production\pic_usb.production.obj
+__ptext6 148A 0 CODE 0 text6 dist/default/production\pic_usb.production.obj
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\pic_usb.production.obj
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\pic_usb.production.obj
 OpenUSART@config 65 0 BANK0 1 cstackBANK0 dist/default/production\pic_usb.production.obj
 __Htext8 0 0 ABS 0 text8 dist/default/production\pic_usb.production.obj
 __Ltext8 0 0 ABS 0 text8 dist/default/production\pic_usb.production.obj
-__ptext7 DDA 0 CODE 0 text7 dist/default/production\pic_usb.production.obj
+__ptext7 E3E 0 CODE 0 text7 dist/default/production\pic_usb.production.obj
 __pbssCOMRAM 2B 0 COMRAM 1 bssCOMRAM dist/default/production\pic_usb.production.obj
 __Htext9 0 0 ABS 0 text9 dist/default/production\pic_usb.production.obj
 __Ltext9 0 0 ABS 0 text9 dist/default/production\pic_usb.production.obj
-__ptext8 1376 0 CODE 0 text8 dist/default/production\pic_usb.production.obj
+__ptext8 13DA 0 CODE 0 text8 dist/default/production\pic_usb.production.obj
 main@config 71 0 BANK0 1 cstackBANK0 dist/default/production\pic_usb.production.obj
-__ptext9 FD2 0 CODE 0 text9 dist/default/production\pic_usb.production.obj
+__ptext9 1036 0 CODE 0 text9 dist/default/production\pic_usb.production.obj
 __size_of_lcd_init 0 0 ABS 0 - dist/default/production\pic_usb.production.obj
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production\pic_usb.production.obj
 __Lclrtext 0 0 ABS 0 clrtext dist/default/production\pic_usb.production.obj
 __size_of_lcd_gotoxy 0 0 ABS 0 - dist/default/production\pic_usb.production.obj
 _lcd_upper_row_buffer 200 0 BANK2 1 bssBANK2 dist/default/production\pic_usb.production.obj
-__end_of__initialization 1206 0 CODE 0 cinit dist/default/production\pic_usb.production.obj
+__end_of__initialization 126A 0 CODE 0 cinit dist/default/production\pic_usb.production.obj
 OpenPWM1@period 60 0 BANK0 1 cstackBANK0 dist/default/production\pic_usb.production.obj
 _lcd_lower_row_buffer 300 0 BANK3 1 bssBANK3 dist/default/production\pic_usb.production.obj
 _lcd_upper_display_buffer 73 0 BANK0 1 bssBANK0 dist/default/production\pic_usb.production.obj
-__end_of___lwdiv 10CA 0 CODE 0 text4 dist/default/production\pic_usb.production.obj
+__end_of___lwdiv 112E 0 CODE 0 text4 dist/default/production\pic_usb.production.obj
 lcd_write_nibble@is_data 60 0 BANK0 1 cstackBANK0 dist/default/production\pic_usb.production.obj
-_WriteUSART 1498 0 CODE 0 text14 dist/default/production\pic_usb.production.obj
+_WriteUSART 14FC 0 CODE 0 text14 dist/default/production\pic_usb.production.obj
 _lcd_lower_display_buffer 2B 0 COMRAM 1 bssCOMRAM dist/default/production\pic_usb.production.obj
 _USART_Status 43 0 COMRAM 1 bssCOMRAM dist/default/production\pic_usb.production.obj
 ReadUSART@data 1 0 COMRAM 1 cstackCOMRAM dist/default/production\pic_usb.production.obj
 __Hidata 0 0 CODE 0 idata dist/default/production\pic_usb.production.obj
 __Lidata 0 0 CODE 0 idata dist/default/production\pic_usb.production.obj
-__end_of_lcd_gotoxy 11B2 0 CODE 0 text3 dist/default/production\pic_usb.production.obj
+__end_of_lcd_gotoxy 1216 0 CODE 0 text3 dist/default/production\pic_usb.production.obj
 __Hrdata 0 0 COMRAM 1 rdata dist/default/production\pic_usb.production.obj
 __Lrdata 0 0 COMRAM 1 rdata dist/default/production\pic_usb.production.obj
 putsUSART@data 19 0 COMRAM 1 cstackCOMRAM dist/default/production\pic_usb.production.obj
@@ -737,9 +743,9 @@ itoa@val 13 0 COMRAM 1 cstackCOMRAM dist/default/production\pic_usb.production.o
 utoa@val A 0 COMRAM 1 cstackCOMRAM dist/default/production\pic_usb.production.obj
 __Hstack 0 0 STACK 2 stack dist/default/production\pic_usb.production.obj
 __Lstack 0 0 STACK 2 stack dist/default/production\pic_usb.production.obj
-__end_of_putsUSART 12CA 0 CODE 0 text13 dist/default/production\pic_usb.production.obj
+__end_of_putsUSART 132E 0 CODE 0 text13 dist/default/production\pic_usb.production.obj
 int_func 840 0 CODE 0 intcode_body dist/default/production\pic_usb.production.obj
-___lwmod 13BE 0 CODE 0 text18 dist/default/production\pic_usb.production.obj
+___lwmod 1422 0 CODE 0 text18 dist/default/production\pic_usb.production.obj
 __Hparam 0 0 ABS 0 rparam dist/default/production\pic_usb.production.obj
 __Lparam 0 0 ABS 0 rparam dist/default/production\pic_usb.production.obj
 __Hspace_0 30000E 0 ABS 0 - dist/default/production\pic_usb.production.obj
@@ -759,34 +765,34 @@ lcd_puts@str 68 0 BANK0 1 cstackBANK0 dist/default/production\pic_usb.production
 __Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\pic_usb.production.obj
 __Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\pic_usb.production.obj
 ?___wmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production\pic_usb.production.obj
-_isdigit 1446 0 CODE 0 text20 dist/default/production\pic_usb.production.obj
+_isdigit 14AA 0 CODE 0 text20 dist/default/production\pic_usb.production.obj
 __Hcinit 0 0 ABS 0 cinit dist/default/production\pic_usb.production.obj
 __Lcinit 0 0 ABS 0 cinit dist/default/production\pic_usb.production.obj
 __CFG_FOSC$HS 0 0 ABS 0 - dist/default/production\pic_usb.production.obj
-__pcinit 11B2 0 CODE 0 cinit dist/default/production\pic_usb.production.obj
+__pcinit 1216 0 CODE 0 cinit dist/default/production\pic_usb.production.obj
 __size_of_lcd_write_byte 0 0 ABS 0 - dist/default/production\pic_usb.production.obj
-__ramtop 800 0 RAM 0 ramtop C:\Users\Leandro\AppData\Local\Temp\sg88.obj
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Leandro\AppData\Local\Temp\sg88.obj
-___lwdiv 1052 0 CODE 0 text4 dist/default/production\pic_usb.production.obj
+__ramtop 800 0 RAM 0 ramtop C:\Users\Martin\AppData\Local\Temp\s92k.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Martin\AppData\Local\Temp\s92k.obj
+___lwdiv 10B6 0 CODE 0 text4 dist/default/production\pic_usb.production.obj
 __size_of_main 0 0 ABS 0 - dist/default/production\pic_usb.production.obj
 __Hconst 0 0 CODE 0 const dist/default/production\pic_usb.production.obj
 __Lconst 0 0 CODE 0 const dist/default/production\pic_usb.production.obj
 __size_of_OpenUSART 0 0 ABS 0 - dist/default/production\pic_usb.production.obj
 __size_of_itoa 0 0 ABS 0 - dist/default/production\pic_usb.production.obj
-_strncpy 1210 0 CODE 0 text12 dist/default/production\pic_usb.production.obj
+_strncpy 1274 0 CODE 0 text12 dist/default/production\pic_usb.production.obj
 _LCD_ROW_ADDRESS 801 0 SMALLCONST 0 smallconst dist/default/production\pic_usb.production.obj
 __HidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\pic_usb.production.obj
 __LidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\pic_usb.production.obj
-__pidataBANK0 14AA 0 CODE 0 idataBANK0 dist/default/production\pic_usb.production.obj
+__pidataBANK0 150E 0 CODE 0 idataBANK0 dist/default/production\pic_usb.production.obj
 __size_of_OpenPWM1 0 0 ABS 0 - dist/default/production\pic_usb.production.obj
-__end_of_isdigit 1466 0 CODE 0 text20 dist/default/production\pic_usb.production.obj
+__end_of_isdigit 14CA 0 CODE 0 text20 dist/default/production\pic_usb.production.obj
 i2___lwdiv@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/production\pic_usb.production.obj
-_lcd_write_byte 1426 0 CODE 0 text6 dist/default/production\pic_usb.production.obj
+_lcd_write_byte 148A 0 CODE 0 text6 dist/default/production\pic_usb.production.obj
 __size_of___lwdiv 0 0 ABS 0 - dist/default/production\pic_usb.production.obj
 SetDCPWM1@dutycycle 60 0 BANK0 1 cstackBANK0 dist/default/production\pic_usb.production.obj
 __HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\pic_usb.production.obj
 __LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\pic_usb.production.obj
-__end_of_WriteUSART 14AA 0 CODE 0 text14 dist/default/production\pic_usb.production.obj
+__end_of_WriteUSART 150E 0 CODE 0 text14 dist/default/production\pic_usb.production.obj
 __pbssBANK0 73 0 BANK0 1 bssBANK0 dist/default/production\pic_usb.production.obj
 __size_of_isdigit 0 0 ABS 0 - dist/default/production\pic_usb.production.obj
 lcd_putnum@r 6E 0 BANK0 1 cstackBANK0 dist/default/production\pic_usb.production.obj
@@ -799,95 +805,95 @@ __Htext10 0 0 ABS 0 text10 dist/default/production\pic_usb.production.obj
 __Ltext10 0 0 ABS 0 text10 dist/default/production\pic_usb.production.obj
 __Htext20 0 0 ABS 0 text20 dist/default/production\pic_usb.production.obj
 __Ltext20 0 0 ABS 0 text20 dist/default/production\pic_usb.production.obj
-__ptext10 1484 0 CODE 0 text10 dist/default/production\pic_usb.production.obj
-__ptext20 1446 0 CODE 0 text20 dist/default/production\pic_usb.production.obj
+__ptext10 14E8 0 CODE 0 text10 dist/default/production\pic_usb.production.obj
+__ptext20 14AA 0 CODE 0 text20 dist/default/production\pic_usb.production.obj
 __Htext21 0 0 ABS 0 text21 dist/default/production\pic_usb.production.obj
 __Ltext21 0 0 ABS 0 text21 dist/default/production\pic_usb.production.obj
 __Htext12 0 0 ABS 0 text12 dist/default/production\pic_usb.production.obj
 __Ltext12 0 0 ABS 0 text12 dist/default/production\pic_usb.production.obj
-__ptext21 1400 0 CODE 0 text21 dist/default/production\pic_usb.production.obj
+__ptext21 1464 0 CODE 0 text21 dist/default/production\pic_usb.production.obj
 __Htext22 0 0 ABS 0 text22 dist/default/production\pic_usb.production.obj
 __Ltext22 0 0 ABS 0 text22 dist/default/production\pic_usb.production.obj
-__ptext12 1210 0 CODE 0 text12 dist/default/production\pic_usb.production.obj
+__ptext12 1274 0 CODE 0 text12 dist/default/production\pic_usb.production.obj
 __Htext13 0 0 ABS 0 text13 dist/default/production\pic_usb.production.obj
 __Ltext13 0 0 ABS 0 text13 dist/default/production\pic_usb.production.obj
 __HbssBANK2 0 0 ABS 0 bssBANK2 dist/default/production\pic_usb.production.obj
-__ptext22 1466 0 CODE 0 text22 dist/default/production\pic_usb.production.obj
+__ptext22 14CA 0 CODE 0 text22 dist/default/production\pic_usb.production.obj
 __LbssBANK2 0 0 ABS 0 bssBANK2 dist/default/production\pic_usb.production.obj
-_OpenPWM1 1484 0 CODE 0 text10 dist/default/production\pic_usb.production.obj
-__ptext13 126E 0 CODE 0 text13 dist/default/production\pic_usb.production.obj
+_OpenPWM1 14E8 0 CODE 0 text10 dist/default/production\pic_usb.production.obj
+__ptext13 12D2 0 CODE 0 text13 dist/default/production\pic_usb.production.obj
 __pbssBANK2 200 0 BANK2 1 bssBANK2 dist/default/production\pic_usb.production.obj
 __size_of_lcd_putnum 0 0 ABS 0 - dist/default/production\pic_usb.production.obj
 __Htext14 0 0 ABS 0 text14 dist/default/production\pic_usb.production.obj
 __Ltext14 0 0 ABS 0 text14 dist/default/production\pic_usb.production.obj
-__ptext14 1498 0 CODE 0 text14 dist/default/production\pic_usb.production.obj
+__ptext14 14FC 0 CODE 0 text14 dist/default/production\pic_usb.production.obj
 __Htext15 0 0 ABS 0 text15 dist/default/production\pic_usb.production.obj
 __Ltext15 0 0 ABS 0 text15 dist/default/production\pic_usb.production.obj
-__ptext15 12CA 0 CODE 0 text15 dist/default/production\pic_usb.production.obj
-___inthi_sp 0 0 STACK 2 stack C:\Users\Leandro\AppData\Local\Temp\sg88.obj
+__ptext15 132E 0 CODE 0 text15 dist/default/production\pic_usb.production.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\Martin\AppData\Local\Temp\s92k.obj
 __Htext16 0 0 ABS 0 text16 dist/default/production\pic_usb.production.obj
 __Ltext16 0 0 ABS 0 text16 dist/default/production\pic_usb.production.obj
-__ptext16 E9C 0 CODE 0 text16 dist/default/production\pic_usb.production.obj
+__ptext16 F00 0 CODE 0 text16 dist/default/production\pic_usb.production.obj
 __Htext17 0 0 ABS 0 text17 dist/default/production\pic_usb.production.obj
 __Ltext17 0 0 ABS 0 text17 dist/default/production\pic_usb.production.obj
 __HbssBANK3 0 0 ABS 0 bssBANK3 dist/default/production\pic_usb.production.obj
 __LbssBANK3 0 0 ABS 0 bssBANK3 dist/default/production\pic_usb.production.obj
-__ptext17 1324 0 CODE 0 text17 dist/default/production\pic_usb.production.obj
+__ptext17 1388 0 CODE 0 text17 dist/default/production\pic_usb.production.obj
 __pbssBANK3 300 0 BANK3 1 bssBANK3 dist/default/production\pic_usb.production.obj
 __Htext18 0 0 ABS 0 text18 dist/default/production\pic_usb.production.obj
-__end_of___lwmod 1400 0 CODE 0 text18 dist/default/production\pic_usb.production.obj
+__end_of___lwmod 1464 0 CODE 0 text18 dist/default/production\pic_usb.production.obj
 __Ltext18 0 0 ABS 0 text18 dist/default/production\pic_usb.production.obj
 ___lwmod@divisor 3 0 COMRAM 1 cstackCOMRAM dist/default/production\pic_usb.production.obj
-__ptext18 13BE 0 CODE 0 text18 dist/default/production\pic_usb.production.obj
+__ptext18 1422 0 CODE 0 text18 dist/default/production\pic_usb.production.obj
 __Htext19 0 0 ABS 0 text19 dist/default/production\pic_usb.production.obj
 __Ltext19 0 0 ABS 0 text19 dist/default/production\pic_usb.production.obj
-__ptext19 D10 0 CODE 0 text19 dist/default/production\pic_usb.production.obj
-___intlo_sp 0 0 STACK 2 stack C:\Users\Leandro\AppData\Local\Temp\sg88.obj
-_ReadUSART 1466 0 CODE 0 text22 dist/default/production\pic_usb.production.obj
+__ptext19 D74 0 CODE 0 text19 dist/default/production\pic_usb.production.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\Martin\AppData\Local\Temp\s92k.obj
+_ReadUSART 14CA 0 CODE 0 text22 dist/default/production\pic_usb.production.obj
 _INTCONbits FF2 0 ABS 0 - dist/default/production\pic_usb.production.obj
-_OpenUSART FD2 0 CODE 0 text9 dist/default/production\pic_usb.production.obj
+_OpenUSART 1036 0 CODE 0 text9 dist/default/production\pic_usb.production.obj
 __Hend_init 1C 0 CODE 0 end_init dist/default/production\pic_usb.production.obj
 __Lend_init 18 0 CODE 0 end_init dist/default/production\pic_usb.production.obj
-_putsUSART 126E 0 CODE 0 text13 dist/default/production\pic_usb.production.obj
+_putsUSART 12D2 0 CODE 0 text13 dist/default/production\pic_usb.production.obj
 ___lwdiv@divisor 62 0 BANK0 1 cstackBANK0 dist/default/production\pic_usb.production.obj
-__end_of_ReadUSART 1484 0 CODE 0 text22 dist/default/production\pic_usb.production.obj
-__end_of_OpenPWM1 1498 0 CODE 0 text10 dist/default/production\pic_usb.production.obj
+__end_of_ReadUSART 14E8 0 CODE 0 text22 dist/default/production\pic_usb.production.obj
+__end_of_OpenPWM1 14FC 0 CODE 0 text10 dist/default/production\pic_usb.production.obj
 lcd_putnum@dec 6D 0 BANK0 1 cstackBANK0 dist/default/production\pic_usb.production.obj
-__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\Leandro\AppData\Local\Temp\sg88.obj
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\Martin\AppData\Local\Temp\s92k.obj
 ?i2___lwdiv 1 0 COMRAM 1 cstackCOMRAM dist/default/production\pic_usb.production.obj
 SetDCPWM1@DCycle 64 0 BANK0 1 cstackBANK0 dist/default/production\pic_usb.production.obj
 __size_of___wmul 0 0 ABS 0 - dist/default/production\pic_usb.production.obj
 __Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\pic_usb.production.obj
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\pic_usb.production.obj
-_lcd_putnum 10CA 0 CODE 0 text2 dist/default/production\pic_usb.production.obj
-__end_of_itoa 1324 0 CODE 0 text15 dist/default/production\pic_usb.production.obj
+_lcd_putnum 112E 0 CODE 0 text2 dist/default/production\pic_usb.production.obj
+__end_of_itoa 1388 0 CODE 0 text15 dist/default/production\pic_usb.production.obj
 __stringdata 805 0 SMALLCONST 0 smallconst dist/default/production\pic_usb.production.obj
 __size_of_atoi 0 0 ABS 0 - dist/default/production\pic_usb.production.obj
-__accesstop 60 0 ABS 0 - C:\Users\Leandro\AppData\Local\Temp\sg88.obj
+__accesstop 60 0 ABS 0 - C:\Users\Martin\AppData\Local\Temp\s92k.obj
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\pic_usb.production.obj
 __Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\pic_usb.production.obj
 __pintcode_body 840 0 CODE 0 intcode_body dist/default/production\pic_usb.production.obj
-intlevel0 0 0 CODE 0 text C:\Users\Leandro\AppData\Local\Temp\sg88.obj
-intlevel1 0 0 CODE 0 text C:\Users\Leandro\AppData\Local\Temp\sg88.obj
-intlevel2 0 0 CODE 0 text C:\Users\Leandro\AppData\Local\Temp\sg88.obj
-__end_of_lcd_write_nibble E9C 0 CODE 0 text7 dist/default/production\pic_usb.production.obj
-intlevel3 0 0 CODE 0 text C:\Users\Leandro\AppData\Local\Temp\sg88.obj
-__end_of_SetDCPWM1 13BE 0 CODE 0 text8 dist/default/production\pic_usb.production.obj
+intlevel0 0 0 CODE 0 text C:\Users\Martin\AppData\Local\Temp\s92k.obj
+intlevel1 0 0 CODE 0 text C:\Users\Martin\AppData\Local\Temp\s92k.obj
+intlevel2 0 0 CODE 0 text C:\Users\Martin\AppData\Local\Temp\s92k.obj
+__end_of_lcd_write_nibble F00 0 CODE 0 text7 dist/default/production\pic_usb.production.obj
+intlevel3 0 0 CODE 0 text C:\Users\Martin\AppData\Local\Temp\s92k.obj
+__end_of_SetDCPWM1 1422 0 CODE 0 text8 dist/default/production\pic_usb.production.obj
 __size_of_utoa 0 0 ABS 0 - dist/default/production\pic_usb.production.obj
 __size_of___lwmod 0 0 ABS 0 - dist/default/production\pic_usb.production.obj
 _cantidadLetrasDOWN 3B 0 COMRAM 1 bssCOMRAM dist/default/production\pic_usb.production.obj
-__end_of___wmul 1426 0 CODE 0 text21 dist/default/production\pic_usb.production.obj
-start_initialization 11B2 0 CODE 0 cinit dist/default/production\pic_usb.production.obj
+__end_of___wmul 148A 0 CODE 0 text21 dist/default/production\pic_usb.production.obj
+start_initialization 1216 0 CODE 0 cinit dist/default/production\pic_usb.production.obj
 ___lwdiv@quotient 65 0 BANK0 1 cstackBANK0 dist/default/production\pic_usb.production.obj
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\pic_usb.production.obj
-__end_of_utoa F40 0 CODE 0 text16 dist/default/production\pic_usb.production.obj
+__end_of_utoa FA4 0 CODE 0 text16 dist/default/production\pic_usb.production.obj
 lcd_putnum@x 6B 0 BANK0 1 cstackBANK0 dist/default/production\pic_usb.production.obj
 i2___lwdiv@quotient 5 0 COMRAM 1 cstackCOMRAM dist/default/production\pic_usb.production.obj
-__initialization 11B2 0 CODE 0 cinit dist/default/production\pic_usb.production.obj
+__initialization 1216 0 CODE 0 cinit dist/default/production\pic_usb.production.obj
 __size_ofi2___lwdiv 0 0 ABS 0 - dist/default/production\pic_usb.production.obj
-__end_of_strncpy 126E 0 CODE 0 text12 dist/default/production\pic_usb.production.obj
-_lcd_write_nibble DDA 0 CODE 0 text7 dist/default/production\pic_usb.production.obj
-__end_of_lcd_init D10 0 CODE 0 text5 dist/default/production\pic_usb.production.obj
+__end_of_strncpy 12D2 0 CODE 0 text12 dist/default/production\pic_usb.production.obj
+_lcd_write_nibble E3E 0 CODE 0 text7 dist/default/production\pic_usb.production.obj
+__end_of_lcd_init D74 0 CODE 0 text5 dist/default/production\pic_usb.production.obj
 ___lwmod@dividend 1 0 COMRAM 1 cstackCOMRAM dist/default/production\pic_usb.production.obj
 __activetblptr 2 0 ABS 0 - dist/default/production\pic_usb.production.obj
 ___wmul@product 5 0 COMRAM 1 cstackCOMRAM dist/default/production\pic_usb.production.obj
@@ -931,4 +937,4 @@ cstackBANK0 1 60 60 25 1
 bssBANK1 1 100 100 C8 1
 bssBANK2 1 200 200 C8 1
 bssBANK3 1 300 300 C8 1
-intcode_body 0 840 840 C6C 1
+intcode_body 0 840 840 CD0 1

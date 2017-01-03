@@ -3,154 +3,154 @@
 [d edition pro ]
 [d chip 18F4550 ]
 [d frameptr 4065 ]
-"4 I:\Programas\Microchip\xc8\v1.33\sources\common\abdiv.c
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abdiv.c
 [v ___abdiv __abdiv `(c  1 e 1 0 ]
-"4 I:\Programas\Microchip\xc8\v1.33\sources\common\abmod.c
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abmod.c
 [v ___abmod __abmod `(c  1 e 1 0 ]
-"31 I:\Programas\Microchip\xc8\v1.33\sources\common\abtofl.c
+"31 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abtofl.c
 [v ___abtofl __abtofl `(d  1 e 3 0 ]
-"33 I:\Programas\Microchip\xc8\v1.33\sources\common\abtoft.c
+"33 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abtoft.c
 [v ___abtoft __abtoft `(f  1 e 3 0 ]
-"8 I:\Programas\Microchip\xc8\v1.33\sources\common\aldiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\aldiv.c
 [v ___aldiv __aldiv `(l  1 e 4 0 ]
-"8 I:\Programas\Microchip\xc8\v1.33\sources\common\almod.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\almod.c
 [v ___almod __almod `(l  1 e 4 0 ]
-"36 I:\Programas\Microchip\xc8\v1.33\sources\common\altofl.c
+"36 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\altofl.c
 [v ___altofl __altofl `(d  1 e 3 0 ]
-"42 I:\Programas\Microchip\xc8\v1.33\sources\common\altoft.c
+"42 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\altoft.c
 [v ___altoft __altoft `(f  1 e 3 0 ]
-"8 I:\Programas\Microchip\xc8\v1.33\sources\common\atdiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atdiv.c
 [v ___atdiv __atdiv `(m  1 e 3 0 ]
-"8 I:\Programas\Microchip\xc8\v1.33\sources\common\atmod.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atmod.c
 [v ___atmod __atmod `(m  1 e 3 0 ]
-"5 I:\Programas\Microchip\xc8\v1.33\sources\common\atoi.c
+"5 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c
 [v _atoi atoi `(i  1 e 2 0 ]
-"37 I:\Programas\Microchip\xc8\v1.33\sources\common\attofl.c
+"37 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\attofl.c
 [v ___attofl __attofl `(d  1 e 3 0 ]
-"37 I:\Programas\Microchip\xc8\v1.33\sources\common\attoft.c
+"37 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\attoft.c
 [v ___attoft __attoft `(f  1 e 3 0 ]
-"8 I:\Programas\Microchip\xc8\v1.33\sources\common\awdiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awdiv.c
 [v ___awdiv __awdiv `(i  1 e 2 0 ]
-"8 I:\Programas\Microchip\xc8\v1.33\sources\common\awmod.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
-"31 I:\Programas\Microchip\xc8\v1.33\sources\common\awtofl.c
+"31 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awtofl.c
 [v ___awtofl __awtofl `(d  1 e 3 0 ]
-"32 I:\Programas\Microchip\xc8\v1.33\sources\common\awtoft.c
+"32 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awtoft.c
 [v ___awtoft __awtoft `(f  1 e 3 0 ]
-"63 I:\Programas\Microchip\xc8\v1.33\sources\common\double.c
+"63 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\double.c
 [v ___flpack __flpack `(d  1 e 3 0 ]
-"88 I:\Programas\Microchip\xc8\v1.33\sources\common\fladd.c
+"88 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\fladd.c
 [v ___fladd __fladd `(d  1 e 3 0 ]
-"49 I:\Programas\Microchip\xc8\v1.33\sources\common\fldiv.c
+"49 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\fldiv.c
 [v ___fldiv __fldiv `(d  1 e 3 0 ]
-"4 I:\Programas\Microchip\xc8\v1.33\sources\common\flge.c
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\flge.c
 [v ___flge __flge `(b  1 e 0 0 ]
-"62 I:\Programas\Microchip\xc8\v1.33\sources\common\flmul.c
+"62 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\flmul.c
 [v ___flmul __flmul `(d  1 e 3 0 ]
-"15 I:\Programas\Microchip\xc8\v1.33\sources\common\flneg.c
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\flneg.c
 [v ___flneg __flneg `(d  1 e 3 0 ]
-"62 I:\Programas\Microchip\xc8\v1.33\sources\common\float.c
+"62 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\float.c
 [v ___ftpack __ftpack `(f  1 e 3 0 ]
-"20 I:\Programas\Microchip\xc8\v1.33\sources\common\flsub.c
+"20 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\flsub.c
 [v ___flsub __flsub `(d  1 e 3 0 ]
-"43 I:\Programas\Microchip\xc8\v1.33\sources\common\fltol.c
+"43 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\fltol.c
 [v ___fltol __fltol `(l  1 e 4 0 ]
-"86 I:\Programas\Microchip\xc8\v1.33\sources\common\ftadd.c
+"86 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 3 0 ]
-"49 I:\Programas\Microchip\xc8\v1.33\sources\common\ftdiv.c
+"49 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 3 0 ]
-"4 I:\Programas\Microchip\xc8\v1.33\sources\common\ftge.c
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftge.c
 [v ___ftge __ftge `(b  1 e 0 0 ]
-"62 I:\Programas\Microchip\xc8\v1.33\sources\common\ftmul.c
+"62 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftmul.c
 [v ___ftmul __ftmul `(f  1 e 3 0 ]
-"15 I:\Programas\Microchip\xc8\v1.33\sources\common\ftneg.c
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftneg.c
 [v ___ftneg __ftneg `(f  1 e 3 0 ]
-"20 I:\Programas\Microchip\xc8\v1.33\sources\common\ftsub.c
+"20 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 3 0 ]
-"44 I:\Programas\Microchip\xc8\v1.33\sources\common\fttol.c
+"44 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\fttol.c
 [v ___fttol __fttol `(l  1 e 4 0 ]
-"8 I:\Programas\Microchip\xc8\v1.33\sources\common\isdigit.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\isdigit.c
 [v _isdigit isdigit `(b  1 e 0 0 ]
-"4 I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c
 [v _itoa itoa `(*.39uc  1 e 2 0 ]
 "17
 [v _utoa utoa `(*.39uc  1 e 2 0 ]
-"4 I:\Programas\Microchip\xc8\v1.33\sources\common\lbdiv.c
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbdiv.c
 [v ___lbdiv __lbdiv `(uc  1 e 1 0 ]
-"4 I:\Programas\Microchip\xc8\v1.33\sources\common\lbmod.c
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbmod.c
 [v ___lbmod __lbmod `(uc  1 e 1 0 ]
-"27 I:\Programas\Microchip\xc8\v1.33\sources\common\lbtofl.c
+"27 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbtofl.c
 [v ___lbtofl __lbtofl `(d  1 e 3 0 ]
-"27 I:\Programas\Microchip\xc8\v1.33\sources\common\lbtoft.c
+"27 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lbtoft.c
 [v ___lbtoft __lbtoft `(f  1 e 3 0 ]
-"8 I:\Programas\Microchip\xc8\v1.33\sources\common\lldiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c
 [v ___lldiv __lldiv `(ul  1 e 4 0 ]
-"8 I:\Programas\Microchip\xc8\v1.33\sources\common\llmod.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\llmod.c
 [v ___llmod __llmod `(ul  1 e 4 0 ]
-"30 I:\Programas\Microchip\xc8\v1.33\sources\common\lltofl.c
+"30 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lltofl.c
 [v ___lltofl __lltofl `(d  1 e 3 0 ]
-"35 I:\Programas\Microchip\xc8\v1.33\sources\common\lltoft.c
+"35 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lltoft.c
 [v ___lltoft __lltoft `(f  1 e 3 0 ]
-"8 I:\Programas\Microchip\xc8\v1.33\sources\common\ltdiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ltdiv.c
 [v ___ltdiv __ltdiv `(um  1 e 3 0 ]
-"8 I:\Programas\Microchip\xc8\v1.33\sources\common\ltmod.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ltmod.c
 [v ___ltmod __ltmod `(um  1 e 3 0 ]
-"30 I:\Programas\Microchip\xc8\v1.33\sources\common\lttofl.c
+"30 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lttofl.c
 [v ___lttofl __lttofl `(d  1 e 3 0 ]
-"30 I:\Programas\Microchip\xc8\v1.33\sources\common\lttoft.c
+"30 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lttoft.c
 [v ___lttoft __lttoft `(f  1 e 3 0 ]
-"8 I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
 [v i2___lwdiv __lwdiv `(ui  1 e 2 0 ]
-"8 I:\Programas\Microchip\xc8\v1.33\sources\common\lwmod.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
-"28 I:\Programas\Microchip\xc8\v1.33\sources\common\lwtofl.c
+"28 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwtofl.c
 [v ___lwtofl __lwtofl `(d  1 e 3 0 ]
-"28 I:\Programas\Microchip\xc8\v1.33\sources\common\lwtoft.c
+"28 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwtoft.c
 [v ___lwtoft __lwtoft `(f  1 e 3 0 ]
-"8 I:\Programas\Microchip\xc8\v1.33\sources\common\strncpy.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncpy.c
 [v _strncpy strncpy `(*.39uc  1 e 2 0 ]
-"15 I:\Programas\Microchip\xc8\v1.33\sources\common\Umul16.c
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
-"15 I:\Programas\Microchip\xc8\v1.33\sources\common\Umul24.c
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul24.c
 [v ___tmul __tmul `(um  1 e 3 0 ]
-"15 I:\Programas\Microchip\xc8\v1.33\sources\common\Umul32.c
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"4 I:\Programas\Microchip\xc8\v1.33\sources\common\Umul8.c
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul8.c
 [v ___bmul __bmul `(uc  1 e 1 0 ]
-"6 I:\Programas\Microchip\xc8\v1.33\sources\pic18\asfladd.c
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\asfladd.c
 [v ___asfladd __asfladd `(d  1 e 3 0 ]
-"6 I:\Programas\Microchip\xc8\v1.33\sources\pic18\asfldiv.c
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\asfldiv.c
 [v ___asfldiv __asfldiv `(d  1 e 3 0 ]
-"6 I:\Programas\Microchip\xc8\v1.33\sources\pic18\asflmul.c
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\asflmul.c
 [v ___asflmul __asflmul `(d  1 e 3 0 ]
-"6 I:\Programas\Microchip\xc8\v1.33\sources\pic18\asflsub.c
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\asflsub.c
 [v ___asflsub __asflsub `(d  1 e 3 0 ]
-"6 I:\Programas\Microchip\xc8\v1.33\sources\pic18\asftadd.c
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\asftadd.c
 [v ___asftadd __asftadd `(f  1 e 3 0 ]
-"6 I:\Programas\Microchip\xc8\v1.33\sources\pic18\asftdiv.c
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\asftdiv.c
 [v ___asftdiv __asftdiv `(f  1 e 3 0 ]
-"6 I:\Programas\Microchip\xc8\v1.33\sources\pic18\asftmul.c
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\asftmul.c
 [v ___asftmul __asftmul `(f  1 e 3 0 ]
-"6 I:\Programas\Microchip\xc8\v1.33\sources\pic18\asftsub.c
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\asftsub.c
 [v ___asftsub __asftsub `(f  1 e 3 0 ]
-"6 I:\Programas\Microchip\xc8\v1.33\sources\pic18\aslmul.c
+"6 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\aslmul.c
 [v ___aslmul __aslmul `(ul  1 e 4 0 ]
-"8 I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c
 [v _OpenPWM1 OpenPWM1 `(v  1 e 0 0 ]
 "23
 [v _OpenPWM1ConfigIO OpenPWM1ConfigIO `(v  1 e 0 0 ]
-"7 I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c
+"7 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c
 [v _SetDCPWM1 SetDCPWM1 `(v  1 e 0 0 ]
-"73 I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c
+"73 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c
 [v _OpenUSART OpenUSART `(v  1 e 0 0 ]
-"14 I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uputs.c
+"14 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uputs.c
 [v _putsUSART putsUSART `(v  1 e 0 0 ]
-"15 I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c
 [v _ReadUSART ReadUSART `(uc  1 e 1 0 ]
-"13 I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c
+"13 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c
 [v _WriteUSART WriteUSART `(v  1 e 0 0 ]
-"11 I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c
+"11 C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c
 [v _lcd_init lcd_init `(v  1 e 0 0 ]
 "54
 [v _lcd_gotoxy lcd_gotoxy `(v  1 e 0 0 ]
@@ -168,13 +168,13 @@
 [v _lcd_write_nibble lcd_write_nibble `(v  1 e 0 0 ]
 "185
 [v _lcd_write_byte lcd_write_byte `(v  1 e 0 0 ]
-"46 I:\Proyectos\MPLABXProjects\pic_usb\main.c
+"46 C:\Users\Martin\Documents\GitHub\pic_usb\main.c
 [v _main main `(v  1 e 0 0 ]
 "96
 [v _ISR ISR `II(v  1 e 0 0 ]
-"169
+"177
 [v _cuentaLetras cuentaLetras `(i  1 e 2 0 ]
-"179
+"187
 [v _rotarString rotarString `(v  1 e 0 0 ]
 [s S297 . 1 `uc 1 LATD0 1 0 :1:0 
 `uc 1 LATD1 1 0 :1:1 
@@ -185,7 +185,7 @@
 `uc 1 LATD6 1 0 :1:6 
 `uc 1 LATD7 1 0 :1:7 
 ]
-"3788 I:\Programas\Microchip\xc8\v1.33\include\pic18f4550.h
+"3788 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f4550.h
 [s S306 . 1 `uc 1 LD0 1 0 :1:0 
 ]
 [s S308 . 1 `uc 1 . 1 0 :1:0 
@@ -424,16 +424,16 @@
 `uc 1 OVERRUN_ERROR 1 0 :1:3 
 `uc 1 fill 1 0 :4:4 
 ]
-"5 I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\udefs.c
+"5 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\udefs.c
 [u S938 USART 1 `uc 1 val 1 0 `S932 1 . 1 0 ]
 [v _USART_Status USART_Status `S938  1 e 1 0 ]
-"6 I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c
+"6 C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c
 [v _LCD_ROW_ADDRESS LCD_ROW_ADDRESS `C[4]uc  1 e 4 0 ]
 "8
 [v _lcd_x lcd_x `uc  1 e 1 0 ]
 "9
 [v _lcd_y lcd_y `uc  1 e 1 0 ]
-"24 I:\Proyectos\MPLABXProjects\pic_usb\main.c
+"24 C:\Users\Martin\Documents\GitHub\pic_usb\main.c
 [v _c c `uc  1 e 1 0 ]
 "25
 [v _flag_newline flag_newline `uc  1 e 1 0 ]
@@ -467,7 +467,7 @@
 [v main@config config `uc  1 a 1 17 ]
 "94
 } 0
-"108 I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c
+"108 C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c
 [v _lcd_puts lcd_puts `(v  1 e 0 0 ]
 {
 [v lcd_puts@str str `*.25uc  1 p 2 8 ]
@@ -504,7 +504,7 @@
 [v lcd_gotoxy@x x `uc  1 a 1 7 ]
 "72
 } 0
-"8 I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
 {
 "11
@@ -516,7 +516,7 @@
 [v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
 "31
 } 0
-"11 I:\Proyectos\MPLABXProjects\pic_usb\lcd_driver.c
+"11 C:\Users\Martin\Documents\GitHub\pic_usb\lcd_driver.c
 [v _lcd_init lcd_init `(v  1 e 0 0 ]
 {
 "52
@@ -543,7 +543,7 @@
 [v lcd_write_nibble@nibble nibble `uc  1 a 1 2 ]
 "183
 } 0
-"7 I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c
+"7 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c
 [v _SetDCPWM1 SetDCPWM1 `(v  1 e 0 0 ]
 {
 [u S648 PWMDC 2 `ui 1 lpwm 2 0 `[2]uc 1 bpwm 2 0 ]
@@ -553,7 +553,7 @@
 [v SetDCPWM1@dutycycle dutycycle `ui  1 p 2 0 ]
 "19
 } 0
-"73 I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c
+"73 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c
 [v _OpenUSART OpenUSART `(v  1 e 0 0 ]
 {
 [v OpenUSART@config config `uc  1 a 1 wreg ]
@@ -563,7 +563,7 @@
 [v OpenUSART@config config `uc  1 a 1 5 ]
 "143
 } 0
-"8 I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c
 [v _OpenPWM1 OpenPWM1 `(v  1 e 0 0 ]
 {
 [v OpenPWM1@period period `uc  1 a 1 wreg ]
@@ -572,12 +572,12 @@
 [v OpenPWM1@period period `uc  1 a 1 0 ]
 "19
 } 0
-"96 I:\Proyectos\MPLABXProjects\pic_usb\main.c
+"96 C:\Users\Martin\Documents\GitHub\pic_usb\main.c
 [v _ISR ISR `II(v  1 e 0 0 ]
 {
-"166
+"174
 } 0
-"8 I:\Programas\Microchip\xc8\v1.33\sources\common\strncpy.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncpy.c
 [v _strncpy strncpy `(*.39uc  1 e 2 0 ]
 {
 "15
@@ -588,13 +588,13 @@
 [v strncpy@size size `ui  1 p 2 4 ]
 "27
 } 0
-"14 I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uputs.c
+"14 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uputs.c
 [v _putsUSART putsUSART `(v  1 e 0 0 ]
 {
 [v putsUSART@data data `*.35uc  1 p 2 24 ]
 "21
 } 0
-"13 I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c
+"13 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c
 [v _WriteUSART WriteUSART `(v  1 e 0 0 ]
 {
 [v WriteUSART@data data `uc  1 a 1 wreg ]
@@ -603,7 +603,7 @@
 [v WriteUSART@data data `uc  1 a 1 0 ]
 "23
 } 0
-"4 I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c
+"4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c
 [v _itoa itoa `(*.39uc  1 e 2 0 ]
 {
 "6
@@ -627,7 +627,7 @@
 [v utoa@base base `i  1 p 2 11 ]
 "37
 } 0
-"8 I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c
 [v i2___lwdiv __lwdiv `(ui  1 e 2 0 ]
 {
 [v i2___lwdiv@quotient __lwdiv `ui  1 a 2 4 ]
@@ -636,7 +636,7 @@
 [v i2___lwdiv@divisor divisor `ui  1 p 2 2 ]
 "31
 } 0
-"8 I:\Programas\Microchip\xc8\v1.33\sources\common\lwmod.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
 {
 "11
@@ -646,7 +646,7 @@
 [v ___lwmod@divisor divisor `ui  1 p 2 2 ]
 "26
 } 0
-"5 I:\Programas\Microchip\xc8\v1.33\sources\common\atoi.c
+"5 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c
 [v _atoi atoi `(i  1 e 2 0 ]
 {
 "7
@@ -657,7 +657,7 @@
 [v atoi@s s `*.39Cuc  1 p 2 6 ]
 "24
 } 0
-"8 I:\Programas\Microchip\xc8\v1.33\sources\common\isdigit.c
+"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\isdigit.c
 [v _isdigit isdigit `(b  1 e 0 0 ]
 {
 [v isdigit@c c `uc  1 a 1 wreg ]
@@ -666,7 +666,7 @@
 [v isdigit@c c `uc  1 a 1 2 ]
 "15
 } 0
-"15 I:\Programas\Microchip\xc8\v1.33\sources\common\Umul16.c
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 {
 "17
@@ -676,7 +676,7 @@
 [v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
 "53
 } 0
-"15 I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c
 [v _ReadUSART ReadUSART `(uc  1 e 1 0 ]
 {
 "17

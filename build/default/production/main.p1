@@ -1,6 +1,6 @@
 Version 3.2 HI-TECH Software Intermediate Code
 [p mainexit ]
-"4392 I:\Programas\Microchip\xc8\v1.33\include\pic18f4550.h
+"4392 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f4550.h
 [v _TRISC `Vuc ~T0 @X0 0 e@3988 ]
 "4563
 [v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
@@ -46,9 +46,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _TXSTAbits `VS367 ~T0 @X0 0 e@4012 ]
 "4943
 [v _PIE1 `Vuc ~T0 @X0 0 e@3997 ]
-"581 I:\Programas\Microchip\xc8\v1.33\include\plib\usart.h
+"581 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\usart.h
 [v _OpenUSART `(v ~T0 @X0 0 ef2`uc`ui ]
-"10543 I:\Programas\Microchip\xc8\v1.33\include\pic18f4550.h
+"10543 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f4550.h
 [v _RCIF `Vb ~T0 @X0 0 e@31989 ]
 "10545
 [v _RCIP `Vb ~T0 @X0 0 e@31997 ]
@@ -95,7 +95,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _INTCONbits `VS547 ~T0 @X0 0 e@4082 ]
 "7809
 [v _T2CON `Vuc ~T0 @X0 0 e@4042 ]
-"467 I:\Programas\Microchip\xc8\v1.33\include\plib\pwm.h
+"467 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\pwm.h
 [v _OpenPWM1 `(v ~T0 @X0 0 ef1`uc ]
 "468
 [v _SetDCPWM1 `(v ~T0 @X0 0 ef1`ui ]
@@ -104,7 +104,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "106
 [v _lcd_write_byte `(v ~T0 @X0 0 ef2`uc`uc ]
 [v F5249 `(v ~T0 @X0 1 tf1`ul ]
-"147 I:\Programas\Microchip\xc8\v1.33\include\pic18.h
+"147 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18.h
 [v __delay `JF5249 ~T0 @X0 0 e ]
 [p i __delay ]
 "84 lcd_driver.h
@@ -113,7 +113,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _lcd_puts `(v ~T0 @X0 0 ef1`*uc ]
 "92
 [v _lcd_putnum `(v ~T0 @X0 0 ef4`ui`uc`uc`uc ]
-"3746 I:\Programas\Microchip\xc8\v1.33\include\pic18f4550.h
+"3746 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f4550.h
 [s S272 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S272 . LATD0 LATD1 LATD2 LATD3 LATD4 LATD5 LATD6 LATD7 ]
 "3756
@@ -145,15 +145,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S271 . . . . . . . . . . ]
 "3788
 [v _LATDbits `VS271 ~T0 @X0 0 e@3980 ]
-"596 I:\Programas\Microchip\xc8\v1.33\include\plib\usart.h
+"596 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\usart.h
 [v _ReadUSART `(uc ~T0 @X0 0 ef ]
-"45 I:\Programas\Microchip\xc8\v1.33\include\string.h
+"45 C:\Program Files (x86)\Microchip\xc8\v1.33\include\string.h
 [v _strncpy `(*uc ~T0 @X0 0 ef3`*uc`*Cuc`ui ]
-"67 I:\Programas\Microchip\xc8\v1.33\include\stdlib.h
+"67 C:\Program Files (x86)\Microchip\xc8\v1.33\include\stdlib.h
 [v _atoi `(i ~T0 @X0 0 ef1`*Cuc ]
-"599 I:\Programas\Microchip\xc8\v1.33\include\plib\usart.h
+"599 C:\Program Files (x86)\Microchip\xc8\v1.33\include\plib\usart.h
 [v _putsUSART `(v ~T0 @X0 0 ef1`*uc ]
-"103 I:\Programas\Microchip\xc8\v1.33\include\stdlib.h
+"103 C:\Program Files (x86)\Microchip\xc8\v1.33\include\stdlib.h
 [v _itoa `(*uc ~T0 @X0 0 ef3`*uc`i`i ]
 "8 main.c
 [p x FOSC=HS ]
@@ -164,7 +164,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;htc.h: 21: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 24: extern void __builtin_software_breakpoint(void);
 [; ;pic18f4550.h: 47: extern volatile unsigned char SPPDATA @ 0xF62;
-"49 I:\Programas\Microchip\xc8\v1.33\include\pic18f4550.h
+"49 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f4550.h
 [; ;pic18f4550.h: 49: asm("SPPDATA equ 0F62h");
 [; <" SPPDATA equ 0F62h ;# ">
 [; ;pic18f4550.h: 52: typedef union {
@@ -5425,194 +5425,236 @@ Version 3.2 HI-TECH Software Intermediate Code
 "138
 }
 [e :U 614 ]
+[; ;main.c: 138: }
+[; ;main.c: 139: for(;i>0;i--)
 "139
+{
+[e $U 618  ]
+"140
+[e :U 615 ]
+[; ;main.c: 140: MessageBuffer[i] = 0x00;
+[e = *U + &U _MessageBuffer * -> -> _i `ui `ux -> -> # *U &U _MessageBuffer `ui `ux -> -> 0 `i `uc ]
+"139
+[e -- _i -> 1 `i ]
+[e :U 618 ]
+[e $ > _i -> 0 `i 615  ]
+[e :U 616 ]
+"140
+}
+[; ;main.c: 141: i=0;
+"141
+[e = _i -> 0 `i ]
+[; ;main.c: 142: return;
+"142
+[e $UE 602  ]
+"143
 }
 [e :U 612 ]
-[; ;main.c: 138: }
-[; ;main.c: 139: }
-[; ;main.c: 140: if(MessageBuffer[i] == 0x2D)
-"140
-[e $ ! == -> *U + &U _MessageBuffer * -> -> _i `ui `ux -> -> # *U &U _MessageBuffer `ui `ux `i -> 45 `i 615  ]
-[; ;main.c: 141: {
-"141
-{
-[; ;main.c: 142: if(DutyCycle >= 0 && DutyCycle <= 1023)
-"142
-[e $ ! && >= _DutyCycle -> -> 0 `i `ui <= _DutyCycle -> -> 1023 `i `ui 616  ]
-[; ;main.c: 143: {
-"143
-{
-[; ;main.c: 144: DutyCycle--;
+[; ;main.c: 143: }
+[; ;main.c: 144: if(MessageBuffer[i] == 0x2D)
 "144
-[e -- _DutyCycle -> -> 1 `i `ui ]
-[; ;main.c: 146: putsUSART("Modificado el SetPoint a: ");
-"146
-[e ( _putsUSART (1 -> :s 8C `*uc ]
-[; ;main.c: 147: putsUSART(itoa(DutyCycle, DC_str, 10));
-"147
-[e ( _putsUSART (1 ( _itoa (3 , , -> _DutyCycle `*uc -> &U _DC_str `i -> 10 `i ]
-[; ;main.c: 148: putsUSART("\n");
-"148
-[e ( _putsUSART (1 -> :s 9C `*uc ]
-"149
-}
-[; ;main.c: 149: }
-[e $U 617  ]
-"150
-[e :U 616 ]
-[; ;main.c: 150: else
-[; ;main.c: 151: {
-"151
+[e $ ! == -> *U + &U _MessageBuffer * -> -> _i `ui `ux -> -> # *U &U _MessageBuffer `ui `ux `i -> 45 `i 619  ]
+[; ;main.c: 145: {
+"145
 {
-[; ;main.c: 152: putsUSART("Error maquinola\n");
+[; ;main.c: 146: if(DutyCycle >= 0 && DutyCycle <= 1023)
+"146
+[e $ ! && >= _DutyCycle -> -> 0 `i `ui <= _DutyCycle -> -> 1023 `i `ui 620  ]
+[; ;main.c: 147: {
+"147
+{
+[; ;main.c: 148: DutyCycle--;
+"148
+[e -- _DutyCycle -> -> 1 `i `ui ]
+[; ;main.c: 150: putsUSART("Modificado el SetPoint a: ");
+"150
+[e ( _putsUSART (1 -> :s 8C `*uc ]
+[; ;main.c: 151: putsUSART(itoa(DutyCycle, DC_str, 10));
+"151
+[e ( _putsUSART (1 ( _itoa (3 , , -> _DutyCycle `*uc -> &U _DC_str `i -> 10 `i ]
+[; ;main.c: 152: putsUSART("\n");
 "152
-[e ( _putsUSART (1 -> :s 10C `*uc ]
+[e ( _putsUSART (1 -> :s 9C `*uc ]
 "153
 }
-[e :U 617 ]
-"154
-}
-[e :U 615 ]
 [; ;main.c: 153: }
-[; ;main.c: 154: }
-[; ;main.c: 155: i++;
+[e $U 621  ]
+"154
+[e :U 620 ]
+[; ;main.c: 154: else
+[; ;main.c: 155: {
 "155
-[e ++ _i -> 1 `i ]
-[; ;main.c: 156: PIR1bits.RCIF = 0;
+{
+[; ;main.c: 156: putsUSART("Error maquinola\n");
 "156
-[e = . . _PIR1bits 0 5 -> -> 0 `i `uc ]
+[e ( _putsUSART (1 -> :s 10C `*uc ]
 "157
 }
+[e :U 621 ]
 [; ;main.c: 157: }
-[e $U 618  ]
+[; ;main.c: 158: for(;i>0;i--)
 "158
-[e :U 604 ]
-[; ;main.c: 158: else
-[; ;main.c: 159: {
+{
+[e $U 625  ]
 "159
-{
-[; ;main.c: 160: putsUSART(MessageBuffer);
-"160
-[e ( _putsUSART (1 &U _MessageBuffer ]
-[; ;main.c: 161: for(;i>0;i--)
-"161
-{
-[e $U 622  ]
-"162
-[e :U 619 ]
-[; ;main.c: 162: MessageBuffer[i] = 0x00;
-[e = *U + &U _MessageBuffer * -> -> _i `ui `ux -> -> # *U &U _MessageBuffer `ui `ux -> -> 0 `i `uc ]
-"161
-[e -- _i -> 1 `i ]
 [e :U 622 ]
-[e $ > _i -> 0 `i 619  ]
-[e :U 620 ]
+[; ;main.c: 159: MessageBuffer[i] = 0x00;
+[e = *U + &U _MessageBuffer * -> -> _i `ui `ux -> -> # *U &U _MessageBuffer `ui `ux -> -> 0 `i `uc ]
+"158
+[e -- _i -> 1 `i ]
+[e :U 625 ]
+[e $ > _i -> 0 `i 622  ]
+[e :U 623 ]
+"159
+}
+[; ;main.c: 160: i=0;
+"160
+[e = _i -> 0 `i ]
+[; ;main.c: 161: return;
+"161
+[e $UE 602  ]
 "162
 }
-[; ;main.c: 163: i=0;
+[e :U 619 ]
+[; ;main.c: 162: }
+[; ;main.c: 163: i++;
 "163
-[e = _i -> 0 `i ]
+[e ++ _i -> 1 `i ]
+[; ;main.c: 164: PIR1bits.RCIF = 0;
 "164
-}
-[e :U 618 ]
+[e = . . _PIR1bits 0 5 -> -> 0 `i `uc ]
 "165
 }
-[e :U 603 ]
-[; ;main.c: 164: }
 [; ;main.c: 165: }
-[; ;main.c: 166: }
+[e $U 626  ]
 "166
+[e :U 604 ]
+[; ;main.c: 166: else
+[; ;main.c: 167: {
+"167
+{
+[; ;main.c: 168: putsUSART(MessageBuffer);
+"168
+[e ( _putsUSART (1 &U _MessageBuffer ]
+[; ;main.c: 169: for(;i>0;i--)
+"169
+{
+[e $U 630  ]
+"170
+[e :U 627 ]
+[; ;main.c: 170: MessageBuffer[i] = 0x00;
+[e = *U + &U _MessageBuffer * -> -> _i `ui `ux -> -> # *U &U _MessageBuffer `ui `ux -> -> 0 `i `uc ]
+"169
+[e -- _i -> 1 `i ]
+[e :U 630 ]
+[e $ > _i -> 0 `i 627  ]
+[e :U 628 ]
+"170
+}
+[; ;main.c: 171: i=0;
+"171
+[e = _i -> 0 `i ]
+"172
+}
+[e :U 626 ]
+"173
+}
+[e :U 603 ]
+[; ;main.c: 172: }
+[; ;main.c: 173: }
+[; ;main.c: 174: }
+"174
 [e :UE 602 ]
 }
-"169
-[v _cuentaLetras `(i ~T0 @X0 1 ef1`*uc ]
-"170
-{
-[; ;main.c: 169: int cuentaLetras(char* str)
-[; ;main.c: 170: {
-[e :U _cuentaLetras ]
-"169
-[v _str `*uc ~T0 @X0 1 r1 ]
-"170
-[f ]
-"171
-[v _j `i ~T0 @X0 1 a ]
-[; ;main.c: 171: int j=0;
-[e = _j -> 0 `i ]
-[; ;main.c: 172: while(str[j]!= 0x0D)
-"172
-[e $U 624  ]
-[e :U 625 ]
-[; ;main.c: 173: {
-"173
-{
-[; ;main.c: 174: j++;
-"174
-[e ++ _j -> 1 `i ]
-"175
-}
-[e :U 624 ]
-"172
-[e $ != -> *U + _str * -> _j `x -> -> # *U _str `i `x `i -> 13 `i 625  ]
-[e :U 626 ]
-[; ;main.c: 175: }
-[; ;main.c: 176: return j+1;
-"176
-[e ) + _j -> 1 `i ]
-[e $UE 623  ]
-[; ;main.c: 177: }
 "177
-[e :UE 623 ]
-}
-"179
-[v _rotarString `(v ~T0 @X0 1 ef2`*uc`i ]
-"180
+[v _cuentaLetras `(i ~T0 @X0 1 ef1`*uc ]
+"178
 {
-[; ;main.c: 179: void rotarString(char* str, int length)
-[; ;main.c: 180: {
-[e :U _rotarString ]
+[; ;main.c: 177: int cuentaLetras(char* str)
+[; ;main.c: 178: {
+[e :U _cuentaLetras ]
+"177
+[v _str `*uc ~T0 @X0 1 r1 ]
+"178
+[f ]
 "179
+[v _j `i ~T0 @X0 1 a ]
+[; ;main.c: 179: int j=0;
+[e = _j -> 0 `i ]
+[; ;main.c: 180: while(str[j]!= 0x0D)
+"180
+[e $U 632  ]
+[e :U 633 ]
+[; ;main.c: 181: {
+"181
+{
+[; ;main.c: 182: j++;
+"182
+[e ++ _j -> 1 `i ]
+"183
+}
+[e :U 632 ]
+"180
+[e $ != -> *U + _str * -> _j `x -> -> # *U _str `i `x `i -> 13 `i 633  ]
+[e :U 634 ]
+[; ;main.c: 183: }
+[; ;main.c: 184: return j+1;
+"184
+[e ) + _j -> 1 `i ]
+[e $UE 631  ]
+[; ;main.c: 185: }
+"185
+[e :UE 631 ]
+}
+"187
+[v _rotarString `(v ~T0 @X0 1 ef2`*uc`i ]
+"188
+{
+[; ;main.c: 187: void rotarString(char* str, int length)
+[; ;main.c: 188: {
+[e :U _rotarString ]
+"187
 [v _str `*uc ~T0 @X0 1 r1 ]
 [v _length `i ~T0 @X0 1 r2 ]
-"180
+"188
 [f ]
-"181
+"189
 [v _j `i ~T0 @X0 1 a ]
-"182
+"190
 [v _aux `uc ~T0 @X0 1 a ]
-[; ;main.c: 181: int j;
-[; ;main.c: 182: char aux;
-[; ;main.c: 183: aux = str[0];
-"183
+[; ;main.c: 189: int j;
+[; ;main.c: 190: char aux;
+[; ;main.c: 191: aux = str[0];
+"191
 [e = _aux *U + _str * -> -> 0 `i `x -> -> # *U _str `i `x ]
-[; ;main.c: 184: for(j = 0; j<length - 1; j++)
-"184
+[; ;main.c: 192: for(j = 0; j<length - 1; j++)
+"192
 {
 [e = _j -> 0 `i ]
-[e $U 631  ]
-"185
-[e :U 628 ]
-[; ;main.c: 185: {
+[e $U 639  ]
+"193
+[e :U 636 ]
+[; ;main.c: 193: {
 {
-[; ;main.c: 186: str[j] = str[j+1];
-"186
+[; ;main.c: 194: str[j] = str[j+1];
+"194
 [e = *U + _str * -> _j `x -> -> # *U _str `i `x *U + _str * -> + _j -> 1 `i `x -> -> # *U _str `i `x ]
-"187
+"195
 }
-"184
+"192
 [e ++ _j -> 1 `i ]
-[e :U 631 ]
-[e $ < _j - _length -> 1 `i 628  ]
-[e :U 629 ]
-"187
+[e :U 639 ]
+[e $ < _j - _length -> 1 `i 636  ]
+[e :U 637 ]
+"195
 }
-[; ;main.c: 187: }
-[; ;main.c: 188: str[length - 1] = aux;
-"188
+[; ;main.c: 195: }
+[; ;main.c: 196: str[length - 1] = aux;
+"196
 [e = *U + _str * -> - _length -> 1 `i `x -> -> # *U _str `i `x _aux ]
-[; ;main.c: 189: }
-"189
-[e :UE 627 ]
+[; ;main.c: 197: }
+"197
+[e :UE 635 ]
 }
 [a 1C 68 117 116 121 32 67 121 99 108 101 58 32 0 ]
 [a 2C 77 111 100 105 102 105 99 97 100 111 32 101 108 32 83 101 116 80 111 105 110 116 32 97 58 32 0 ]

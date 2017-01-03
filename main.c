@@ -136,6 +136,10 @@ void interrupt ISR()
                 {
                     putsUSART("Error maquinola\n");
                 }
+                for(;i>0;i--)
+                    MessageBuffer[i] = 0x00; //clear the array
+                i=0; //for sanity
+                return;
             }
             if(MessageBuffer[i] == 0x2D)
             {
@@ -151,6 +155,10 @@ void interrupt ISR()
                 {
                     putsUSART("Error maquinola\n");
                 }  
+                for(;i>0;i--)
+                    MessageBuffer[i] = 0x00; //clear the array
+                i=0; //for sanity
+                return;
             }
             i++;
             PIR1bits.RCIF = 0; // clear rx flag
