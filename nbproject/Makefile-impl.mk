@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=soria.X
+PROJECTNAME=pic_usb
 
 # Active Configuration
 DEFAULTCONF=default

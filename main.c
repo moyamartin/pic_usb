@@ -45,7 +45,7 @@ void main(void) {
     lcd_init();
     lcd_clear();
     lcd_gotoxy(0,0);
-    lcd_puts_const("Hola Mundo");
+    lcd_puts_const("Waska");
     
     while(1){
         //while(BusyUSART());
