@@ -120,9 +120,7 @@ void interrupt ISR()
                         putsUSART("Error maquinola");
                         putsUSART(0x0D);
                     }
-
                     cleanMessageBuffer();
-                    PIR1bits.RCIF = 0; // clear rx flag
                     break;
                 case 0x2B: //check for plus key
                     if(DutyCycle >= 0 && DutyCycle <= 1023)
@@ -139,7 +137,6 @@ void interrupt ISR()
                         putsUSART(0x0D);
                     }
                     cleanMessageBuffer();
-                    PIR1bits.RCIF = 0; // clear rx flag
                     break;
                 case 0x2D: //check for minus key
                     if(DutyCycle >= 0 && DutyCycle <= 1023)
@@ -157,12 +154,12 @@ void interrupt ISR()
                         putsUSART(0x0D);
                     }  
                     cleanMessageBuffer();
-                    PIR1bits.RCIF = 0; // clear rx flag
                     break;                
                 default:
                     i++;
-                    PIR1bits.RCIF = 0; // clear rx flag
+                    
             }
+            PIR1bits.RCIF = 0; // clear rx flag
         }
         else
         {
