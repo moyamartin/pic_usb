@@ -6602,6 +6602,7 @@ unsigned char DC_str[5];
 
 void rotarString(char* str, int length);
 int cuentaLetras(char* str);
+void cleanMessageBuffer();
 
 void interrupt ISR(void);
 
@@ -6663,8 +6664,10 @@ if(PIR1bits.RCIF == 1)
 if(i<200)
 {
 MessageBuffer[i] = ReadUSART();
-if(MessageBuffer[i] == 0x0D)
+
+switch(MessageBuffer[i])
 {
+case 0x0D:
 strncpy(DC_str, MessageBuffer,4);
 k = atoi(DC_str);
 if(k >= 0 && k <= 1023)
@@ -6672,69 +6675,73 @@ if(k >= 0 && k <= 1023)
 DutyCycle = k;
 putsUSART("Modificado el SetPoint a: ");
 putsUSART(DC_str);
-putsUSART("\n");
+putsUSART(0x0D);
 }
 else
 {
-putsUSART("Error maquinola\n");
+putsUSART("Error maquinola");
+putsUSART(0x0D);
 }
 
-for(;i>0;i--)
-MessageBuffer[i] = 0x00;
-i=0;
-return;
-}
-if(MessageBuffer[i] == 0x2B)
-{
+cleanMessageBuffer();
+PIR1bits.RCIF = 0;
+break;
+case 0x2B:
 if(DutyCycle >= 0 && DutyCycle <= 1023)
 {
 DutyCycle++;
-
+itoa(DC_str, DutyCycle, 10);
 putsUSART("Modificado el SetPoint a: ");
-putsUSART(itoa(DutyCycle, DC_str, 10));
-putsUSART("\n");
+putsUSART(DC_str);
+putsUSART(0x0D);
 }
 else
 {
-putsUSART("Error maquinola\n");
+putsUSART("Error maquinola");
+putsUSART(0x0D);
 }
-for(;i>0;i--)
-MessageBuffer[i] = 0x00;
-i=0;
-return;
-}
-if(MessageBuffer[i] == 0x2D)
-{
+cleanMessageBuffer();
+PIR1bits.RCIF = 0;
+break;
+case 0x2D:
 if(DutyCycle >= 0 && DutyCycle <= 1023)
 {
 DutyCycle--;
 
 putsUSART("Modificado el SetPoint a: ");
-putsUSART(itoa(DutyCycle, DC_str, 10));
-putsUSART("\n");
+itoa(DC_str, DutyCycle, 10);
+putsUSART(DC_str);
+putsUSART(0x0D);
 }
 else
 {
-putsUSART("Error maquinola\n");
+putsUSART("Error maquinola");
+putsUSART(0x0D);
 }
-for(;i>0;i--)
-MessageBuffer[i] = 0x00;
-i=0;
-return;
-}
+cleanMessageBuffer();
+PIR1bits.RCIF = 0;
+break;
+default:
 i++;
 PIR1bits.RCIF = 0;
+}
 }
 else
 {
 putsUSART(MessageBuffer);
-for(;i>0;i--)
-MessageBuffer[i] = 0x00;
-i=0;
+cleanMessageBuffer();
 }
 }
+return;
 }
 
+void cleanMessageBuffer()
+{
+for(;i>0;i--){
+MessageBuffer[i] = 0x00;
+}
+i=0;
+}
 
 int cuentaLetras(char* str)
 {

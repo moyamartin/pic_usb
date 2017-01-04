@@ -40,6 +40,7 @@ unsigned char DC_str[5];
 
 void rotarString(char* str, int length);
 int cuentaLetras(char* str);
+void cleanMessageBuffer();
 
 void interrupt ISR(void);
 
@@ -101,78 +102,84 @@ void interrupt ISR()
         if(i<MAX_CHAR_BUFFER) //our buffer size
         {
             MessageBuffer[i] = ReadUSART(); //read the byte from rx register
-            if(MessageBuffer[i] == 0x0D) //check for return key
+            
+            switch(MessageBuffer[i])
             {
-                strncpy(DC_str, MessageBuffer,4);
-                k = atoi(DC_str);
-                if(k >= 0 && k <= 1023)
-                {
-                    DutyCycle = k;
-                    putsUSART("Modificado el SetPoint a: ");
-					putsUSART(DC_str);
-                    putsUSART("\n");
-                }
-                else
-                {
-                    putsUSART("Error maquinola\n");
-                }
-  
-                for(;i>0;i--)
-                    MessageBuffer[i] = 0x00; //clear the array
-                i=0; //for sanity
-                return;
+                case 0x0D:  //check for return key
+                    strncpy(DC_str, MessageBuffer,4); 
+                    k = atoi(DC_str);
+                    if(k >= 0 && k <= 1023)
+                    {
+                        DutyCycle = k;
+                        putsUSART("Modificado el SetPoint a: ");
+                        putsUSART(DC_str);
+                        putsUSART(0x0D);
+                    }
+                    else
+                    {
+                        putsUSART("Error maquinola");
+                        putsUSART(0x0D);
+                    }
+
+                    cleanMessageBuffer();
+                    PIR1bits.RCIF = 0; // clear rx flag
+                    break;
+                case 0x2B: //check for plus key
+                    if(DutyCycle >= 0 && DutyCycle <= 1023)
+                    {   
+                        DutyCycle++;
+                        itoa(DC_str, DutyCycle, 10);
+                        putsUSART("Modificado el SetPoint a: ");
+                        putsUSART(DC_str);
+                        putsUSART(0x0D);
+                    }
+                    else
+                    {
+                        putsUSART("Error maquinola");
+                        putsUSART(0x0D);
+                    }
+                    cleanMessageBuffer();
+                    PIR1bits.RCIF = 0; // clear rx flag
+                    break;
+                case 0x2D: //check for minus key
+                    if(DutyCycle >= 0 && DutyCycle <= 1023)
+                    {   
+                        DutyCycle--;
+
+                        putsUSART("Modificado el SetPoint a: ");
+                        itoa(DC_str, DutyCycle, 10);
+                        putsUSART(DC_str);
+                        putsUSART(0x0D);
+                    }
+                    else
+                    {
+                        putsUSART("Error maquinola");
+                        putsUSART(0x0D);
+                    }  
+                    cleanMessageBuffer();
+                    PIR1bits.RCIF = 0; // clear rx flag
+                    break;                
+                default:
+                    i++;
+                    PIR1bits.RCIF = 0; // clear rx flag
             }
-            if(MessageBuffer[i] == 0x2B)
-            {
-                if(DutyCycle >= 0 && DutyCycle <= 1023)
-                {   
-                    DutyCycle++;
-                      
-                    putsUSART("Modificado el SetPoint a: ");
-                    putsUSART(itoa(DutyCycle, DC_str, 10));
-                    putsUSART("\n");
-                }
-                else
-                {
-                    putsUSART("Error maquinola\n");
-                }
-                for(;i>0;i--)
-                    MessageBuffer[i] = 0x00; //clear the array
-                i=0; //for sanity
-                return;
-            }
-            if(MessageBuffer[i] == 0x2D)
-            {
-                if(DutyCycle >= 0 && DutyCycle <= 1023)
-                {   
-                    DutyCycle--;
-                      
-                    putsUSART("Modificado el SetPoint a: ");
-                    putsUSART(itoa(DutyCycle, DC_str, 10));
-                    putsUSART("\n");
-                }
-                else
-                {
-                    putsUSART("Error maquinola\n");
-                }  
-                for(;i>0;i--)
-                    MessageBuffer[i] = 0x00; //clear the array
-                i=0; //for sanity
-                return;
-            }
-            i++;
-            PIR1bits.RCIF = 0; // clear rx flag
         }
         else
         {
             putsUSART(MessageBuffer);
-            for(;i>0;i--)
-                MessageBuffer[i] = 0x00; //clear the array
-            i=0; //for sanity
+            cleanMessageBuffer();
         }
     }
+    return;
 }
 
+void cleanMessageBuffer()
+{
+    for(;i>0;i--){
+        MessageBuffer[i] = 0x00; //clear the array
+    }
+    i=0; //for sanity
+}
 
 int cuentaLetras(char* str)
 {
