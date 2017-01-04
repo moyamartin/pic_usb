@@ -2,10 +2,10 @@ Microchip MPLAB XC8 Compiler V1.33 ()
 
 Linker command line:
 
--W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v1.33\dat\en_msgs.txt -cs \
+-W-3 --edf=I:\Programas\Microchip\xc8\v1.33\dat\en_msgs.txt -cs \
   -h+dist/default/production\pic_usb.production.sym \
   --cmf=dist/default/production\pic_usb.production.cmf -z -Q18F4550 \
-  -oC:\Users\Martin\AppData\Local\Temp\s27k.6 \
+  -oC:\Users\Leandro\AppData\Local\Temp\s93k.6 \
   -Mdist/default/production/pic_usb.production.map -E1 -ver=XC8 \
   -ASTACK=03C8h-07ffh -pstack=STACK -ACODE=00h-07FFFh -ACONST=00h-07FFFh \
   -ASMALLCONST=0800h-08FFhx120 -AMEDIUMCONST=0800h-07FFFh -ACOMRAM=01h-05Fh \
@@ -22,7 +22,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE \
-  C:\Users\Martin\AppData\Local\Temp\s27k.obj \
+  C:\Users\Leandro\AppData\Local\Temp\s93k.obj \
   dist/default/production\pic_usb.production.obj 
 
 Object code version is 3.11
@@ -35,7 +35,7 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Martin\AppData\Local\Temp\s27k.obj
+C:\Users\Leandro\AppData\Local\Temp\s93k.obj
                 end_init                             18       18        4        4       0
                 reset_vec                             0        0        4        0       0
                 idloc                            200000   200000        8   200000       0
@@ -43,30 +43,30 @@ C:\Users\Martin\AppData\Local\Temp\s27k.obj
 dist/default/production\pic_usb.production.obj
                 intcode                               8        8       10        4       0
                 smallconst                          800      800       3E      400       0
-                text23                             1438     1438       1E      41F       0
-                text22                             13D2     13D2       26      41F       0
-                text21                             1418     1418       20      41F       0
-                text20                              CB0      CB0       CA      41F       0
-                text19                             1398     1398       3A      41F       0
-                text18                             1356     1356       42      41F       0
-                text17                             12BC     12BC       52      41F       0
-                text16                              E3C      E3C       A4      41F       0
-                text15                             126A     126A       52      41F       0
-                text14                             146A     146A       12      41F       0
-                text13                             120E     120E       5C      41F       0
-                text12                             11B0     11B0       5E      41F       0
-                intcode_body                        83E      83E      254      41F       0
-                text10                             1456     1456       14      41F       0
-                text9                               F72      F72       80      41F       0
-                text8                              130E     130E       48      41F       0
-                text7                               D7A      D7A       C2      41F       0
-                text6                              13F8     13F8       20      41F       0
-                text5                               BC0      BC0       F0      41F       0
-                text4                               FF2      FF2       78      41F       0
-                text3                              10DE     10DE       74      41F       0
-                text2                              106A     106A       74      41F       0
-                text1                               EE0      EE0       92      41F       0
-                text0                               A92      A92      12E      41F       0
+                text23                             1422     1422       1E      41F       0
+                text22                             13BC     13BC       26      41F       0
+                text21                             1402     1402       20      41F       0
+                text20                              CA6      CA6       CA      41F       0
+                text19                             138E     138E       2E      41F       0
+                text18                             134C     134C       42      41F       0
+                text17                             12B2     12B2       52      41F       0
+                text16                              E32      E32       A4      41F       0
+                text15                             1260     1260       52      41F       0
+                text14                             1454     1454       12      41F       0
+                text13                             1204     1204       5C      41F       0
+                text12                             11A6     11A6       5E      41F       0
+                intcode_body                        83E      83E      24A      41F       0
+                text10                             1440     1440       14      41F       0
+                text9                               F68      F68       80      41F       0
+                text8                              1304     1304       48      41F       0
+                text7                               D70      D70       C2      41F       0
+                text6                              13E2     13E2       20      41F       0
+                text5                               BB6      BB6       F0      41F       0
+                text4                               FE8      FE8       78      41F       0
+                text3                              10D4     10D4       74      41F       0
+                text2                              1060     1060       74      41F       0
+                text1                               ED6      ED6       92      41F       0
+                text0                               A88      A88      12E      41F       0
                 cstackCOMRAM                          1        1       26        1       1
                 cstackBANK0                          60       60       13       60       1
                 bssBANK3                            300      300       C8      300       1
@@ -75,8 +75,8 @@ dist/default/production\pic_usb.production.obj
                 bssBANK0                             73       73       10       60       1
                 dataCOMRAM                           49       49        2        1       1
                 bssCOMRAM                            27       27       22        1       1
-                cinit                              1152     1152       5E      41F       0
-                idataCOMRAM                        147C     147C        2      41F       0
+                cinit                              1148     1148       5E      41F       0
+                idataCOMRAM                        1466     1466        2      41F       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
@@ -85,32 +85,32 @@ TOTAL           Name                               Link     Load   Length     Sp
                 end_init                             18       18        4         0
                 intcode                               8        8       10         0
                 reset_vec                             0        0        4         0
-                text23                             1438     1438       1E         0
-                text22                             13D2     13D2       26         0
-                text21                             1418     1418       20         0
-                text20                              CB0      CB0       CA         0
-                text19                             1398     1398       3A         0
-                text18                             1356     1356       42         0
-                text17                             12BC     12BC       52         0
-                text16                              E3C      E3C       A4         0
-                text15                             126A     126A       52         0
-                text14                             146A     146A       12         0
-                text13                             120E     120E       5C         0
-                text12                             11B0     11B0       5E         0
-                intcode_body                        83E      83E      254         0
-                text10                             1456     1456       14         0
-                text9                               F72      F72       80         0
-                text8                              130E     130E       48         0
-                text7                               D7A      D7A       C2         0
-                text6                              13F8     13F8       20         0
-                text5                               BC0      BC0       F0         0
-                text4                               FF2      FF2       78         0
-                text3                              10DE     10DE       74         0
-                text2                              106A     106A       74         0
-                text1                               EE0      EE0       92         0
-                text0                               A92      A92      12E         0
-                cinit                              1152     1152       5E         0
-                idataCOMRAM                        147C     147C        2         0
+                text23                             1422     1422       1E         0
+                text22                             13BC     13BC       26         0
+                text21                             1402     1402       20         0
+                text20                              CA6      CA6       CA         0
+                text19                             138E     138E       2E         0
+                text18                             134C     134C       42         0
+                text17                             12B2     12B2       52         0
+                text16                              E32      E32       A4         0
+                text15                             1260     1260       52         0
+                text14                             1454     1454       12         0
+                text13                             1204     1204       5C         0
+                text12                             11A6     11A6       5E         0
+                intcode_body                        83E      83E      24A         0
+                text10                             1440     1440       14         0
+                text9                               F68      F68       80         0
+                text8                              1304     1304       48         0
+                text7                               D70      D70       C2         0
+                text6                              13E2     13E2       20         0
+                text5                               BB6      BB6       F0         0
+                text4                               FE8      FE8       78         0
+                text3                              10D4     10D4       74         0
+                text2                              1060     1060       74         0
+                text1                               ED6      ED6       92         0
+                text0                               A88      A88      12E         0
+                cinit                              1148     1148       5E         0
+                idataCOMRAM                        1466     1466        2         0
 
         CLASS   CONST          
 
@@ -175,7 +175,7 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 bssBANK2                       000200  0000C8  0002C8       200       1  BANK2   
                 bssBANK3                       000300  0000C8  0003C8       300       1  BANK3   
                 smallconst                     000800  00003E  00083E       400       0  SMALLCON
-                intcode_body                   00083E  000C40  00147E       41F       0  CODE    
+                intcode_body                   00083E  000C2A  001468       41F       0  CODE    
                 idloc                          200000  000008  200008    200000       0  IDLOC   
                 config                         300000  00000E  30000E    300000       0  CONFIG  
 
@@ -198,19 +198,19 @@ UNUSED ADDRESS RANGES
                          0003C8-0007FF              438
         CODE             000004-000007                4
                          00001C-0007FF              7E4
-                         00147E-007FFF             6B82
+                         001468-007FFF             6B98
         COMRAM           00004B-00005F               15
         CONST            000004-000007                4
                          00001C-0007FF              7E4
-                         00147E-007FFF             6B82
+                         001468-007FFF             6B98
         EEDATA           F00000-F000FF              100
-        MEDIUMCONST      00147E-007FFF             6B82
+        MEDIUMCONST      001468-007FFF             6B98
         RAM              000083-0000FF               7D
                          0001C8-0001FF               38
                          0002C8-0002FF               38
                          0003C8-0007FF              100
         SFR              000F60-000FFF               A0
-        SMALLCONST       00147E-007FFF              100
+        SMALLCONST       001468-007FFF              100
         STACK            0003C8-0007FF              438
 
                                   Symbol Table
@@ -236,8 +236,8 @@ _ISR                         intcode      000008
 _LATDbits                    (abs)        000F8C
 _LCD_ROW_ADDRESS             smallconst   000801
 _MessageBuffer               bssBANK1     000100
-_OpenPWM1                    text10       001456
-_OpenUSART                   text9        000F72
+_OpenPWM1                    text10       001440
+_OpenUSART                   text9        000F68
 _PEIE                        (abs)        007F96
 _PIE1                        (abs)        000F9D
 _PIE1bits                    (abs)        000F9D
@@ -249,10 +249,10 @@ _RCIP                        (abs)        007CFD
 _RCREG                       (abs)        000FAE
 _RCSTA                       (abs)        000FAB
 _RCSTAbits                   (abs)        000FAB
-_ReadUSART                   text23       001438
+_ReadUSART                   text23       001422
 _SPBRG                       (abs)        000FAF
 _SPBRGH                      (abs)        000FB0
-_SetDCPWM1                   text8        00130E
+_SetDCPWM1                   text8        001304
 _T2CON                       (abs)        000FCA
 _T2CONbits                   (abs)        000FCA
 _TRISC                       (abs)        000F94
@@ -262,7 +262,7 @@ _TXREG                       (abs)        000FAD
 _TXSTA                       (abs)        000FAC
 _TXSTAbits                   (abs)        000FAC
 _USART_Status                bssCOMRAM    00003F
-_WriteUSART                  text14       00146A
+_WriteUSART                  text14       001454
 __CFG_FOSC$HS                (abs)        000000
 __CFG_LVP$OFF                (abs)        000000
 __CFG_MCLRE$ON               (abs)        000000
@@ -452,87 +452,87 @@ __S1                         (abs)        0003C8
 __S2                         (abs)        000000
 ___inthi_sp                  stack        000000
 ___intlo_sp                  stack        000000
-___lwdiv                     text4        000FF2
+___lwdiv                     text4        000FE8
 ___lwdiv@counter             cstackBANK0  000066
 ___lwdiv@dividend            cstackBANK0  000060
 ___lwdiv@divisor             cstackBANK0  000062
 ___lwdiv@quotient            cstackBANK0  000064
-___lwmod                     text18       001356
+___lwmod                     text18       00134C
 ___lwmod@counter             cstackCOMRAM 000005
 ___lwmod@dividend            cstackCOMRAM 000001
 ___lwmod@divisor             cstackCOMRAM 000003
 ___sp                        stack        000000
-___wmul                      text22       0013D2
+___wmul                      text22       0013BC
 ___wmul@multiplicand         cstackCOMRAM 000003
 ___wmul@multiplier           cstackCOMRAM 000001
 ___wmul@product              cstackCOMRAM 000005
 __accesstop                  (abs)        000060
 __activetblptr               (abs)        000002
-__end_of_ISR                 intcode_body 000A92
+__end_of_ISR                 intcode_body 000A88
 __end_of_LCD_ROW_ADDRESS     smallconst   000805
-__end_of_OpenPWM1            text10       00146A
-__end_of_OpenUSART           text9        000FF2
-__end_of_ReadUSART           text23       001456
-__end_of_SetDCPWM1           text8        001356
-__end_of_WriteUSART          text14       00147C
-__end_of___lwdiv             text4        00106A
-__end_of___lwmod             text18       001398
-__end_of___wmul              text22       0013F8
-__end_of__initialization     cinit        0011A6
+__end_of_OpenPWM1            text10       001454
+__end_of_OpenUSART           text9        000FE8
+__end_of_ReadUSART           text23       001440
+__end_of_SetDCPWM1           text8        00134C
+__end_of_WriteUSART          text14       001466
+__end_of___lwdiv             text4        001060
+__end_of___lwmod             text18       00138E
+__end_of___wmul              text22       0013E2
+__end_of__initialization     cinit        00119C
 __end_of__stringdata         smallconst   00083D
-__end_of_atoi                text20       000D7A
-__end_of_cleanMessageBuffer  text19       0013D2
-__end_of_isdigit             text21       001438
-__end_of_itoa                text15       0012BC
-__end_of_lcd_gotoxy          text3        001152
-__end_of_lcd_init            text5        000CB0
-__end_of_lcd_putnum          text2        0010DE
-__end_of_lcd_puts            text1        000F72
-__end_of_lcd_write_byte      text6        001418
-__end_of_lcd_write_nibble    text7        000E3C
-__end_of_main                text0        000BC0
-__end_of_putsUSART           text13       00126A
-__end_of_strncpy             text12       00120E
-__end_of_utoa                text16       000EE0
-__end_ofi2___lwdiv           text17       00130E
-__initialization             cinit        001152
+__end_of_atoi                text20       000D70
+__end_of_cleanMessageBuffer  text19       0013BC
+__end_of_isdigit             text21       001422
+__end_of_itoa                text15       0012B2
+__end_of_lcd_gotoxy          text3        001148
+__end_of_lcd_init            text5        000CA6
+__end_of_lcd_putnum          text2        0010D4
+__end_of_lcd_puts            text1        000F68
+__end_of_lcd_write_byte      text6        001402
+__end_of_lcd_write_nibble    text7        000E32
+__end_of_main                text0        000BB6
+__end_of_putsUSART           text13       001260
+__end_of_strncpy             text12       001204
+__end_of_utoa                text16       000ED6
+__end_ofi2___lwdiv           text17       001304
+__initialization             cinit        001148
 __mediumconst                mediumconst  000000
 __pbssBANK0                  bssBANK0     000073
 __pbssBANK1                  bssBANK1     000100
 __pbssBANK2                  bssBANK2     000200
 __pbssBANK3                  bssBANK3     000300
 __pbssCOMRAM                 bssCOMRAM    000027
-__pcinit                     cinit        001152
+__pcinit                     cinit        001148
 __pcstackBANK0               cstackBANK0  000060
 __pcstackCOMRAM              cstackCOMRAM 000001
 __pdataCOMRAM                dataCOMRAM   000049
-__pidataCOMRAM               idataCOMRAM  00147C
+__pidataCOMRAM               idataCOMRAM  001466
 __pintcode                   intcode      000008
 __pintcode_body              intcode_body 00083E
 __psmallconst                smallconst   000800
-__ptext0                     text0        000A92
-__ptext1                     text1        000EE0
-__ptext10                    text10       001456
-__ptext12                    text12       0011B0
-__ptext13                    text13       00120E
-__ptext14                    text14       00146A
-__ptext15                    text15       00126A
-__ptext16                    text16       000E3C
-__ptext17                    text17       0012BC
-__ptext18                    text18       001356
-__ptext19                    text19       001398
-__ptext2                     text2        00106A
-__ptext20                    text20       000CB0
-__ptext21                    text21       001418
-__ptext22                    text22       0013D2
-__ptext23                    text23       001438
-__ptext3                     text3        0010DE
-__ptext4                     text4        000FF2
-__ptext5                     text5        000BC0
-__ptext6                     text6        0013F8
-__ptext7                     text7        000D7A
-__ptext8                     text8        00130E
-__ptext9                     text9        000F72
+__ptext0                     text0        000A88
+__ptext1                     text1        000ED6
+__ptext10                    text10       001440
+__ptext12                    text12       0011A6
+__ptext13                    text13       001204
+__ptext14                    text14       001454
+__ptext15                    text15       001260
+__ptext16                    text16       000E32
+__ptext17                    text17       0012B2
+__ptext18                    text18       00134C
+__ptext19                    text19       00138E
+__ptext2                     text2        001060
+__ptext20                    text20       000CA6
+__ptext21                    text21       001402
+__ptext22                    text22       0013BC
+__ptext23                    text23       001422
+__ptext3                     text3        0010D4
+__ptext4                     text4        000FE8
+__ptext5                     text5        000BB6
+__ptext6                     text6        0013E2
+__ptext7                     text7        000D70
+__ptext8                     text8        001304
+__ptext9                     text9        000F68
 __ramtop                     ramtop       000800
 __size_of_ISR                (abs)        000000
 __size_of_OpenPWM1           (abs)        000000
@@ -560,38 +560,38 @@ __size_of_utoa               (abs)        000000
 __size_ofi2___lwdiv          (abs)        000000
 __smallconst                 smallconst   000800
 __stringdata                 smallconst   000805
-_atoi                        text20       000CB0
+_atoi                        text20       000CA6
 _c                           bssCOMRAM    000040
 _cantidadLetrasDOWN          bssCOMRAM    000037
 _cantidadLetrasUP            bssCOMRAM    000039
-_cleanMessageBuffer          text19       001398
+_cleanMessageBuffer          text19       00138E
 _flag_newline                bssCOMRAM    000041
 _i                           bssCOMRAM    00003B
-_isdigit                     text21       001418
+_isdigit                     text21       001402
 _isdigit$1330                cstackCOMRAM 000002
-_itoa                        text15       00126A
+_itoa                        text15       001260
 _k                           bssCOMRAM    00003D
-_lcd_gotoxy                  text3        0010DE
-_lcd_init                    text5        000BC0
+_lcd_gotoxy                  text3        0010D4
+_lcd_init                    text5        000BB6
 _lcd_lower_display_buffer    bssCOMRAM    000027
 _lcd_lower_row_buffer        bssBANK3     000300
-_lcd_putnum                  text2        00106A
-_lcd_puts                    text1        000EE0
+_lcd_putnum                  text2        001060
+_lcd_puts                    text1        000ED6
 _lcd_upper_display_buffer    bssBANK0     000073
 _lcd_upper_row_buffer        bssBANK2     000200
-_lcd_write_byte              text6        0013F8
-_lcd_write_nibble            text7        000D7A
+_lcd_write_byte              text6        0013E2
+_lcd_write_nibble            text7        000D70
 _lcd_x                       bssCOMRAM    000042
 _lcd_y                       bssCOMRAM    000043
-_main                        text0        000A92
-_putsUSART                   text13       00120E
-_strncpy                     text12       0011B0
-_utoa                        text16       000E3C
+_main                        text0        000A88
+_putsUSART                   text13       001204
+_strncpy                     text12       0011A6
+_utoa                        text16       000E32
 atoi@a                       cstackCOMRAM 00000C
 atoi@s                       cstackCOMRAM 000007
 atoi@sign                    cstackCOMRAM 00000B
-end_of_initialization        cinit        0011A6
-i2___lwdiv                   text17       0012BC
+end_of_initialization        cinit        00119C
+i2___lwdiv                   text17       0012B2
 i2___lwdiv@counter           cstackCOMRAM 000007
 i2___lwdiv@dividend          cstackCOMRAM 000001
 i2___lwdiv@divisor           cstackCOMRAM 000003
@@ -626,7 +626,7 @@ putsUSART@data               cstackCOMRAM 000002
 stackhi                      (abs)        0007FF
 stacklo                      (abs)        0003C8
 start                        init         000018
-start_initialization         cinit        001152
+start_initialization         cinit        001148
 strncpy@cp                   cstackCOMRAM 000007
 strncpy@from                 cstackCOMRAM 000003
 strncpy@size                 cstackCOMRAM 000005
@@ -783,7 +783,7 @@ Total ram usage:        3 bytes
 
  *************** function ___lwdiv *****************
  Defined at:
-		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c"
+		line 8 in file "I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c"
  Parameters:    Size  Location     Type
   dividend        2    0[BANK0 ] unsigned int 
   divisor         2    2[BANK0 ] unsigned int 
@@ -916,7 +916,7 @@ Total ram usage:        3 bytes
 
  *************** function _SetDCPWM1 *****************
  Defined at:
-		line 7 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c"
+		line 7 in file "I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c"
  Parameters:    Size  Location     Type
   dutycycle       2    0[BANK0 ] unsigned int 
  Auto vars:     Size  Location     Type
@@ -946,7 +946,7 @@ Total ram usage:        6 bytes
 
  *************** function _OpenUSART *****************
  Defined at:
-		line 73 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c"
+		line 73 in file "I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c"
  Parameters:    Size  Location     Type
   config          1    wreg     unsigned char 
   spbrg           2    0[BANK0 ] unsigned int 
@@ -977,7 +977,7 @@ Total ram usage:        6 bytes
 
  *************** function _OpenPWM1 *****************
  Defined at:
-		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c"
+		line 8 in file "I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c"
  Parameters:    Size  Location     Type
   period          1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -1042,7 +1042,7 @@ Total ram usage:       14 bytes
 
  *************** function _strncpy *****************
  Defined at:
-		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncpy.c"
+		line 8 in file "I:\Programas\Microchip\xc8\v1.33\sources\common\strncpy.c"
  Parameters:    Size  Location     Type
   to              2    0[COMRAM] PTR unsigned char 
 		 -> DC_str(5), 
@@ -1076,7 +1076,7 @@ Total ram usage:        8 bytes
 
  *************** function _putsUSART *****************
  Defined at:
-		line 14 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uputs.c"
+		line 14 in file "I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uputs.c"
  Parameters:    Size  Location     Type
   data            2    1[COMRAM] PTR unsigned char 
 		 -> STR_7(16), STR_6(27), STR_5(16), STR_4(27), 
@@ -1109,7 +1109,7 @@ Total ram usage:        4 bytes
 
  *************** function _WriteUSART *****************
  Defined at:
-		line 13 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c"
+		line 13 in file "I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c"
  Parameters:    Size  Location     Type
   data            1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -1138,7 +1138,7 @@ Total ram usage:        1 bytes
 
  *************** function _itoa *****************
  Defined at:
-		line 4 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c"
+		line 4 in file "I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c"
  Parameters:    Size  Location     Type
   buf             2   16[COMRAM] PTR unsigned char 
 		 -> DC_str(5), 
@@ -1172,7 +1172,7 @@ Total ram usage:        8 bytes
 
  *************** function _utoa *****************
  Defined at:
-		line 17 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c"
+		line 17 in file "I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c"
  Parameters:    Size  Location     Type
   buf             2    7[COMRAM] PTR unsigned char 
 		 -> DC_str(5), 
@@ -1207,7 +1207,7 @@ Total ram usage:        9 bytes
 
  *************** function i2___lwdiv *****************
  Defined at:
-		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c"
+		line 8 in file "I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c"
  Parameters:    Size  Location     Type
   dividend        2    0[COMRAM] unsigned int 
   divisor         2    2[COMRAM] unsigned int 
@@ -1238,7 +1238,7 @@ Total ram usage:        7 bytes
 
  *************** function ___lwmod *****************
  Defined at:
-		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c"
+		line 8 in file "I:\Programas\Microchip\xc8\v1.33\sources\common\lwmod.c"
  Parameters:    Size  Location     Type
   dividend        2    0[COMRAM] unsigned int 
   divisor         2    2[COMRAM] unsigned int 
@@ -1268,7 +1268,7 @@ Total ram usage:        5 bytes
 
  *************** function _cleanMessageBuffer *****************
  Defined at:
-		line 176 in file "main.c"
+		line 172 in file "main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1276,7 +1276,7 @@ Total ram usage:        5 bytes
  Return value:  Size  Location     Type
 		None               void
  Registers used:
-		wreg, fsr2l, fsr2h, status,2, status,0, prodl
+		wreg, fsr2l, fsr2h, status,2, status,0
  Tracked objects:
 		On entry : 
 		On exit  : 
@@ -1297,7 +1297,7 @@ Total ram usage:        0 bytes
 
  *************** function _atoi *****************
  Defined at:
-		line 5 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c"
+		line 5 in file "I:\Programas\Microchip\xc8\v1.33\sources\common\atoi.c"
  Parameters:    Size  Location     Type
   s               2    6[COMRAM] PTR const unsigned char 
 		 -> DC_str(5), 
@@ -1330,7 +1330,7 @@ Total ram usage:        7 bytes
 
  *************** function _isdigit *****************
  Defined at:
-		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\isdigit.c"
+		line 8 in file "I:\Programas\Microchip\xc8\v1.33\sources\common\isdigit.c"
  Parameters:    Size  Location     Type
   c               1    wreg     unsigned char 
  Auto vars:     Size  Location     Type
@@ -1359,7 +1359,7 @@ Total ram usage:        3 bytes
 
  *************** function ___wmul *****************
  Defined at:
-		line 15 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c"
+		line 15 in file "I:\Programas\Microchip\xc8\v1.33\sources\common\Umul16.c"
  Parameters:    Size  Location     Type
   multiplier      2    0[COMRAM] unsigned int 
   multiplicand    2    2[COMRAM] unsigned int 
@@ -1389,7 +1389,7 @@ Total ram usage:        6 bytes
 
  *************** function _ReadUSART *****************
  Defined at:
-		line 15 in file "C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c"
+		line 15 in file "I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1420,94 +1420,94 @@ Total ram usage:        1 bytes
 MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c
-		___lwmod       		CODE           	1356	0000	66
+I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c
+		_ReadUSART     		CODE           	1422	0000	30
 
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c estimated size: 66
+I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c estimated size: 30
+
+I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uputs.c
+		_putsUSART     		CODE           	1204	0000	92
+
+I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uputs.c estimated size: 92
 
 lcd_driver.c
-		_lcd_write_byte		CODE           	13F8	0000	32
-		_lcd_puts      		CODE           	0EE0	0000	146
-		_lcd_putnum    		CODE           	106A	0000	116
-		_lcd_gotoxy    		CODE           	10DE	0000	116
-		_lcd_write_nibb		CODE           	0D7A	0000	194
-		_lcd_init      		CODE           	0BC0	0000	240
+		_lcd_write_byte		CODE           	13E2	0000	32
+		_lcd_puts      		CODE           	0ED6	0000	146
+		_lcd_putnum    		CODE           	1060	0000	116
+		_lcd_gotoxy    		CODE           	10D4	0000	116
+		_lcd_write_nibb		CODE           	0D70	0000	194
+		_lcd_init      		CODE           	0BB6	0000	240
 
 lcd_driver.c estimated size: 844
 
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c
-		___wmul        		CODE           	13D2	0000	38
+I:\Programas\Microchip\xc8\v1.33\sources\common\Umul16.c
+		___wmul        		CODE           	13BC	0000	38
 
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul16.c estimated size: 38
+I:\Programas\Microchip\xc8\v1.33\sources\common\Umul16.c estimated size: 38
 
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c
-		_OpenUSART     		CODE           	0F72	0000	128
+I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c
+		_itoa          		CODE           	1260	0000	82
+		_utoa          		CODE           	0E32	0000	164
 
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c estimated size: 128
+I:\Programas\Microchip\xc8\v1.33\sources\common\itoa.c estimated size: 246
 
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c
-		_atoi          		CODE           	0CB0	0000	202
+I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c
+		_WriteUSART    		CODE           	1454	0000	18
 
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\atoi.c estimated size: 202
+I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c estimated size: 18
 
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c
-		_WriteUSART    		CODE           	146A	0000	18
+I:\Programas\Microchip\xc8\v1.33\sources\common\strncpy.c
+		_strncpy       		CODE           	11A6	0000	94
 
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uwrite.c estimated size: 18
+I:\Programas\Microchip\xc8\v1.33\sources\common\strncpy.c estimated size: 94
 
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c
-		___lwdiv       		CODE           	0FF2	0000	120
+I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c
+		_OpenPWM1      		CODE           	1440	0000	20
 
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c estimated size: 120
+I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c estimated size: 20
+
+I:\Programas\Microchip\xc8\v1.33\sources\common\lwmod.c
+		___lwmod       		CODE           	134C	0000	66
+
+I:\Programas\Microchip\xc8\v1.33\sources\common\lwmod.c estimated size: 66
 
 shared
 		__stringdata   		SMALLCONST     	0805	0000	56
-		i2___lwdiv     		CODE           	12BC	0000	82
-		__initializatio		CODE           	1152	0000	84
+		i2___lwdiv     		CODE           	12B2	0000	82
+		__initializatio		CODE           	1148	0000	84
 		_LCD_ROW_ADDRES		SMALLCONST     	0801	0000	4
 
 shared estimated size: 226
 
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c
-		_ReadUSART     		CODE           	1438	0000	30
+I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c
+		_OpenUSART     		CODE           	0F68	0000	128
 
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uread.c estimated size: 30
+I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\USART\uopen.c estimated size: 128
 
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c
-		_SetDCPWM1     		CODE           	130E	0000	72
+I:\Programas\Microchip\xc8\v1.33\sources\common\isdigit.c
+		_isdigit       		CODE           	1402	0000	32
 
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c estimated size: 72
-
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c
-		_itoa          		CODE           	126A	0000	82
-		_utoa          		CODE           	0E3C	0000	164
-
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\itoa.c estimated size: 246
-
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uputs.c
-		_putsUSART     		CODE           	120E	0000	92
-
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\USART\uputs.c estimated size: 92
-
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncpy.c
-		_strncpy       		CODE           	11B0	0000	94
-
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\strncpy.c estimated size: 94
+I:\Programas\Microchip\xc8\v1.33\sources\common\isdigit.c estimated size: 32
 
 main.c
-		_ISR           		CODE           	0008	0000	2698
-		_main          		CODE           	0A92	0000	302
-		_cleanMessageBu		CODE           	1398	0000	58
+		_ISR           		CODE           	0008	0000	2688
+		_main          		CODE           	0A88	0000	302
+		_cleanMessageBu		CODE           	138E	0000	46
 
-main.c estimated size: 3058
+main.c estimated size: 3036
 
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c
-		_OpenPWM1      		CODE           	1456	0000	20
+I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c
+		___lwdiv       		CODE           	0FE8	0000	120
 
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1open.c estimated size: 20
+I:\Programas\Microchip\xc8\v1.33\sources\common\lwdiv.c estimated size: 120
 
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\isdigit.c
-		_isdigit       		CODE           	1418	0000	32
+I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c
+		_SetDCPWM1     		CODE           	1304	0000	72
 
-C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\isdigit.c estimated size: 32
+I:\Programas\Microchip\xc8\v1.33\sources\pic18\plib\PWM\pw1setdc.c estimated size: 72
+
+I:\Programas\Microchip\xc8\v1.33\sources\common\atoi.c
+		_atoi          		CODE           	0CA6	0000	202
+
+I:\Programas\Microchip\xc8\v1.33\sources\common\atoi.c estimated size: 202
 

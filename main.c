@@ -21,12 +21,12 @@
 #define MAX_CHAR_BUFFER 200
 
 
-char c;
-char flag_newline = 0;
-int i=0;
-int k;
-int cantidadLetrasUP = 0; 
-int cantidadLetrasDOWN = 0 ;
+unsigned char c;
+unsigned char flag_newline = 0;
+unsigned int i=0;
+unsigned int k;
+unsigned int cantidadLetrasUP = 0; 
+unsigned int cantidadLetrasDOWN = 0 ;
 unsigned int DutyCycle = 10;
 
 unsigned char MessageBuffer[MAX_CHAR_BUFFER];
@@ -39,7 +39,7 @@ unsigned char lcd_upper_display_buffer[LCD_COLUMNS];
 unsigned char DC_str[5];
 
 void rotarString(char* str, int length);
-int cuentaLetras(char* str);
+unsigned int cuentaLetras(char* str);
 void cleanMessageBuffer();
 
 void interrupt ISR(void);
@@ -113,45 +113,44 @@ void interrupt ISR()
                         DutyCycle = k;
                         putsUSART("Modificado el SetPoint a: ");
                         putsUSART(DC_str);
-                        putsUSART(0x0D);
+                        putsUSART('\n');
                     }
                     else
                     {
                         putsUSART("Error maquinola");
-                        putsUSART(0x0D);
+                        putsUSART('\n');
                     }
                     cleanMessageBuffer();
                     break;
                 case 0x2B: //check for plus key
-                    if(DutyCycle >= 0 && DutyCycle <= 1023)
+                    if(DutyCycle >= 0 && DutyCycle < 1023)
                     {   
                         DutyCycle++;
                         itoa(DC_str, DutyCycle, 10);
                         putsUSART("Modificado el SetPoint a: ");
                         putsUSART(DC_str);
-                        putsUSART(0x0D);
+                        putsUSART('\n');
                     }
                     else
                     {
                         putsUSART("Error maquinola");
-                        putsUSART(0x0D);
+                        putsUSART('\n');
                     }
                     cleanMessageBuffer();
                     break;
                 case 0x2D: //check for minus key
-                    if(DutyCycle >= 0 && DutyCycle <= 1023)
+                    if(DutyCycle > 0 && DutyCycle <= 1023)
                     {   
                         DutyCycle--;
-
                         putsUSART("Modificado el SetPoint a: ");
                         itoa(DC_str, DutyCycle, 10);
                         putsUSART(DC_str);
-                        putsUSART(0x0D);
+                        putsUSART('\n');
                     }
                     else
                     {
                         putsUSART("Error maquinola");
-                        putsUSART(0x0D);
+                        putsUSART('\n');
                     }  
                     cleanMessageBuffer();
                     break;                
@@ -178,7 +177,7 @@ void cleanMessageBuffer()
     i=0; //for sanity
 }
 
-int cuentaLetras(char* str)
+unsigned int cuentaLetras(char* str)
 {
     int j=0;
     while(str[j]!= 0x0D)
