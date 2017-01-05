@@ -25,6 +25,12 @@
   <sourceRootList>
     <Elem>../../../../Program Files (x86)/Microchip/xc8/v1.33/include/plib</Elem>
     <Elem>.</Elem>
+    <Elem>../../../../../microchip/mla/v2016_11_07/apps/usb/device/cdc_basic/firmware/demo_src</Elem>
+    <Elem>../../../../../microchip/mla/v2016_11_07/framework/usb/src</Elem>
+    <Elem>../../../../../microchip/mla/v2016_11_07/framework/usb/inc</Elem>
+    <Elem>../../../../../microchip/mla/v2016_11_07/apps/usb/host/msd_data_logger</Elem>
+    <Elem>../../../../../microchip/mla/v2016_11_07/framework/usb/doc</Elem>
+    <Elem>../../../../../microchip/mla/v2016_11_07/apps/usb/device/cdc_basic/firmware/picdem_fs_usb.x</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -51,6 +57,8 @@
           <parseOnProdLoad>true</parseOnProdLoad>
           <alternateLoadableFile></alternateLoadableFile>
         </loading>
+        <subordinates>
+        </subordinates>
       </compileType>
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
