@@ -5,7 +5,6 @@
  * Created on 5 de enero de 2017, 15:23
  */
 
-
 #include <xc.h>
 #include "system.h"
 #include "GLCD.h"
@@ -63,12 +62,7 @@ void main(void)
     
     glcd_print(0, 1, texto);
     
-    
-    
     while(1);
-    
-    
-    
     
     return;
 }
